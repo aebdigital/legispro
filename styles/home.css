@@ -159,8 +159,9 @@
 .hero-text h1 {
     color: var(--white);
     margin-bottom: 1.5rem;
-    font-size: 3.5rem;
-    line-height: 1.2;
+    font-size: clamp(3.5rem, 6vw, 5rem);
+    line-height: 1.1;
+    font-weight: 400;
 }
 
 .hero-text p {
@@ -225,8 +226,9 @@
 }
 
 .hero-services .service-name {
+    font-family: var(--font-family-serif);
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--white);
     line-height: 1.3;
     text-align: center;
@@ -516,6 +518,11 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
+}
+
+.step-header h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
 }
 
 .step-item.light .step-header h5 {

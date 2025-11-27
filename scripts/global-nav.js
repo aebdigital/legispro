@@ -1,6 +1,19 @@
 // Global Navigation Script
 document.addEventListener('DOMContentLoaded', function() {
     
+    // Load fonts globally
+    function loadFonts() {
+        const fontLink = document.createElement('link');
+        fontLink.rel = 'stylesheet';
+        fontLink.href = 'https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600;700&display=swap';
+        document.head.appendChild(fontLink);
+    }
+    
+    // Load fonts if not already loaded
+    if (!document.querySelector('link[href*="Crimson+Text"]')) {
+        loadFonts();
+    }
+    
     // Service pages data
     const services = [
         {

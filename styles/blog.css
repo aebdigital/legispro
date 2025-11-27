@@ -424,9 +424,10 @@
 
 .article-content h3 {
     color: var(--primary-color);
-    font-size: 1.25rem;
-    margin-bottom: 0.75rem;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
     line-height: 1.3;
+    font-weight: 400;
 }
 
 .article-content p {
