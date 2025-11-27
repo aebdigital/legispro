@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegisPro, s.r.o.</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/location.css">
+    <link rel="stylesheet" href="styles/home.css">
+    
+    <!-- GSAP and Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+</head>
+<body>
+    <!-- Page Loading Overlay -->
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Global Header will be inserted here -->
+
+    <!-- Hero Section -->
+    <section class="hero fade-in-up" id="banner">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2532&q=80" alt="LegisPro, s.r.o.">
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Profesionálne právne služby</h1>
+                <p>Poskytujeme komplexné právne poradenstvo.</p>
+            </div>
+            <div class="hero-buttons">
+                <a href="pages/kontakt.html" class="btn btn-primary">Rezervovať konzultáciu</a>
+                <a href="#about" class="btn btn-secondary">Zistiť viac</a>
+            </div>
+        </div>
+
+        <div class="hero-services">
+            <div class="service-row">
+                <a href="pages/sluzby/start-upy-greenfieldy.html" class="service-box">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.663 17h4.673M12 3l1.5 4.5 4.5 1.5-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="service-name">START UPy</div>
+                </a>
+                <a href="pages/sluzby/gdpr.html" class="service-box">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="16" r="1" fill="currentColor"/><path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <div class="service-name">GDPR</div>
+                </a>
+                <a href="pages/sluzby/optimalizacie.html" class="service-box">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                    </div>
+                    <div class="service-name">Optimalizácie</div>
+                </a>
+                <a href="pages/sluzby/due-diligence.html" class="service-box">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/><path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <div class="service-name">Due Diligence</div>
+                </a>
+                <a href="pages/sluzby/vymahanie-pohladavok.html" class="service-box">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="service-name">Vymáhanie pohľadávok</div>
+                </a>
+            </div>
+            <div class="service-row">
+                <a href="pages/sluzby/danove-pravo.html" class="service-box">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="currentColor" stroke-width="2"/><line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/><line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <div class="service-name">Daňové právo</div>
+                </a>
+                <a href="pages/sluzby/ecommerce.html" class="service-box">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="21" r="1" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="21" r="1" stroke="currentColor" stroke-width="2"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <div class="service-name">e-Commerce</div>
+                </a>
+                <a href="pages/sluzby/reality.html" class="service-box">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="2"/><polyline points="9,22 9,12 15,12 15,22" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <div class="service-name">Reality</div>
+                </a>
+                <a href="pages/sluzby/sporove-zastupovanie.html" class="service-box">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" stroke="currentColor" stroke-width="2"/><polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="2"/><line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="2"/><line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="2"/><polyline points="10,9 9,9 8,9" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <div class="service-name">Sporové zastupovanie</div>
+                </a>
+                <a href="pages/sluzby/trestne-pravo.html" class="service-box">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <div class="service-name">Trestné právo</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about fade-in-up" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Dodržiavame najvyššie štandardy integrity</h2>
+                    <p>Uprednostňujeme potreby našich klientov a chápeme, že každý prípad je jedinečný. Náš tím skúsených právnikov sa zaväzuje poskytovať prispôsobené riešenia, ktoré zabezpečia, že dostanete pozornosť a zastúpenie, ktoré si zaslúžite. Naše komplexné odborné znalosti nám umožňujú efektívne riešiť široký rozsah právnych záležitostí.</p>
+                    <div class="about-buttons">
+                        <a href="#services" class="btn btn-dark">Zistiť viac</a>
+                        <a href="pages/kontakt.html" class="btn btn-outline">Kontaktovať nás</a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://framerusercontent.com/images/YepW7uABoZYcbLBXXXgpGN25I.jpg" alt="LegisPro, s.r.o.">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Services Section -->
+    <section class="services fade-in-up" id="services">
+        <div class="container">
+            <div class="services-header">
+                <div class="services-text">
+                    <h2>Služby</h2>
+                    <p>Poskytujeme komplexné právne služby pre jednotlivcov aj firmy. Naši skúsení právnici vám pomôžu riešiť akékoľvek právne výzvy s profesionalitou a dôverou.</p>
+                </div>
+                <a href="#" class="btn btn-dark">Preskúmať všetky</a>
+            </div>
+            <div class="services-grid">
+                <div class="services-row">
+                    <div class="service-card">
+                        <div class="service-background">
+                            <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="START UPy a Greenfieldy">
+                        </div>
+                        <div class="service-overlay"></div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.663 17h4.673M12 3l1.5 4.5 4.5 1.5-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <h5>START UPy a Greenfieldy</h5>
+                            <p>Máme radi nové a zaujímavé nápady. Pomôžeme Vám spustiť, rozbehnúť a rozvíjať Vaše nové projekty. Budeme Vás sprevádzať celým, veľakrát komplikovaným procesom.</p>
+                            <a href="pages/sluzby/start-upy-greenfieldy.html" class="service-link">Zistiť viac</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-background">
+                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="GDPR">
+                        </div>
+                        <div class="service-overlay"></div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="16" r="1" fill="currentColor"/><path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="currentColor" stroke-width="2"/></svg>
+                            </div>
+                            <h5>GDPR</h5>
+                            <p>Pripravíme Vám na mieru šitú GDPR dokumentáciu a zabezpečíme súlad s aktuálnou právnou úpravou. Ochrana osobných údajov je v dnešnej dobe kľúčová pre každú firmu.</p>
+                            <a href="pages/sluzby/gdpr.html" class="service-link">Zistiť viac</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-row">
+                    <div class="service-card">
+                        <div class="service-background">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2073&q=80" alt="Reality">
+                        </div>
+                        <div class="service-overlay"></div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="2"/><polyline points="9,22 9,12 15,12 15,22" stroke="currentColor" stroke-width="2"/></svg>
+                            </div>
+                            <h5>Reality</h5>
+                            <p>Potrebujete kúpiť či predať nehnuteľnosť? Máme dlhoročné skúsenosti na realitnom trhu. Vždy veľmi dôkladne preverujeme danú transakciu a sledujeme jej celý priebeh.</p>
+                            <a href="pages/sluzby/reality.html" class="service-link">Zistiť viac</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-background">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Due Diligence">
+                        </div>
+                        <div class="service-overlay"></div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/><path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="2"/></svg>
+                            </div>
+                            <h5>Due Diligence</h5>
+                            <p>Plánujete významnú obchodnú transakciu? Rozumieme potrebe získania kvalitných informácií pre posúdenie následkov takejto transakcie a bonity obchodného partnera.</p>
+                            <a href="pages/sluzby/due-diligence.html" class="service-link">Zistiť viac</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process fade-in-up">
+        <div class="container">
+            <div class="process-content">
+                <div class="process-steps">
+                    <div class="step-item light">
+                        <div class="step-header">
+                            <h5>Prvá konzultácia</h5>
+                            <span class="step-number">01</span>
+                        </div>
+                        <p>Vypočujeme si vaše potreby a posúdime váš právny problém. Bez záväzkov vám predstavíme možné riešenia.</p>
+                    </div>
+                    <div class="step-item dark">
+                        <div class="step-header">
+                            <h5>Analýza a stratégia</h5>
+                            <span class="step-number">02</span>
+                        </div>
+                        <p>Pripravíme detailnú analýzu vášho prípadu a navneme najlepšiu právnu stratégiu na dosiahnutie vašich cieľov.</p>
+                    </div>
+                    <div class="step-item light">
+                        <div class="step-header">
+                            <h5>Realizácia a výsledok</h5>
+                            <span class="step-number">03</span>
+                        </div>
+                        <p>Profesionálne zastupujeme vaše záujmy a riešime váš prípad až do úspešného záveru.</p>
+                    </div>
+                </div>
+                <div class="process-text">
+                    <h2>Ako postupujeme</h2>
+                    <p>Naša práca je založená na systematickom prístupe, ktorý zabezpečuje najlepšie výsledky pre našich klientov. Od prvého kontaktu až po uzavretie prípadu vás sprevádzame každým krokom právneho procesu.</p>
+                    <a href="pages/kontakt.html" class="btn btn-dark">Dohodnite si stretnutie</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section fade-in-up">
+        <div class="video-background">
+            <img src="https://framerusercontent.com/images/MDTIxacK7g2pz8XwmhehKudXG8.jpg" alt="LegisPro, s.r.o.">
+        </div>
+        <div class="video-overlay"></div>
+        <div class="video-content">
+            <div class="video-text">
+                <h2>Naša vízia a hodnoty</h2>
+                <p>Sme tu pre vás už roky a naše skúsenosti hovorí za nás. Dôverujte odborníkom, ktorí rozumejú vašim potrebám a poskytnú vám najlepšie riešenia.</p>
+            </div>
+            <div class="vision-values">
+                <div class="value-item">
+                    <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Profesionalita a odbornosť</span>
+                </div>
+                <div class="value-item">
+                    <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Transparentnosť vo všetkých krokoch</span>
+                </div>
+                <div class="value-item">
+                    <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Individuálny prístup ku klientom</span>
+                </div>
+                <div class="value-item">
+                    <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Dlhodobé partnerstvo</span>
+                </div>
+                <div class="value-item">
+                    <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Efektívne riešenia</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+   
+
+    <!-- Blog Section -->
+    <section class="blog fade-in-up" id="blog">
+        <div class="container">
+            <div class="blog-header">
+                <div class="blog-text">
+                    <h2>Blog</h2>
+                    <p>Aktuálne právne témy a praktické rady od odborníkov.</p>
+                </div>
+                <a href="pages/blog.html" class="btn btn-dark">Preskúmať všetky</a>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Daňová kontrola a najčastejšie nedostatky v transferovom oceňovaní">
+                    </div>
+                    <div class="blog-content">
+                        <h6>Daňová kontrola a najčastejšie nedostatky v transferovom oceňovaní</h6>
+                        <p>Všeobecný priebeh daňovej kontroly je upravený v § 44 až § 47 zákona č. 563/2009 Z.z. o správe daní(daňový poriadok) a o zmene a doplnení niektorých zákonov. Účelom daňovej kontroly je preskúmanie postupov daňovníka pri stanovení transferových cien, t.j. či zvolil vhodnú transferovú metódu, či disponuje dostatočnou dokumentáciou k preverovaným transakciám, či vie transparentne podať vysvetlenie k jednotlivým prípadom, či si zvolil správnu základňu pre analýzu porovnateľnosti a teda či vie dostatočne preukázať aplikáciu princípu nezávislosti pri závislých transakciách, ktoré uskutočnil v danom zdaňovacom období.</p>
+                        <a href="pages/blog.html?post=danove-kontroly-transfer-pricing" class="blog-link">Čítať celý príspevok</a>
+                    </div>
+                    <div class="blog-category">Daňové právo</div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Vybraná judikatúra v transferovom oceňovaní">
+                    </div>
+                    <div class="blog-content">
+                        <h6>Vybraná judikatúra v transferovom oceňovaní</h6>
+                        <p>Problematika transferového oceňovania je dynamicky sa vyvíjajúcou oblasťou a dalo by sa povedať, že jej právna úprava nie je dostačujúca a jednoznačná, čo sa prejavuje aj v rozdielnych pohľadoch na ňu z hľadiska správcu dane a daňovníka. V praxi to často vyúsťuje do dorubenia dane daňovníkovi a následným súdnym sporom. Pre účely tohto článku sa zameriame na rozdielne pohľady z hľadiska použitej transferovej metódy, právnej záväznosti smernice o transferovom oceňovaní a dôkazného bremena.</p>
+                        <a href="pages/blog.html?post=judikatura-transfer-pricing" class="blog-link">Čítať celý príspevok</a>
+                    </div>
+                    <div class="blog-category">Súdna prax</div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Kedy je možné započítať pohľadávky">
+                    </div>
+                    <div class="blog-content">
+                        <h6>Kedy je možné započítať pohľadávky</h6>
+                        <p>Zánik pohľadávok započítaním predstavuje formu bezhotovostného vyrovnania sa medzi dlžníkom a veriteľom, kedy medzi nimi neodchádza k reálnemu plneniu, čo nepochybne prináša úsporu nákladov, ktoré by títo účastníci museli inak vynaložiť. Dalo by sa povedať, že ide formu náhradného plnenia záväzku veriteľovi, ktorým sa uspokojuje jeho pohľadávka. Vzhľadom na relatívnu jednoduchosť a efektivitu splnenia záväzkov týmto spôsobom ide v praxi o často využívaný inštitút.</p>
+                        <a href="pages/blog.html?post=zapocitanie-pohladavok" class="blog-link">Čítať celý príspevok</a>
+                    </div>
+                    <div class="blog-category">Obchodné právo</div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location">
+        <div class="location-background"></div>
+        <div class="container">
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="location-item">
+                        <h4>Nájdite nás</h4>
+                        <p><a href="https://maps.google.com/?q=Sládkovičova+1+949+01+Nitra" target="_blank">Sládkovičova 1, 949 01 Nitra, Slovenská republika</a></p>
+                    </div>
+                    <div class="location-item">
+                        <h4>Kontaktujte nás</h4>
+                        <p><a href="mailto:office@legispro.sk">office@legispro.sk</a></p>
+                        <p><a href="tel:+421 948 528 265">+421 948 528 265</a></p>
+                    </div>
+                </div>
+                <div class="map">
+                    <div class="map-overlay" id="mapOverlayHome">
+                        <div class="map-overlay-content">
+                            <h4>Pre interakciu s mapou kliknite</h4>
+                        </div>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10498.640103596685!2d18.084437315673!3d48.3146597792368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f11.1!3m3!1m2!1s0x476a89e6a5a3a2b7%3A0x400f7d1c69788a0!2sSl%C3%A1dkovi%C4%8Dova%201%2C%20949%2001%20Nitra-Chrenov%C3%A1%2C%20Slovakia!5e0!3m2!1sen!2sus!4v1609452345678"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Footer will be inserted here -->
+
+    <!-- Lenis Smooth Scrolling -->
+    <script src="scripts/gsap-simple.js"></script>
+    
+    <!-- Main JavaScript -->
+    <script src="scripts/script.js"></script>
+    <script src="scripts/global-nav.js"></script>
+
+    <!-- Page Loading Animation -->
+    <script>
+    // Enhanced page loader with fallback
+    (function() {
+        let loaderRemoved = false;
+
+        function removeLoader() {
+            if (loaderRemoved) return;
+            loaderRemoved = true;
+
+            const loader = document.querySelector('.page-loader');
+            const body = document.body;
+
+            if (loader) {
+                body.classList.add('loaded');
+                loader.classList.add('fade-out');
+
+                setTimeout(() => {
+                    if (loader.parentNode) {
+                        loader.remove();
+                    }
+                }, 800);
+            }
+        }
+
+        // Remove loader when page is fully loaded
+        window.addEventListener('load', removeLoader);
+
+        // Fallback: remove loader after 3 seconds max
+        setTimeout(removeLoader, 3000);
+
+        // Remove loader when DOM is ready (faster fallback)
+        if (document.readyState === 'complete') {
+            setTimeout(removeLoader, 100);
+        } else {
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(removeLoader, 100);
+            });
+        }
+    })();
+    </script>
+</body>
+</html>
