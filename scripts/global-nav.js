@@ -81,8 +81,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Determine current path and create appropriate URLs
     function getBasePath() {
         const currentPath = window.location.pathname;
-        if (currentPath.includes('/pages/sluzby/')) {
-            return '../../'; // We're in sluzby subfolder
+        if (currentPath.includes('/pages/sluzby/') || currentPath.includes('/pages/blog/')) {
+            return '../../'; // We're in sluzby or blog subfolder
         }
         if (currentPath.includes('/pages/')) {
             return '../'; // We're in pages folder
@@ -100,6 +100,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         if (page === 'kontakt' || page === 'blog') {
             return basePath + 'pages/' + page + '.html';
+        }
+        if (page === 'podnikatelsky-balik' || page === 'skolenia-webinare') {
+            return basePath + 'pages/sluzby/' + page + '.html';
         }
         // Service pages are now in sluzby subfolder
         return basePath + 'pages/sluzby/' + page + '.html';
@@ -140,6 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="nav-container">
                     <div class="logo">
                         <a href="${getPagePath('index')}">
+                            <img src="${basePath}sources/logo.png" alt="LegisPro" class="logo-image">
                             <h3>LegisPro</h3>
                         </a>
                     </div>
@@ -161,6 +165,8 @@ document.addEventListener('DOMContentLoaded', function() {
                                 </div>
                             </div>
                         </div>
+                        <a href="${getPagePath('podnikatelsky-balik')}" class="nav-link ${currentPage === 'podnikatelsky-balik' ? 'active' : ''}">Podnikateľský balík</a>
+                        <a href="${getPagePath('skolenia-webinare')}" class="nav-link ${currentPage === 'skolenia-webinare' ? 'active' : ''}">Školenia a webináre</a>
                         <a href="${getPagePath('blog')}" class="nav-link">Blog</a>
                     </div>
                     <a href="${getPagePath('kontakt')}" class="btn btn-primary">Konzultácia</a>
@@ -175,7 +181,10 @@ document.addEventListener('DOMContentLoaded', function() {
             <!-- Mobile Menu -->
             <div class="mobile-menu" id="mobileMenu">
                 <div class="mobile-menu-header">
-                    <h3>LegisPro</h3>
+                    <div class="mobile-logo">
+                        <img src="${basePath}sources/logo.png" alt="LegisPro" class="logo-image">
+                        <h3>LegisPro</h3>
+                    </div>
                     <button class="mobile-menu-close" id="mobileMenuClose">✕</button>
                 </div>
                 <a href="${getPagePath('index')}" class="nav-link">Domov</a>
@@ -197,6 +206,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 </div>
                 
+                <a href="${getPagePath('podnikatelsky-balik')}" class="nav-link">Podnikateľský balík</a>
+                <a href="${getPagePath('skolenia-webinare')}" class="nav-link">Školenia a webináre</a>
                 <a href="${getPagePath('blog')}" class="nav-link">Blog</a>
                 <a href="${getPagePath('kontakt')}" class="btn btn-primary">Konzultácia</a>
             </div>
@@ -274,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             </a>
                         </div>
                         <div class="footer-copyright">
-                            <p>© ${new Date().getFullYear()} LegisPro, s.r.o. Všetky práva vyhradené.</p>
+                            <p>© ${new Date().getFullYear()} LegisPro, s.r.o. Všetky práva vyhradené. | <a href="${getPagePath('gdpr')}">Ochrana osobných údajov</a></p>
                             <p><a href="https://aebdigital.sk" target="_blank">tvorba stránky AEB Digital</a></p>
                         </div>
                     </div>

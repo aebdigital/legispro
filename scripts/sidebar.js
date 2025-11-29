@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
             name: 'GDPR',
             slug: 'gdpr',
             icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="16" r="1" fill="currentColor"/><path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="currentColor" stroke-width="2"/></svg>',
-            description: 'Ochrana osobných údajov'
+            description: 'GDPR služby a poradenstvo'
         },
         {
             name: 'Optimalizačné riešenia',
@@ -138,7 +138,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (!serviceContainer) return;
         
+        const currentService = services.find(s => s.slug === currentPage);
+        const currentServiceName = currentService ? currentService.name : 'Naše služby';
+        
         let sidebarHTML = `
+            <!-- Desktop Navigation -->
             <div class="service-navigation-card">
                 <h3>Naše služby</h3>
                 <ul class="service-nav-list">
@@ -159,9 +163,69 @@ document.addEventListener('DOMContentLoaded', function() {
         sidebarHTML += `
                 </ul>
             </div>
+            
+            <!-- Mobile Dropdown Navigation -->
+            <div class="service-navigation-mobile">
+                <button class="service-dropdown-toggle" id="serviceDropdownToggle">
+                    <span>
+                        <strong>Naše služby</strong>
+                        ${currentService ? `<br><small style="font-weight: 400; opacity: 0.9;">${currentService.name}</small>` : ''}
+                    </span>
+                    <span class="service-dropdown-arrow">▼</span>
+                </button>
+                <div class="service-dropdown-content" id="serviceDropdownContent">
+                    <ul class="mobile-service-nav-list">
+        `;
+        
+        services.forEach(service => {
+            const isActive = currentPage === service.slug;
+            sidebarHTML += `
+                <li>
+                    <a href="${service.slug}.html" class="${isActive ? 'current' : ''}">
+                        <span class="mobile-nav-icon">${service.icon}</span>
+                        ${service.name}
+                    </a>
+                </li>
+            `;
+        });
+        
+        sidebarHTML += `
+                    </ul>
+                </div>
+            </div>
         `;
         
         serviceContainer.innerHTML = sidebarHTML;
+        
+        // Initialize mobile dropdown functionality
+        initializeMobileDropdown();
+    }
+    
+    function initializeMobileDropdown() {
+        const toggle = document.getElementById('serviceDropdownToggle');
+        const content = document.getElementById('serviceDropdownContent');
+        
+        if (toggle && content) {
+            toggle.addEventListener('click', function() {
+                const isActive = content.classList.contains('active');
+                
+                if (isActive) {
+                    content.classList.remove('active');
+                    toggle.classList.remove('active');
+                } else {
+                    content.classList.add('active');
+                    toggle.classList.add('active');
+                }
+            });
+            
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!toggle.contains(event.target) && !content.contains(event.target)) {
+                    content.classList.remove('active');
+                    toggle.classList.remove('active');
+                }
+            });
+        }
     }
     
     function initializeMobileSidebar() {

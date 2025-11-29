@@ -483,8 +483,9 @@ section {
 /* Responsive typography */
 @media (max-width: 768px) {
     .container {
-        width: 95%;
-        padding: 0 var(--spacing-md);
+        width: 90vw;
+        padding: 0;
+        margin: 0 auto;
     }
     
     .grid-2,
@@ -505,8 +506,9 @@ section {
 
 @media (max-width: 480px) {
     .container {
-        width: 100%;
-        padding: 0 var(--spacing-sm);
+        width: 90vw;
+        padding: 0;
+        margin: 0 auto;
     }
     
     .btn {

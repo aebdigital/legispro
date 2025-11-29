@@ -149,9 +149,6 @@
     justify-content: center;
     width: 24px;
     height: 24px;
-    min-width: 44px;
-    min-height: 44px;
-    padding: 10px;
 }
 
 .social-links a svg {
@@ -183,6 +180,12 @@
 @media (max-width: 768px) {
     .footer {
         padding: 2rem 0 2rem;
+    }
+    
+    .container {
+        width: 90vw;
+        padding: 0;
+        margin: 0 auto;
     }
     
     .footer .container {
@@ -223,7 +226,7 @@
 
 @media (max-width: 480px) {
     .footer {
-        padding: 3rem 0 2rem;
+        padding: 2rem 0 1.5rem;
     }
     
     .footer-column h5 {
