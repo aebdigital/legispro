@@ -37,8 +37,10 @@
 
 .service-hero-background img {
     width: 100%;
-    height: 100%;
+    height: 120%;
     object-fit: cover;
+    transform: translateY(0);
+    will-change: transform;
 }
 
 .service-hero-overlay {
@@ -109,8 +111,10 @@
 
 .contact-hero-background img {
     width: 100%;
-    height: 100%;
+    height: 120%;
     object-fit: cover;
+    transform: translateY(0);
+    will-change: transform;
 }
 
 .contact-hero-overlay {

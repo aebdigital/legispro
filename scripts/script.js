@@ -15,15 +15,35 @@ if (!window.lenis) {
     });
 }
 
-// Navbar scroll effect
-window.addEventListener('scroll', function() {
+// Navbar scroll effect (fallback for when Lenis is not available)
+function updateScrollEffects(scrollY) {
     const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 100) {
+    
+    if (scrollY > 100) {
         navbar.classList.add('scrolled');
     } else {
         navbar.classList.remove('scrolled');
     }
-});
+    
+    // Parallax effect for hero background images
+    const heroImages = document.querySelectorAll('.hero-background img, .service-hero-background img, .contact-hero-background img');
+    heroImages.forEach(img => {
+        const rect = img.getBoundingClientRect();
+        const speed = 0.2; // 20% parallax effect
+        
+        if (rect.bottom >= 0 && rect.top <= window.innerHeight) {
+            const yPos = -(scrollY * speed);
+            img.style.transform = `translateY(${yPos}px)`;
+        }
+    });
+}
+
+// Fallback scroll listener for when Lenis is not available
+if (!window.lenis) {
+    window.addEventListener('scroll', function() {
+        updateScrollEffects(window.scrollY);
+    });
+}
 
 // Map overlay functionality
 document.addEventListener('DOMContentLoaded', function() {

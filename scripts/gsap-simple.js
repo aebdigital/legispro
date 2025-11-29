@@ -21,8 +21,15 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
-// Connect Lenis to GSAP ScrollTrigger
-lenis.on('scroll', ScrollTrigger.update);
+// Connect Lenis to GSAP ScrollTrigger and update scroll effects
+lenis.on('scroll', (e) => {
+    ScrollTrigger.update();
+    
+    // Update scroll effects when using Lenis
+    if (typeof updateScrollEffects === 'function') {
+        updateScrollEffects(e.scroll);
+    }
+});
 
 gsap.ticker.add((time) => {
     lenis.raf(time * 1000);
