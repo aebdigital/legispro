@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             return basePath === '../' ? '../index.html' : './index.html';
         }
-        if (page === 'kontakt' || page === 'blog') {
+        if (page === 'kontakt' || page === 'blog' || page === 'ochrana-osobnych-udajov') {
             return basePath + 'pages/' + page + '.html';
         }
         if (page === 'podnikatelsky-balik' || page === 'skolenia-webinare') {
@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             </a>
                         </div>
                         <div class="footer-copyright">
-                            <p>© ${new Date().getFullYear()} LegisPro, s.r.o. Všetky práva vyhradené. | <a href="${getPagePath('gdpr')}">Ochrana osobných údajov</a></p>
+                            <p>© ${new Date().getFullYear()} LegisPro, s.r.o. Všetky práva vyhradené. | <a href="${getPagePath('ochrana-osobnych-udajov')}">Ochrana osobných údajov</a></p>
                             <p><a href="https://aebdigital.sk" target="_blank">tvorba stránky AEB Digital</a></p>
                         </div>
                     </div>
