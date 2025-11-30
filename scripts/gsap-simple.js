@@ -14,13 +14,6 @@ const lenis = new Lenis({
 // Make lenis globally accessible so modals can control it
 window.lenis = lenis;
 
-function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-}
-
-requestAnimationFrame(raf);
-
 // Connect Lenis to GSAP ScrollTrigger and update scroll effects
 lenis.on('scroll', (e) => {
     ScrollTrigger.update();
@@ -36,6 +29,15 @@ gsap.ticker.add((time) => {
 });
 
 gsap.ticker.lagSmoothing(0);
+
+// Handle tab visibility to prevent memory buildup
+document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+        lenis.stop();
+    } else {
+        lenis.start();
+    }
+});
 
 // Lenis scroll to functionality for anchor links
 document.addEventListener('DOMContentLoaded', function() {
