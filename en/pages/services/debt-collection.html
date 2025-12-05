@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Debt collection services by LegisPro - effective recovery of unpaid debts for your business. Legal proceedings, mediation and court actions. Fast solutions.">
+    <title>Debt Collection - LegisPro</title>
+    <link rel="icon" type="image/png" href="../../../sources/logo.png">
+    <link rel="shortcut icon" type="image/png" href="../../../sources/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/base.css?v=1764377524">
+    
+    
+    <link rel="stylesheet" href="../../../styles/header.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/footer.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/location.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/sluzby.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/language-toggle.css?v=1764377524">
+    
+    <!-- GSAP and Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js?v=1764377524"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js?v=1764377524"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js?v=1764377524"></script>
+</head>
+<body>
+    <!-- Page Loading Overlay -->
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Global Header will be inserted here -->
+
+    <div id="serviceSidebar"></div>
+
+    <section class="service-hero fade-in-up">
+        <div class="service-hero-background">
+            <img src="../../../sources/images/legal-office-1.jpg" alt="Vymáhanie pohľadávok">
+        </div>
+        <div class="service-hero-overlay"></div>
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>Debt Collection</h1>
+                <p>We have years of experience with debt collection for our clients in the territory of the Slovak Republic and the European Union.</p>
+                <div class="service-hero-buttons">
+                    <a href="../contact.html" class="btn btn-primary"><span>Contact Us</span></a>
+                    <a href="#obsah" class="btn btn-secondary"><span>More Information</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="obsah" class="service-content fade-in-up">
+        <div class="container">
+            <div class="service-content-grid">
+                <div class="service-main">
+                    <h2>Effective Debt Collection</h2>
+                    <p>The success of debt collection also depends on immediate and intensive communication with the debtor. In such cases, the debtor will often agree to one of our proven and tested methods of debt repayment.</p>
+                    
+                    <div class="service-feature">
+                        <h3>Out-of-Court Collection</h3>
+                        <p>As the first step, we will represent you in out-of-court negotiations with your debtor. We use proven methods of communication and negotiation.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Court Proceedings</h3>
+                        <p>If the situation requires it, we will file a lawsuit and represent you in any enforcement proceedings.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>International Collection</h3>
+                        <p>We have experience with debt collection within the European Union and cooperate with partner law firms.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Payment Schedules</h3>
+                        <p>We will propose and negotiate optimal payment schedules that will be acceptable to both parties.</p>
+                    </div>
+                </div>
+
+                <div class="service-sidebar-content">
+                    <div class="service-info-card">
+                        <h3>Our Approach</h3>
+                        <ul>
+                            <li>Immediate collection initiation</li>
+                            <li>Intensive communication with debtor</li>
+                            <li>Out-of-court and court procedures</li>
+                            <li>International collection</li>
+                            <li>Transparent reporting</li>
+                        </ul>
+                    </div>
+                    <div class="service-contact-card">
+                        <h3>Having Problems with a Debtor?</h3>
+                        <p>Contact us and we will start acting immediately.</p>
+                        <a href="../contact.html" class="btn btn-dark">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lenis Smooth Scrolling -->
+    <script src="../../../scripts/gsap-simple.js?v=1764377524"></script>
+    
+    <!-- Internationalization -->
+    
+    <!-- Main JavaScript -->
+    <script src="../../../scripts/script.js?v=1764377524"></script>
+    <script src="../../../scripts/global-nav.js?v=1764377524"></script>
+    <script src="../../../scripts/sidebar.js?v=1764377524"></script>
+
+    <!-- Page Loading Animation -->
+    <script>
+    // Enhanced page loader with fallback
+    (function() {
+        let loaderRemoved = false;
+
+        function removeLoader() {
+            if (loaderRemoved) return;
+            loaderRemoved = true;
+
+            const loader = document.querySelector('.page-loader');
+            const body = document.body;
+
+            if (loader) {
+                body.classList.add('loaded');
+                loader.classList.add('fade-out');
+
+                setTimeout(() => {
+                    if (loader.parentNode) {
+                        loader.remove();
+                    }
+                }, 800);
+            }
+        }
+
+        // Remove loader when page is fully loaded
+        window.addEventListener('load', removeLoader);
+
+        // Fallback: remove loader after 3 seconds max
+        setTimeout(removeLoader, 3000);
+
+        // Remove loader when DOM is ready (faster fallback)
+        if (document.readyState === 'complete') {
+            setTimeout(removeLoader, 100);
+        } else {
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(removeLoader, 100);
+            });
+        }
+    })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Services juridiques immobiliers par LegisPro - achat, vente de propriétés, locations, hypothèques et droits de propriété. Conseil juridique complet.">
+    <title>Immobilier - LegisPro</title>
+    
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="sk" href="https://legispro.sk/sk/pages/sluzby/reality.html" />
+    <link rel="alternate" hreflang="en" href="https://legispro.sk/en/pages/sluzby/real-estate.html" />
+    <link rel="alternate" hreflang="fr" href="https://legispro.sk/fr/pages/sluzby/immobilier.html" />
+    <link rel="alternate" hreflang="de" href="https://legispro.sk/de/pages/sluzby/immobilien.html" />
+    <link rel="alternate" hreflang="x-default" href="https://legispro.sk/" />
+    <link rel="icon" type="image/png" href="../../../sources/logo.png">
+    <link rel="shortcut icon" type="image/png" href="../../../sources/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/base.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/header.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/footer.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/location.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/sluzby.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/language-toggle.css?v=1764377524">
+    
+    <!-- GSAP and Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js?v=1764377524"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js?v=1764377524"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js?v=1764377524"></script>
+</head>
+<body>
+    <!-- Page Loading Overlay -->
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Global Header will be inserted here -->
+
+    <div id="serviceSidebar"></div>
+
+    <section class="service-hero fade-in-up">
+        <div class="service-hero-background">
+            <img src="../../../sources/images/real-estate-1.jpg" alt="Immobilier">
+        </div>
+        <div class="service-hero-overlay"></div>
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>Immobilier</h1>
+                <p>Besoin d'acheter ou de vendre de l'immobilier ? Nous avons des années d'expérience sur le marché immobilier.</p>
+                <div class="service-hero-buttons">
+                    <a href="../contact.html" class="btn btn-primary"><span>Contactez-nous</span></a>
+                    <a href="#obsah" class="btn btn-secondary"><span>Plus d'Informations</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="obsah" class="service-content fade-in-up">
+        <div class="container">
+            <div class="service-content-grid">
+                <div class="service-main">
+                    <h2>Transactions immobilières sécurisées</h2>
+                    <p>Nous vérifions toujours très soigneusement la transaction donnée et suivons tout son déroulement. Nous avons souvent réussi à protéger nos clients et à leur économiser des ressources considérables.</p>
+                    
+                    <div class="service-feature">
+                        <h3>Due diligence immobilière</h3>
+                        <p>Nous vérifions soigneusement le plan d'urbanisme de la zone donnée, l'existence de titres exécutoires et d'autres faits qui peuvent influencer votre décision.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Représentation juridique</h3>
+                        <p>Nous vous accompagnerons tout au long du processus d'achat ou de vente de votre bien immobilier, afin que vous et votre patrimoine soyez protégés au maximum.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Vérification de documents</h3>
+                        <p>Il arrive souvent que le vendeur taise certains faits, qui ne peuvent être découverts qu'en examinant en profondeur la documentation et les registres.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Documentation contractuelle</h3>
+                        <p>Nous préparons tous les contrats et documents nécessaires pour un transfert sécurisé de bien immobilier avec protection de vos intérêts.</p>
+                    </div>
+                </div>
+
+                <div class="service-sidebar-content">
+                    <div class="service-info-card">
+                        <h3>Nos services</h3>
+                        <ul>
+                            <li>Due diligence immobilière</li>
+                            <li>Préparation de documentation contractuelle</li>
+                            <li>Vérification de l'état juridique</li>
+                            <li>Représentation dans les transactions</li>
+                            <li>Résolution de problèmes juridiques</li>
+                        </ul>
+                    </div>
+                    <div class="service-contact-card">
+                        <h3>Transaction immobilière?</h3>
+                        <p>Assurez-vous un transfert sécurisé de bien immobilier.</p>
+                        <a href="../contact.html" class="btn btn-dark">Contacter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lenis Smooth Scrolling -->
+    <script src="../../../scripts/gsap-simple.js?v=1764377524"></script>
+    
+    <!-- Internationalization -->
+    
+    <!-- Main JavaScript -->
+    <script src="../../../scripts/script.js?v=1764377524"></script>
+    <script src="../../../scripts/global-nav.js?v=1764377524"></script>
+    <script src="../../../scripts/sidebar.js?v=1764377524"></script>
+
+    <!-- Page Loading Animation -->
+    <script>
+    // Enhanced page loader with fallback
+    (function() {
+        let loaderRemoved = false;
+
+        function removeLoader() {
+            if (loaderRemoved) return;
+            loaderRemoved = true;
+
+            const loader = document.querySelector('.page-loader');
+            const body = document.body;
+
+            if (loader) {
+                body.classList.add('loaded');
+                loader.classList.add('fade-out');
+
+                setTimeout(() => {
+                    if (loader.parentNode) {
+                        loader.remove();
+                    }
+                }, 800);
+            }
+        }
+
+        // Remove loader when page is fully loaded
+        window.addEventListener('load', removeLoader);
+
+        // Fallback: remove loader after 3 seconds max
+        setTimeout(removeLoader, 3000);
+
+        // Remove loader when DOM is ready (faster fallback)
+        if (document.readyState === 'complete') {
+            setTimeout(removeLoader, 100);
+        } else {
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(removeLoader, 100);
+            });
+        }
+    })();
+    </script>
+</body>
+</html>

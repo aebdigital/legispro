@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post - LegisPro</title>
+    <link rel="icon" type="image/png" href="../../../sources/logo.png">
+    <link rel="shortcut icon" type="image/png" href="../../../sources/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/base.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/header.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/footer.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/location.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/blog.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/language-toggle.css?v=1764377524">
+    
+    <!-- GSAP and Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js?v=1764377524"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js?v=1764377524"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js?v=1764377524"></script>
+</head>
+<body class="blog-post">
+    <!-- Page Loading Overlay -->
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Global Header will be inserted here -->
+
+    <section class="service-hero blog-hero fade-in-up">
+        <div class="service-hero-background">
+            <img src="../../../sources/images/blog-post-1.jpg" alt="Blog" id="heroImage">
+        </div>
+        <div class="service-hero-overlay"></div>
+    </section>
+
+    <section class="post-content fade-in-up">
+        <div class="container">
+            <div class="post-header">
+                <div class="breadcrumb">
+                    <a href="../../../index.html">Home</a>
+                    <span>›</span>
+                    <a href="../blog.html">Blog</a>
+                    <span>›</span>
+                    <span class="breadcrumb-current" id="breadcrumbTitle">Loading...</span>
+                </div>
+
+                <div class="post-meta">
+                    <div class="post-category" id="postCategory">Loading...</div>
+                    <div class="post-date" id="postDate">Loading...</div>
+                    <div class="post-reading-time" id="postReadingTime">Loading...</div>
+                </div>
+
+                <h1 id="postMainTitle">Loading...</h1>
+                <p class="post-excerpt" id="postMainExcerpt">Loading post content...</p>
+
+                <div class="post-image">
+                    <img src="" alt="" id="postMainImage">
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <article class="post-body">
+                    <div id="postContent">
+                        <p>Loading content...</p>
+                    </div>
+
+                    <div class="post-tags" id="postTags">
+                        <!-- Tags will be dynamically loaded -->
+                    </div>
+                </article>
+
+                <aside class="post-sidebar">
+                    <div class="sidebar-widget">
+                        <h4>Najnovšie články</h4>
+                        <div class="related-posts" id="relatedPosts">
+                            <!-- Related posts will be dynamically loaded -->
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h4>Máte otázky?</h4>
+                        <p>Neváhajte nás kontaktovať</p>
+                        <a href="../../../pages/contact.html" class="btn btn-primary btn-sm">Contact Us</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Lenis Smooth Scrolling -->
+    <script src="../../../scripts/gsap-simple.js?v=1764377524"></script>
+    
+    <!-- Main JavaScript -->
+    <script src="../../../scripts/script.js?v=1764377524"></script>
+    <script src="../../../scripts/global-nav.js?v=1764377524"></script>
+    <script src="../../../scripts/blog-data.js?v=1764377524"></script>
+    <script src="../../../scripts/blog-post.js?v=1764377524"></script>
+
+    <!-- Page Loading Animation -->
+    <script>
+    // Enhanced page loader with fallback
+    (function() {
+        let loaderRemoved = false;
+
+        function removeLoader() {
+            if (loaderRemoved) return;
+            loaderRemoved = true;
+
+            const loader = document.querySelector('.page-loader');
+            const body = document.body;
+
+            if (loader) {
+                body.classList.add('loaded');
+                loader.classList.add('fade-out');
+
+                setTimeout(() => {
+                    if (loader.parentNode) {
+                        loader.remove();
+                    }
+                }, 800);
+            }
+        }
+
+        // Remove loader when page is fully loaded
+        window.addEventListener('load', removeLoader);
+
+        // Fallback: remove loader after 3 seconds max
+        setTimeout(removeLoader, 3000);
+
+        // Remove loader when DOM is ready (faster fallback)
+        if (document.readyState === 'complete') {
+            setTimeout(removeLoader, 100);
+        } else {
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(removeLoader, 100);
+            });
+        }
+    })();
+    </script>
+</body>
+</html>

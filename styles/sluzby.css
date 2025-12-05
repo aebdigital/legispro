@@ -955,3 +955,35 @@
         padding: 1.5rem;
     }
 }
+
+/* CTA Widget Styling for Service Pages */
+.content-image .sidebar-widget {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    margin-bottom: 2rem;
+    border: 2px solid var(--primary-color);
+    text-align: center;
+}
+
+.content-image .sidebar-widget h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.content-image .sidebar-widget p {
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.content-image .sidebar-widget .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+}

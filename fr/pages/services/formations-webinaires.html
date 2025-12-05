@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formations juridiques et webinaires par LegisPro - formation professionnelle en GDPR, droit fiscal, droit du travail et droit commercial. Cours interactifs.">
+    <title>Formations & Webinaires - LegisPro</title>
+    
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="sk" href="https://legispro.sk/sk/pages/sluzby/skolenia-webinare.html" />
+    <link rel="alternate" hreflang="en" href="https://legispro.sk/en/pages/sluzby/training-webinars.html" />
+    <link rel="alternate" hreflang="fr" href="https://legispro.sk/fr/pages/sluzby/formations-webinaires.html" />
+    <link rel="alternate" hreflang="de" href="https://legispro.sk/de/pages/sluzby/schulungen-webinare.html" />
+    <link rel="alternate" hreflang="x-default" href="https://legispro.sk/" />
+    <link rel="icon" type="image/png" href="../../../sources/logo.png">
+    <link rel="shortcut icon" type="image/png" href="../../../sources/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/base.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/header.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/footer.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/location.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/sluzby.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/language-toggle.css?v=1764377524">
+    
+    <!-- GSAP and Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js?v=1764377524"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js?v=1764377524"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js?v=1764377524"></script>
+</head>
+<body>
+    <!-- Page Loading Overlay -->
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Global Header will be inserted here -->
+
+    <div id="serviceSidebar"></div>
+
+    <section class="service-hero fade-in-up">
+        <div class="service-hero-background">
+            <img src="../../../sources/images/contact-office-1.jpg" alt="Professional Legal Training">
+        </div>
+        <div class="service-hero-overlay"></div>
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>Formations & Webinaires</h1>
+                <p>Formations juridiques professionnelles adaptées à vos besoins sous forme de conférences personnelles ou de webinaires.</p>
+                <div class="service-hero-buttons">
+                    <a href="../contact.html" class="btn btn-primary"><span>Contactez-nous</span></a>
+                    <a href="#obsah" class="btn btn-secondary"><span>Plus d'Informations</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="obsah" class="service-content fade-in-up">
+        <div class="container">
+            <div class="content-with-image">
+                <div class="content-text">
+                    <h2>Formations spécialisées sur mesure</h2>
+                    <p>Nous serons ravis de vous proposer des formations déjà préparées ou de développer de nouveaux sujets dans le domaine du droit civil, commercial, du travail, financier, ou d'autres sujets selon vos besoins. Nous traitons les sujets pour vous sous forme de conférences personnelles ou de webinaires.</p>
+                    
+                    <div class="service-feature">
+                        <h3>Droit civil</h3>
+                        <p>Formations complètes dans le domaine du droit civil, y compris le droit contractuel, les relations de propriété et la responsabilité pour dommages.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Droit commercial</h3>
+                        <p>Formations axées sur les relations d'obligation commerciale, les sociétés commerciales et leur gestion, les fusions et acquisitions.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Droit du travail</h3>
+                        <p>Sujets actuels du droit du travail, changements dans la législation, gestion correcte des dossiers du personnel et résolution des litiges du travail.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Droit financier</h3>
+                        <p>Formations en droit fiscal, prix de transfert, optimisation de la charge fiscale et communication avec l'administration fiscale.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Formats flexibles</h3>
+                        <p>Nous réalisons les formations sous forme de conférences personnelles dans vos locaux ou sous forme de webinaires en ligne selon vos besoins.</p>
+                    </div>
+
+                   
+                </div>
+
+                <div class="content-image">
+                    <div class="sidebar-widget">
+                        <h4>Vous avez des questions?</h4>
+                        <p>N'hésitez pas à nous contacter</p>
+                        <a href="../contact.html" class="btn btn-primary btn-sm">Nous contacter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lenis Smooth Scrolling -->
+    <script src="../../../scripts/gsap-simple.js?v=1764377524"></script>
+    
+    <!-- Internationalization -->
+    
+    <!-- Main JavaScript -->
+    <script src="../../../scripts/script.js?v=1764377524"></script>
+    <script src="../../../scripts/global-nav.js?v=1764377524"></script>
+    <script src="../../../scripts/sidebar.js?v=1764377524"></script>
+
+    <!-- Page Loading Animation -->
+    <script>
+    // Enhanced page loader with fallback
+    (function() {
+        let loaderRemoved = false;
+
+        function removeLoader() {
+            if (loaderRemoved) return;
+            loaderRemoved = true;
+
+            const loader = document.querySelector('.page-loader');
+            const body = document.body;
+
+            if (loader) {
+                body.classList.add('loaded');
+                loader.classList.add('fade-out');
+
+                setTimeout(() => {
+                    if (loader.parentNode) {
+                        loader.remove();
+                    }
+                }, 800);
+            }
+        }
+
+        // Remove loader when page is fully loaded
+        window.addEventListener('load', removeLoader);
+
+        // Fallback: remove loader after 3 seconds max
+        setTimeout(removeLoader, 3000);
+
+        // Remove loader when DOM is ready (faster fallback)
+        if (document.readyState === 'complete') {
+            setTimeout(removeLoader, 100);
+        } else {
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(removeLoader, 100);
+            });
+        }
+    })();
+    </script>
+</body>
+</html>

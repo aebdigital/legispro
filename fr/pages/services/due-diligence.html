@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Services de due diligence LegisPro - analyse juridique complète avant acquisitions, investissements ou fusions. Évaluation d'experts et gestion des risques.">
+    <title>Due Diligence - LegisPro</title>
+    
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="sk" href="https://legispro.sk/sk/pages/sluzby/due-diligence.html" />
+    <link rel="alternate" hreflang="en" href="https://legispro.sk/en/pages/sluzby/due-diligence.html" />
+    <link rel="alternate" hreflang="fr" href="https://legispro.sk/fr/pages/sluzby/due-diligence.html" />
+    <link rel="alternate" hreflang="de" href="https://legispro.sk/de/pages/sluzby/due-diligence.html" />
+    <link rel="alternate" hreflang="x-default" href="https://legispro.sk/" />
+    <link rel="icon" type="image/png" href="../../../sources/logo.png">
+    <link rel="shortcut icon" type="image/png" href="../../../sources/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/base.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/header.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/footer.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/location.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/sluzby.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/language-toggle.css?v=1764377524">
+    
+    <!-- GSAP and Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js?v=1764377524"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js?v=1764377524"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js?v=1764377524"></script>
+</head>
+<body>
+    <!-- Page Loading Overlay -->
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Global Header will be inserted here -->
+
+    <div id="serviceSidebar"></div>
+
+    <section class="service-hero fade-in-up">
+        <div class="service-hero-background">
+            <img src="../../../sources/images/due-diligence-1.jpg" alt="Due Diligence">
+        </div>
+        <div class="service-hero-overlay"></div>
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>Due Diligence</h1>
+                <p>Vous voulez acheter ou vendre votre entreprise ou une partie de celle-ci? Nous réaliserons une due diligence complète pour vous.</p>
+                <div class="service-hero-buttons">
+                    <a href="../contact.html" class="btn btn-primary"><span>Contactez-nous</span></a>
+                    <a href="#obsah" class="btn btn-secondary"><span>Plus d'Informations</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="obsah" class="service-content fade-in-up">
+        <div class="container">
+            <div class="service-content-grid">
+                <div class="service-main">
+                    <h2>Due Diligence complète</h2>
+                    <p>Nous comprenons le besoin d'obtenir des informations de qualité, fiables et complètes pour évaluer les conséquences d'une telle transaction et la solvabilité ou la fiabilité du partenaire commercial lui-même.</p>
+                    
+                    <div class="service-feature">
+                        <h3>Due Diligence juridique</h3>
+                        <p>Analyse approfondie de la situation juridique de la société, des relations contractuelles, des litiges et des risques juridiques.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Due Diligence financière</h3>
+                        <p>Analyse de la situation financière, de la comptabilité, des obligations fiscales et des risques financiers de la société cible.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Due Diligence commerciale</h3>
+                        <p>Évaluation du modèle commercial, de la position sur le marché, de la position concurrentielle et des perspectives de croissance.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Rapports complets</h3>
+                        <p>Vous pouvez nous laisser l'ensemble du processus, nous serons ravis de vous aider et de fournir des rapports détaillés avec des recommandations.</p>
+                    </div>
+                </div>
+
+                <div class="service-sidebar-content">
+                    <div class="service-info-card">
+                        <h3>Domaines d'analyse</h3>
+                        <ul>
+                            <li>Structure juridique et documentation</li>
+                            <li>Situation financière et performance</li>
+                            <li>Relations commerciales et contrats</li>
+                            <li>Litiges et risques</li>
+                            <li>Conformité et exigences réglementaires</li>
+                        </ul>
+                    </div>
+                    <div class="service-contact-card">
+                        <h3>Besoin de Due Diligence?</h3>
+                        <p>Contactez-nous et nous conviendrons de la portée et des conditions de l'analyse.</p>
+                        <a href="../contact.html" class="btn btn-dark">Contacter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lenis Smooth Scrolling -->
+    <script src="../../../scripts/gsap-simple.js?v=1764377524"></script>
+    
+    <!-- Internationalization -->
+    
+    <!-- Main JavaScript -->
+    <script src="../../../scripts/script.js?v=1764377524"></script>
+    <script src="../../../scripts/global-nav.js?v=1764377524"></script>
+    <script src="../../../scripts/sidebar.js?v=1764377524"></script>
+
+    <!-- Page Loading Animation -->
+    <script>
+    // Enhanced page loader with fallback
+    (function() {
+        let loaderRemoved = false;
+
+        function removeLoader() {
+            if (loaderRemoved) return;
+            loaderRemoved = true;
+
+            const loader = document.querySelector('.page-loader');
+            const body = document.body;
+
+            if (loader) {
+                body.classList.add('loaded');
+                loader.classList.add('fade-out');
+
+                setTimeout(() => {
+                    if (loader.parentNode) {
+                        loader.remove();
+                    }
+                }, 800);
+            }
+        }
+
+        // Remove loader when page is fully loaded
+        window.addEventListener('load', removeLoader);
+
+        // Fallback: remove loader after 3 seconds max
+        setTimeout(removeLoader, 3000);
+
+        // Remove loader when DOM is ready (faster fallback)
+        if (document.readyState === 'complete') {
+            setTimeout(removeLoader, 100);
+        } else {
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(removeLoader, 100);
+            });
+        }
+    })();
+    </script>
+</body>
+</html>

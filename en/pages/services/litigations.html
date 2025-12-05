@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Litigation services by LegisPro - court representation, commercial disputes, employment law and comprehensive resolution of legal conflicts. Expert defense.">
+    <title>Litigation - LegisPro</title>
+    <link rel="icon" type="image/png" href="../../../sources/logo.png">
+    <link rel="shortcut icon" type="image/png" href="../../../sources/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/base.css?v=1764377524">
+    
+    
+    <link rel="stylesheet" href="../../../styles/header.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/footer.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/location.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/sluzby.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/language-toggle.css?v=1764377524">
+    
+    <!-- GSAP and Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js?v=1764377524"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js?v=1764377524"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js?v=1764377524"></script>
+</head>
+<body>
+    <!-- Page Loading Overlay -->
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Global Header will be inserted here -->
+
+    <div id="serviceSidebar"></div>
+
+    <section class="service-hero fade-in-up">
+        <div class="service-hero-background">
+            <img src="../../../sources/images/litigation-1.jpg" alt="Sporové zastupovanie">
+        </div>
+        <div class="service-hero-overlay"></div>
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>Litigation</h1>
+                <p>We will represent you in asserting your civil or commercial law claims.</p>
+                <div class="service-hero-buttons">
+                    <a href="../contact.html" class="btn btn-primary"><span>Contact Us</span></a>
+                    <a href="#obsah" class="btn btn-secondary"><span>More Information</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="obsah" class="service-content fade-in-up">
+        <div class="container">
+            <div class="service-content-grid">
+                <div class="service-main">
+                    <h2>Professional Litigation Representation</h2>
+                    <p>We will gladly review the case with you and assess its chances of success. In the interest of efficiency and cost savings for our clients, we always first attempt to resolve the matter out of court.</p>
+                    
+                    <div class="service-feature">
+                        <h3>Civil Law Disputes</h3>
+                        <p>Representation in civil law disputes including contractual disputes, damages claims, and other civil matters.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Commercial Law Disputes</h3>
+                        <p>Resolution of commercial disputes, contract breaches, supplier and customer issues, competition disputes.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Out-of-Court Resolution</h3>
+                        <p>We always try to resolve disputes out of court first, which saves time, costs, and preserves business relationships.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Court Proceedings</h3>
+                        <p>If court proceedings are necessary, we provide comprehensive representation at all levels of judicial proceedings.</p>
+                    </div>
+                </div>
+
+                <div class="service-sidebar-content">
+                    <div class="service-info-card">
+                        <h3>Types of Disputes</h3>
+                        <ul>
+                            <li>Contract disputes</li>
+                            <li>Damage compensation</li>
+                            <li>Commercial disputes</li>
+                            <li>Employment disputes</li>
+                            <li>Competition disputes</li>
+                        </ul>
+                    </div>
+                    <div class="service-contact-card">
+                        <h3>Legal Dispute?</h3>
+                        <p>Get professional representation in court proceedings.</p>
+                        <a href="../contact.html" class="btn btn-dark">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lenis Smooth Scrolling -->
+    <script src="../../../scripts/gsap-simple.js?v=1764377524"></script>
+    
+    <!-- Internationalization -->
+    
+    <!-- Main JavaScript -->
+    <script src="../../../scripts/script.js?v=1764377524"></script>
+    <script src="../../../scripts/global-nav.js?v=1764377524"></script>
+    <script src="../../../scripts/sidebar.js?v=1764377524"></script>
+
+    <!-- Page Loading Animation -->
+    <script>
+    // Enhanced page loader with fallback
+    (function() {
+        let loaderRemoved = false;
+
+        function removeLoader() {
+            if (loaderRemoved) return;
+            loaderRemoved = true;
+
+            const loader = document.querySelector('.page-loader');
+            const body = document.body;
+
+            if (loader) {
+                body.classList.add('loaded');
+                loader.classList.add('fade-out');
+
+                setTimeout(() => {
+                    if (loader.parentNode) {
+                        loader.remove();
+                    }
+                }, 800);
+            }
+        }
+
+        // Remove loader when page is fully loaded
+        window.addEventListener('load', removeLoader);
+
+        // Fallback: remove loader after 3 seconds max
+        setTimeout(removeLoader, 3000);
+
+        // Remove loader when DOM is ready (faster fallback)
+        if (document.readyState === 'complete') {
+            setTimeout(removeLoader, 100);
+        } else {
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(removeLoader, 100);
+            });
+        }
+    })();
+    </script>
+</body>
+</html>

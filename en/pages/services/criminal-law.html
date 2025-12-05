@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Criminal law services by LegisPro - criminal defense, court representation and comprehensive support in criminal proceedings. Expert legal assistance.">
+    <title>Criminal Law - LegisPro</title>
+    <link rel="icon" type="image/png" href="../../../sources/logo.png">
+    <link rel="shortcut icon" type="image/png" href="../../../sources/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/base.css?v=1764377524">
+    
+    
+    <link rel="stylesheet" href="../../../styles/header.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/footer.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/location.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/sluzby.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/language-toggle.css?v=1764377524">
+    
+    <!-- GSAP and Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js?v=1764377524"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js?v=1764377524"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js?v=1764377524"></script>
+</head>
+<body>
+    <!-- Page Loading Overlay -->
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Global Header will be inserted here -->
+
+    <div id="serviceSidebar"></div>
+
+    <section class="service-hero fade-in-up">
+        <div class="service-hero-background">
+            <img src="../../../sources/images/criminal-law-1.jpg" alt="Criminal Law">
+        </div>
+        <div class="service-hero-overlay"></div>
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>Criminal Law</h1>
+                <p>Our law firm also specializes in representing clients in criminal proceedings, particularly in tax and other economic crimes.</p>
+                <div class="service-hero-buttons">
+                    <a href="../contact.html" class="btn btn-primary"><span>Contact Us</span></a>
+                    <a href="#obsah" class="btn btn-secondary"><span>More Information</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="obsah" class="service-content fade-in-up">
+        <div class="container">
+            <div class="service-content-grid">
+                <div class="service-main">
+                    <h2>Criminal Defense</h2>
+                    <p>Don't hesitate to contact us. We provide professional defense and representation in criminal matters with specialization in economic crimes.</p>
+                    
+                    <div class="service-feature">
+                        <h3>Tax Crimes</h3>
+                        <p>We specialize in defense in cases of tax crimes, tax evasion, failure to pay taxes and similar acts.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Economic Crimes</h3>
+                        <p>Representation in economic crimes such as fraud, abuse of power, bribery and corruption.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Criminal Proceedings</h3>
+                        <p>Comprehensive defense in all phases of criminal proceedings from investigation to appeals to higher courts.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Preventive Counseling</h3>
+                        <p>We also provide preventive counseling to prevent criminal law problems in your business.</p>
+                    </div>
+                </div>
+
+                <div class="service-sidebar-content">
+                    <div class="service-info-card">
+                        <h3>Our Specializations</h3>
+                        <ul>
+                            <li>Tax crimes</li>
+                            <li>Economic crimes</li>
+                            <li>Corruption and bribery</li>
+                            <li>Fraud and abuse</li>
+                            <li>Preventive counseling</li>
+                        </ul>
+                    </div>
+                    <div class="service-contact-card">
+                        <h3>Need Defense?</h3>
+                        <p>Contact us immediately for professional defense.</p>
+                        <a href="../contact.html" class="btn btn-dark">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lenis Smooth Scrolling -->
+    <script src="../../../scripts/gsap-simple.js?v=1764377524"></script>
+    
+    <!-- Internationalization -->
+    
+    <!-- Main JavaScript -->
+    <script src="../../../scripts/script.js?v=1764377524"></script>
+    <script src="../../../scripts/global-nav.js?v=1764377524"></script>
+    <script src="../../../scripts/sidebar.js?v=1764377524"></script>
+
+    <!-- Page Loading Animation -->
+    <script>
+    // Enhanced page loader with fallback
+    (function() {
+        let loaderRemoved = false;
+
+        function removeLoader() {
+            if (loaderRemoved) return;
+            loaderRemoved = true;
+
+            const loader = document.querySelector('.page-loader');
+            const body = document.body;
+
+            if (loader) {
+                body.classList.add('loaded');
+                loader.classList.add('fade-out');
+
+                setTimeout(() => {
+                    if (loader.parentNode) {
+                        loader.remove();
+                    }
+                }, 800);
+            }
+        }
+
+        // Remove loader when page is fully loaded
+        window.addEventListener('load', removeLoader);
+
+        // Fallback: remove loader after 3 seconds max
+        setTimeout(removeLoader, 3000);
+
+        // Remove loader when DOM is ready (faster fallback)
+        if (document.readyState === 'complete') {
+            setTimeout(removeLoader, 100);
+        } else {
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(removeLoader, 100);
+            });
+        }
+    })();
+    </script>
+</body>
+</html>

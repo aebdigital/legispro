@@ -13,12 +13,224 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!document.querySelector('link[href*="Crimson+Text"]')) {
         loadFonts();
     }
+
+    // Translations object
+    const translations = {
+        sk: {
+            nav: {
+                home: 'Domov',
+                services: 'Služby',
+                business_package: 'Podnikateľský balík',
+                training: 'Školenia a webináre',
+                blog: 'Blog',
+                contact: 'Konzultácia'
+            },
+            services: {
+                'start-ups-greenfield-projects': { name: 'START UPs & Greenfield projekty', description: 'Spustenie nových projektov' },
+                'gdpr': { name: 'GDPR', description: 'Ochrana osobných údajov' },
+                'optimization-solutions': { name: 'Optimalizačné riešenia', description: 'Audit a optimalizácia procesov' },
+                'due-diligence': { name: 'Due Diligence', description: 'Analýza obchodných transakcií' },
+                'debt-collection': { name: 'Vymáhanie pohľadávok', description: 'Efektívne vymáhanie dlhů' },
+                'financial-law': { name: 'Finančné právo', description: 'Daňové a finančné poradenstvo' },
+                'ecommerce': { name: 'e-Commerce', description: 'Právne služby pre online podnikanie' },
+                'real-estate': { name: 'Nehnuteľnosti', description: 'Právne služby v oblasti nehnuteľností' },
+                'litigations': { name: 'Sporové zastupovanie', description: 'Zastupovanie v sporoch' },
+                'criminal-law': { name: 'Trestné právo', description: 'Obhajoba v trestnom konaní' }
+            },
+            footer: {
+                company: 'Spoločnosť',
+                services: 'Služby',
+                legal_areas: 'Právne oblasti',
+                other_services: 'Ďalšie služby',
+                home: 'Domov',
+                contact: 'Kontakt',
+                consultation: 'Konzultácia',
+                blog: 'Blog',
+                startups: 'START UPs',
+                gdpr: 'GDPR',
+                real_estate: 'Nehnuteľnosti',
+                ecommerce: 'e-Commerce',
+                disputes: 'Spory',
+                criminal: 'Trestné právo',
+                financial: 'Finančné právo',
+                debt: 'Vymáhanie pohľadávok',
+                optimization: 'Optimalizácie',
+                due_diligence: 'Due Diligence',
+                need_help: 'Potrebujete poradiť?',
+                all_rights: 'Všetky práva vyhradené.',
+                privacy_policy: 'Ochrana osobných údajov',
+                cookies: 'Súbory cookies',
+                website_by: 'tvorba stránky AEB Digital'
+            },
+            location: {
+                find_us: 'Nájdite nás',
+                contact_us: 'Kontaktujte nás',
+                map_interaction: 'Pre interakciu s mapou kliknite'
+            }
+        },
+        en: {
+            nav: {
+                home: 'Home',
+                services: 'Services',
+                business_package: 'Business Package',
+                training: 'Training & Webinars',
+                blog: 'Blog',
+                contact: 'Consultation'
+            },
+            services: {
+                'start-ups-greenfield-projects': { name: 'START UPs & Greenfield projects', description: 'Launching new projects' },
+                'gdpr': { name: 'GDPR', description: 'Personal data protection' },
+                'optimization-solutions': { name: 'Optimization Solutions', description: 'Process audit and optimization' },
+                'due-diligence': { name: 'Due Diligence', description: 'Business transaction analysis' },
+                'debt-collection': { name: 'Debt Collection', description: 'Effective debt recovery' },
+                'financial-law': { name: 'Financial Law', description: 'Tax and financial consulting' },
+                'ecommerce': { name: 'e-Commerce', description: 'Legal services for online business' },
+                'real-estate': { name: 'Real Estate', description: 'Legal services in real estate' },
+                'litigations': { name: 'Litigations', description: 'Legal representation in disputes' },
+                'criminal-law': { name: 'Criminal Law', description: 'Defense in criminal proceedings' }
+            },
+            footer: {
+                company: 'Company',
+                services: 'Services',
+                legal_areas: 'Legal Areas',
+                other_services: 'Other Services',
+                home: 'Home',
+                contact: 'Contact',
+                consultation: 'Consultation',
+                blog: 'Blog',
+                startups: 'START UPs',
+                gdpr: 'GDPR',
+                real_estate: 'Real Estate',
+                ecommerce: 'e-Commerce',
+                disputes: 'Disputes',
+                criminal: 'Criminal Law',
+                financial: 'Financial Law',
+                debt: 'Debt Collection',
+                optimization: 'Optimizations',
+                due_diligence: 'Due Diligence',
+                need_help: 'Need help?',
+                all_rights: 'All rights reserved.',
+                privacy_policy: 'Privacy Policy',
+                cookies: 'Cookies',
+                website_by: 'website by AEB Digital'
+            },
+            location: {
+                find_us: 'Find Us',
+                contact_us: 'Contact Us',
+                map_interaction: 'Click to interact with the map'
+            }
+        },
+        de: {
+            nav: {
+                home: 'Startseite',
+                services: 'Dienstleistungen',
+                business_package: 'Unternehmenspaket',
+                training: 'Schulungen & Webinare',
+                blog: 'Blog',
+                contact: 'Beratung'
+            },
+            services: {
+                'start-ups-greenfield-projects': { name: 'START UPs & Greenfields', description: 'Start neuer Projekte' },
+                'gdpr': { name: 'GDPR', description: 'Datenschutz' },
+                'optimization-solutions': { name: 'Optimierungslösungen', description: 'Prozessaudit und -optimierung' },
+                'due-diligence': { name: 'Due Diligence', description: 'Analyse von Geschäftstransaktionen' },
+                'debt-collection': { name: 'Betreibung der Außenstände', description: 'Effektive Schuldeneintreibung' },
+                'financial-law': { name: 'Finanzrecht', description: 'Steuer- und Finanzberatung' },
+                'ecommerce': { name: 'e-Commerce', description: 'Rechtsdienstleistungen für Online-Geschäfte' },
+                'real-estate': { name: 'Immobilien', description: 'Rechtsdienstleistungen im Immobilienbereich' },
+                'litigations': { name: 'Streitvertretung', description: 'Rechtsvertretung bei Streitigkeiten' },
+                'criminal-law': { name: 'Strafrecht', description: 'Verteidigung in Strafverfahren' }
+            },
+            footer: {
+                company: 'Unternehmen',
+                services: 'Dienstleistungen',
+                legal_areas: 'Rechtsbereiche',
+                other_services: 'Weitere Dienstleistungen',
+                home: 'Startseite',
+                contact: 'Kontakt',
+                consultation: 'Beratung',
+                blog: 'Blog',
+                startups: 'START UPs',
+                gdpr: 'GDPR',
+                real_estate: 'Immobilien',
+                ecommerce: 'e-Commerce',
+                disputes: 'Streitigkeiten',
+                criminal: 'Strafrecht',
+                financial: 'Finanzrecht',
+                debt: 'Forderungseinzug',
+                optimization: 'Optimierungen',
+                due_diligence: 'Due Diligence',
+                need_help: 'Brauchen Sie Hilfe?',
+                all_rights: 'Alle Rechte vorbehalten.',
+                privacy_policy: 'Datenschutzrichtlinie',
+                cookies: 'Cookies',
+                website_by: 'Website von AEB Digital'
+            },
+            location: {
+                find_us: 'Finden Sie uns',
+                contact_us: 'Kontaktieren Sie uns',
+                map_interaction: 'Klicken Sie für Karteninteraktion'
+            }
+        },
+        fr: {
+            nav: {
+                home: 'Accueil',
+                services: 'Services',
+                business_package: 'Package Entreprise',
+                training: 'Formations & Webinaires',
+                blog: 'Blog',
+                contact: 'Consultation'
+            },
+            services: {
+                'start-ups-greenfield-projects': { name: 'START UPs et Greenfields', description: 'Lancement de nouveaux projets' },
+                'gdpr': { name: 'GDPR', description: 'Protection des données personnelles' },
+                'optimization-solutions': { name: "Solutions d'optimisation", description: 'Audit et optimisation des processus' },
+                'due-diligence': { name: 'Due Diligence', description: "Analyse des transactions commerciales" },
+                'debt-collection': { name: 'Recouvrement des dettes', description: 'Recouvrement efficace des créances' },
+                'financial-law': { name: 'Droit financier', description: 'Conseil fiscal et financier' },
+                'ecommerce': { name: 'e-Commerce', description: 'Services juridiques pour le commerce en ligne' },
+                'real-estate': { name: 'Biens immobiliers', description: 'Services juridiques immobiliers' },
+                'litigations': { name: 'Litiges', description: 'Représentation dans les litiges' },
+                'criminal-law': { name: 'Droit pénal', description: 'Défense dans les procédures pénales' }
+            },
+            footer: {
+                company: 'Société',
+                services: 'Services',
+                legal_areas: 'Domaines Juridiques',
+                other_services: 'Autres Services',
+                home: 'Accueil',
+                contact: 'Contact',
+                consultation: 'Consultation',
+                blog: 'Blog',
+                startups: 'START UPs',
+                gdpr: 'GDPR',
+                real_estate: 'Immobilier',
+                ecommerce: 'e-Commerce',
+                disputes: 'Litiges',
+                criminal: 'Droit Pénal',
+                financial: 'Droit Financier',
+                debt: 'Recouvrement',
+                optimization: 'Optimisations',
+                due_diligence: 'Due Diligence',
+                need_help: 'Besoin d\'aide?',
+                all_rights: 'Tous droits réservés.',
+                privacy_policy: 'Politique de Confidentialité',
+                cookies: 'Cookies',
+                website_by: 'site web par AEB Digital'
+            },
+            location: {
+                find_us: 'Trouvez-nous',
+                contact_us: 'Contactez-nous', 
+                map_interaction: 'Cliquez pour interagir avec la carte'
+            }
+        }
+    };
     
     // Service pages data
     const services = [
         {
-            name: 'START UPy a Greenfieldy',
-            slug: 'start-upy-greenfieldy',
+            name: 'START UPs & Greenfield Projects',
+            slug: 'start-ups-greenfield-projects',
             icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.663 17h4.673M12 3l1.5 4.5 4.5 1.5-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
             description: 'Spustenie nových projektov'
         },
@@ -29,8 +241,8 @@ document.addEventListener('DOMContentLoaded', function() {
             description: 'Ochrana osobných údajov'
         },
         {
-            name: 'Optimalizačné riešenia',
-            slug: 'optimalizacie',
+            name: 'OPTIMIZATION SOLUTIONS',
+            slug: 'optimization-solutions',
             icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12" stroke="currentColor" stroke-width="2" fill="none"/></svg>',
             description: 'Audit a optimalizácia procesov'
         },
@@ -41,15 +253,15 @@ document.addEventListener('DOMContentLoaded', function() {
             description: 'Analýza obchodných transakcií'
         },
         {
-            name: 'Vymáhanie pohľadávok',
-            slug: 'vymahanie-pohladavok',
-            icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1z" fill="currentColor"/><path d="M3 12c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1z" fill="currentColor"/><path d="M12 21c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1z" fill="currentColor"/><path d="M12 3c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1z" fill="currentColor"/><path d="M19.071 19.071c.391.391 1.024.391 1.415 0s.391-1.024 0-1.415-.024-.391-1.415 0-.391 1.024 0 1.415z" fill="currentColor"/><path d="M3.514 4.929c.391.391 1.024.391 1.415 0s.391-1.024 0-1.415-1.024-.391-1.415 0-.391 1.024 0 1.415z" fill="currentColor"/><path d="M19.071 4.929c.391-.391.391-1.024 0-1.415s-1.024-.391-1.415 0-.391 1.024 0 1.415 1.024.391 1.415 0z" fill="currentColor"/><path d="M3.514 19.071c.391-.391.391-1.024 0-1.415s-1.024-.391-1.415 0-.391 1.024 0 1.415 1.024.391 1.415 0z" fill="currentColor"/></svg>',
+            name: 'DEBT COLLECTION',
+            slug: 'debt-collection',
+            icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke="currentColor" stroke-width="2"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 6l2 2M6 16l2 2M16 18l2-2M6 8l2-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>',
             description: 'Efektívne vymáhanie dlhů'
         },
         {
-            name: 'Daňové a Finančné právo',
-            slug: 'danove-pravo',
-            icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="currentColor" stroke-width="2"/><line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/><line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/></svg>',
+            name: 'FINANCIAL LAW',
+            slug: 'financial-law',
+            icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M6 6h4v4H6zM14 6h4v2h-4zM14 10h4v2h-4zM6 12h12v2H6zM6 16h12v2H6z" stroke="currentColor" stroke-width="1.5"/><path d="M21 8h2v2h-2zM21 12h2v2h-2z" fill="currentColor"/></svg>',
             description: 'Daňová optimalizácia'
         },
         {
@@ -59,53 +271,214 @@ document.addEventListener('DOMContentLoaded', function() {
             description: 'Právne služby pre e-shopy'
         },
         {
-            name: 'Reality',
-            slug: 'reality',
+            name: 'REAL ESTATE',
+            slug: 'real-estate',
             icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="2"/><polyline points="9,22 9,12 15,12 15,22" stroke="currentColor" stroke-width="2"/></svg>',
             description: 'Realitné transakcie'
         },
         {
-            name: 'Sporové zastupovanie',
-            slug: 'sporove-zastupovanie',
+            name: 'LITIGATIONS',
+            slug: 'litigations',
             icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" stroke="currentColor" stroke-width="2"/><polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="2"/><line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="2"/><line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="2"/><polyline points="10,9 9,9 8,9" stroke="currentColor" stroke-width="2"/></svg>',
             description: 'Zastupovanie v súdnych sporoch'
         },
         {
-            name: 'Trestné právo',
-            slug: 'trestne-pravo',
+            name: 'CRIMINAL LAW',
+            slug: 'criminal-law',
             icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"/></svg>',
             description: 'Obhajoba v trestnom konaní'
         }
     ];
 
+    // Get services data based on current language
+    function getServicesData() {
+        const currentLang = getCurrentLanguage();
+        const serviceTranslations = translations[currentLang]?.services || translations.sk.services;
+        
+        return services.map(service => ({
+            ...service,
+            name: serviceTranslations[service.slug]?.name || service.name,
+            description: serviceTranslations[service.slug]?.description || service.description
+        }));
+    }
+
+    // Get translation text
+    function getTranslation(path) {
+        const currentLang = getCurrentLanguage();
+        const keys = path.split('.');
+        let result = translations[currentLang] || translations.sk;
+        
+        for (const key of keys) {
+            if (result && typeof result === 'object' && key in result) {
+                result = result[key];
+            } else {
+                // Fallback to Slovak if translation missing
+                result = translations.sk;
+                for (const fallbackKey of keys) {
+                    if (result && typeof result === 'object' && fallbackKey in result) {
+                        result = result[fallbackKey];
+                    } else {
+                        return key; // Return key if no translation found
+                    }
+                }
+                break;
+            }
+        }
+        
+        return typeof result === 'string' ? result : path;
+    }
+
+    // Get services folder name based on language
+    function getServicesFolder(language) {
+        switch(language) {
+            case 'en': return 'services';
+            case 'de': return 'dienstleistungen';
+            case 'fr': return 'services';
+            case 'sk':
+            default: return 'sluzby';
+        }
+    }
+
     // Determine current path and create appropriate URLs
     function getBasePath() {
         const currentPath = window.location.pathname;
-        if (currentPath.includes('/pages/sluzby/') || currentPath.includes('/pages/blog/')) {
-            return '../../'; // We're in sluzby or blog subfolder
+        const currentLang = getCurrentLanguage();
+        const servicesFolder = getServicesFolder(currentLang);
+        
+        // If we're in a language subfolder, account for it
+        if (currentLang !== 'sk') {
+            if (currentPath.includes(`/pages/${servicesFolder}/`) || currentPath.includes('/pages/blog/')) {
+                return '../../../'; // We're in lang/pages/services or lang/pages/blog subfolder
+            }
+            if (currentPath.includes('/pages/')) {
+                return '../../'; // We're in lang/pages folder
+            }
+            return '../'; // We're in the language root folder
+        } else {
+            // Slovak pages (root structure)
+            if (currentPath.includes('/pages/sluzby/') || currentPath.includes('/pages/blog/')) {
+                return '../../'; // We're in sluzby or blog subfolder
+            }
+            if (currentPath.includes('/pages/')) {
+                return '../'; // We're in pages folder
+            }
+            return './'; // We're in the root
         }
-        if (currentPath.includes('/pages/')) {
-            return '../'; // We're in pages folder
-        }
-        return './'; // We're in the root
     }
 
     function getPagePath(page) {
         const basePath = getBasePath();
+        const currentLang = getCurrentLanguage();
+        
+        // For Slovak (root structure), no language prefix needed
+        // For other languages, pages are in their language subfolder
         if (page === 'index') {
-            if (basePath === '../../') {
-                return '../../index.html';
+            if (currentLang === 'sk') {
+                return basePath + 'index.html';
+            } else {
+                return basePath + currentLang + '/index.html';
             }
-            return basePath === '../' ? '../index.html' : './index.html';
         }
-        if (page === 'kontakt' || page === 'blog' || page === 'ochrana-osobnych-udajov') {
-            return basePath + 'pages/' + page + '.html';
+        
+        // Map page names based on language
+        let actualPageName = page;
+        if (currentLang === 'sk') {
+            const pageMapping = {
+                // Service page mappings to Slovak filenames
+                'start-ups-greenfield-projects': 'start-upy-greenfieldy',
+                'real-estate': 'reality',
+                'litigations': 'sporove-zastupovanie', 
+                'criminal-law': 'trestne-pravo',
+                'financial-law': 'danove-pravo',
+                'debt-collection': 'vymahanie-pohladavok',
+                'optimization-solutions': 'optimalizacie'
+            };
+            actualPageName = pageMapping[page] || page;
+        } else if (currentLang === 'en') {
+            const pageMapping = {
+                'kontakt': 'contact',
+                'ochrana-osobnych-udajov': 'privacy-policy',
+                'podnikatelsky-balik': 'business-package',
+                'skolenia-webinare': 'training-webinars',
+                // Service page mappings
+                'start-ups-greenfield-projects': 'start-ups-greenfield-projects',
+                'real-estate': 'real-estate',
+                'ecommerce': 'ecommerce',
+                'litigations': 'litigations',
+                'criminal-law': 'criminal-law',
+                'financial-law': 'financial-law',
+                'debt-collection': 'debt-collection',
+                'optimization-solutions': 'optimization-solutions'
+            };
+            actualPageName = pageMapping[page] || page;
+        } else if (currentLang === 'de') {
+            const pageMapping = {
+                'kontakt': 'kontakt',
+                'ochrana-osobnych-udajov': 'datenschutzrichtlinie',
+                'podnikatelsky-balik': 'unternehmenspaket',
+                'skolenia-webinare': 'schulungen-webinare',
+                // Service page mappings
+                'start-ups-greenfield-projects': 'start-ups-greenfields',
+                'real-estate': 'immobilien',
+                'ecommerce': 'e-commerce',
+                'litigations': 'streitvertretung',
+                'criminal-law': 'strafrecht',
+                'financial-law': 'finanzrecht',
+                'debt-collection': 'betreibung-der-aussenstande',
+                'optimization-solutions': 'optimierungsloesungen'
+            };
+            actualPageName = pageMapping[page] || page;
+        } else if (currentLang === 'fr') {
+            const pageMapping = {
+                'kontakt': 'contact',
+                'ochrana-osobnych-udajov': 'politique-confidentialite',
+                'podnikatelsky-balik': 'package-entreprise',
+                'skolenia-webinare': 'formations-webinaires',
+                // Service page mappings
+                'start-ups-greenfield-projects': 'start-ups-greenfields',
+                'real-estate': 'biens-immobiliers',
+                'ecommerce': 'e-commerce',
+                'litigations': 'litiges',
+                'criminal-law': 'droit-penal',
+                'financial-law': 'droit-financier',
+                'debt-collection': 'recouvrement-des-dettes',
+                'optimization-solutions': 'solutions-optimisation'
+            };
+            actualPageName = pageMapping[page] || page;
         }
-        if (page === 'podnikatelsky-balik' || page === 'skolenia-webinare') {
-            return basePath + 'pages/sluzby/' + page + '.html';
+        
+        // Build the full path based on current language
+        const servicesFolder = getServicesFolder(currentLang);
+        
+        if (currentLang === 'sk') {
+            // Slovak pages are in root structure
+            if (actualPageName === 'kontakt' || actualPageName === 'blog' || actualPageName === 'ochrana-osobnych-udajov') {
+                return basePath + 'pages/' + actualPageName + '.html';
+            }
+            if (actualPageName === 'podnikatelsky-balik' || actualPageName === 'skolenia-webinare') {
+                return basePath + 'pages/sluzby/' + actualPageName + '.html';
+            }
+            // Service pages are in sluzby subfolder
+            return basePath + 'pages/sluzby/' + actualPageName + '.html';
+        } else {
+            // Other language pages are in their language subfolder
+            const regularPages = [
+                'contact', 'kontakt', 'blog', 'privacy-policy', 'datenschutzrichtlinie', 'politique-confidentialite'
+            ];
+            const businessPages = [
+                'business-package', 'unternehmenspaket', 'package-entreprise', 
+                'training-webinars', 'schulungen-webinare', 'formations-webinaires'
+            ];
+            
+            if (regularPages.includes(actualPageName)) {
+                return basePath + currentLang + '/pages/' + actualPageName + '.html';
+            }
+            if (businessPages.includes(actualPageName)) {
+                return basePath + currentLang + '/pages/' + servicesFolder + '/' + actualPageName + '.html';
+            }
+            // All other pages (service pages) are in the appropriate services subfolder
+            return basePath + currentLang + '/pages/' + servicesFolder + '/' + actualPageName + '.html';
         }
-        // Service pages are now in sluzby subfolder
-        return basePath + 'pages/sluzby/' + page + '.html';
     }
 
     // Get current page for active state
@@ -118,14 +491,85 @@ document.addEventListener('DOMContentLoaded', function() {
         return filename.replace('.html', '');
     }
 
+    // Detect current language from URL path
+    function getCurrentLanguage() {
+        const path = window.location.pathname;
+        if (path.includes('/sk/')) return 'sk';
+        if (path.includes('/en/')) return 'en';
+        if (path.includes('/de/')) return 'de';
+        if (path.includes('/fr/')) return 'fr';
+        return 'sk'; // Default to Slovak
+    }
+
+    // Get correct logo path relative to root
+    function getLogoPath() {
+        const currentPath = window.location.pathname;
+        
+        // Debug logging
+        console.log('Current path:', currentPath);
+        
+        // Simple path-based detection
+        if (currentPath.includes('/sk/pages/sluzby/') || 
+            currentPath.includes('/en/pages/services/') ||
+            currentPath.includes('/de/pages/dienstleistungen/') ||
+            currentPath.includes('/fr/pages/services/') ||
+            currentPath.includes('/pages/sluzby/') ||
+            currentPath.includes('/pages/blog/')) {
+            console.log('Service/blog page - using ../../../sources/logo.png');
+            return '../../../sources/logo.png';
+        }
+        
+        if (currentPath.includes('/sk/pages/') ||
+            currentPath.includes('/en/pages/') ||
+            currentPath.includes('/de/pages/') ||
+            currentPath.includes('/fr/pages/') ||
+            currentPath.includes('/pages/')) {
+            console.log('Pages folder - using ../../sources/logo.png');
+            return '../../sources/logo.png';
+        }
+        
+        if (currentPath.includes('/sk/') ||
+            currentPath.includes('/en/') ||
+            currentPath.includes('/de/') ||
+            currentPath.includes('/fr/')) {
+            console.log('Language folder - using ../sources/logo.png');
+            return '../sources/logo.png';
+        }
+        
+        // Root level
+        console.log('Root level - using ./sources/logo.png');
+        return './sources/logo.png';
+    }
+
+    // Update language toggle display
+    function updateLanguageToggle() {
+        const currentLang = getCurrentLanguage();
+        const currentFlag = document.querySelector('.current-flag');
+        const currentLangText = document.querySelector('.current-lang');
+        
+        const languages = {
+            'sk': { flag: 'https://flagicons.lipis.dev/flags/4x3/sk.svg', name: 'Slovenčina', code: 'SK' },
+            'en': { flag: 'https://flagicons.lipis.dev/flags/4x3/gb.svg', name: 'English', code: 'EN' },
+            'de': { flag: 'https://flagicons.lipis.dev/flags/4x3/de.svg', name: 'Deutsch', code: 'DE' },
+            'fr': { flag: 'https://flagicons.lipis.dev/flags/4x3/fr.svg', name: 'Français', code: 'FR' }
+        };
+        
+        if (currentFlag && currentLangText && languages[currentLang]) {
+            currentFlag.src = languages[currentLang].flag;
+            currentFlag.alt = languages[currentLang].name;
+            currentLangText.textContent = languages[currentLang].code;
+        }
+    }
+
     // Create Header HTML
     function createHeader() {
         const currentPage = getCurrentPage();
         const basePath = getBasePath();
+        const servicesData = getServicesData();
         
         // Build services dropdown
         let servicesDropdownHTML = '';
-        services.forEach(service => {
+        servicesData.forEach(service => {
             servicesDropdownHTML += `
                 <a href="${getPagePath(service.slug)}" class="dropdown-item" title="${service.description}">
                     <span class="dropdown-icon">${service.icon}</span>
@@ -143,15 +587,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="nav-container">
                     <div class="logo">
                         <a href="${getPagePath('index')}">
-                            <img src="${basePath}sources/logo.png" alt="LegisPro" class="logo-image">
+                            <img src="${getLogoPath()}" alt="LegisPro" class="logo-image">
                             <h3>LegisPro</h3>
                         </a>
                     </div>
                     <div class="nav-menu" id="navMenu">
-                        <a href="${getPagePath('index')}" class="nav-link ${currentPage === 'index' ? 'active' : ''}">Domov</a>
+                        <a href="${getPagePath('index')}" class="nav-link ${currentPage === 'index' ? 'active' : ''}" data-i18n="nav.home">${getTranslation('nav.home')}</a>
                         <div class="nav-dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" id="servicesDropdown">
-                                Služby
+                            <a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" data-i18n="nav.services">
+                                ${getTranslation('nav.services')}
                                 <svg class="dropdown-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
@@ -161,15 +605,44 @@ document.addEventListener('DOMContentLoaded', function() {
                                     ${servicesDropdownHTML}
                                 </div>
                                 <div class="dropdown-footer">
-                                    <a href="${getPagePath('kontakt')}" class="btn btn-primary btn-sm">Kontaktovať nás</a>
+                                    <a href="${getPagePath('kontakt')}" class="btn btn-primary btn-sm">${getTranslation('nav.contact')}</a>
                                 </div>
                             </div>
                         </div>
-                        <a href="${getPagePath('podnikatelsky-balik')}" class="nav-link ${currentPage === 'podnikatelsky-balik' ? 'active' : ''}">Podnikateľský balík</a>
-                        <a href="${getPagePath('skolenia-webinare')}" class="nav-link ${currentPage === 'skolenia-webinare' ? 'active' : ''}">Školenia a webináre</a>
-                        <a href="${getPagePath('blog')}" class="nav-link">Blog</a>
+                        <a href="${getPagePath('podnikatelsky-balik')}" class="nav-link ${currentPage === 'podnikatelsky-balik' ? 'active' : ''}" data-i18n="nav.business_package">${getTranslation('nav.business_package')}</a>
+                        <a href="${getPagePath('skolenia-webinare')}" class="nav-link ${currentPage === 'skolenia-webinare' ? 'active' : ''}" data-i18n="nav.training">${getTranslation('nav.training')}</a>
+                        <a href="${getPagePath('blog')}" class="nav-link" data-i18n="nav.blog">${getTranslation('nav.blog')}</a>
                     </div>
-                    <a href="${getPagePath('kontakt')}" class="btn btn-primary">Konzultácia</a>
+                    <!-- Language Toggle -->
+                    <div class="language-toggle">
+                        <div class="current-language">
+                            <img src="https://flagicons.lipis.dev/flags/4x3/sk.svg" alt="Slovenčina" class="current-flag" width="20" height="15">
+                            <span class="current-lang">SK</span>
+                            <svg class="lang-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="language-dropdown">
+                            <button class="lang-option" data-lang="sk">
+                                <img src="https://flagicons.lipis.dev/flags/4x3/sk.svg" alt="Slovenčina" width="20" height="15">
+                                <span>Slovenčina</span>
+                            </button>
+                            <button class="lang-option" data-lang="en">
+                                <img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="English" width="20" height="15">
+                                <span>English</span>
+                            </button>
+                            <button class="lang-option" data-lang="de">
+                                <img src="https://flagicons.lipis.dev/flags/4x3/de.svg" alt="Deutsch" width="20" height="15">
+                                <span>Deutsch</span>
+                            </button>
+                            <button class="lang-option" data-lang="fr">
+                                <img src="https://flagicons.lipis.dev/flags/4x3/fr.svg" alt="Français" width="20" height="15">
+                                <span>Français</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <a href="${getPagePath('kontakt')}" class="btn btn-primary" data-i18n="nav.contact">${getTranslation('nav.contact')}</a>
                     <div class="mobile-menu-toggle" id="mobileMenuToggle">
                         <span></span>
                         <span></span>
@@ -182,22 +655,22 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="mobile-menu" id="mobileMenu">
                 <div class="mobile-menu-header">
                     <div class="mobile-logo">
-                        <img src="${basePath}sources/logo.png" alt="LegisPro" class="logo-image">
+                        <img src="${getLogoPath()}" alt="LegisPro" class="logo-image">
                         <h3>LegisPro</h3>
                     </div>
                     <button class="mobile-menu-close" id="mobileMenuClose">✕</button>
                 </div>
-                <a href="${getPagePath('index')}" class="nav-link">Domov</a>
+                <a href="${getPagePath('index')}" class="nav-link">${getTranslation('nav.home')}</a>
                 
                 <div class="mobile-dropdown">
                     <button class="mobile-dropdown-toggle">
-                        Služby
+                        ${getTranslation('nav.services')}
                         <svg class="dropdown-arrow" width="16" height="16" viewBox="0 0 24 24">
                             <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
                     <div class="mobile-dropdown-content">
-                        ${services.map(service => `
+                        ${servicesData.map(service => `
                             <a href="${getPagePath(service.slug)}" class="mobile-dropdown-item">
                                 <span class="mobile-service-icon">${service.icon}</span>
                                 ${service.name}
@@ -206,10 +679,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 </div>
                 
-                <a href="${getPagePath('podnikatelsky-balik')}" class="nav-link">Podnikateľský balík</a>
-                <a href="${getPagePath('skolenia-webinare')}" class="nav-link">Školenia a webináre</a>
-                <a href="${getPagePath('blog')}" class="nav-link">Blog</a>
-                <a href="${getPagePath('kontakt')}" class="btn btn-primary">Konzultácia</a>
+                <a href="${getPagePath('podnikatelsky-balik')}" class="nav-link">${getTranslation('nav.business_package')}</a>
+                <a href="${getPagePath('skolenia-webinare')}" class="nav-link">${getTranslation('nav.training')}</a>
+                <a href="${getPagePath('blog')}" class="nav-link">${getTranslation('nav.blog')}</a>
+                <a href="${getPagePath('kontakt')}" class="btn btn-primary">${getTranslation('nav.contact')}</a>
             </div>
         `;
     }
@@ -224,7 +697,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="container">
                     <div class="footer-top">
                         <div class="footer-main">
-                            <h5>Potrebujete poradiť?</h5>
+                            <h5>${getTranslation('footer.need_help')}</h5>
                         </div>
                         <div class="footer-emergency">
                             <a href="tel:+421948528265" class="footer-phone-btn">+421 948 528 265</a>
@@ -232,61 +705,44 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                     <div class="footer-links">
                         <div class="footer-column">
-                            <h5>Spoločnosť</h5>
+                            <h5>${getTranslation('footer.company')}</h5>
                             <nav>
-                                <a href="${getPagePath('index')}">Domov</a>
-                                <a href="${getPagePath('kontakt')}">Kontakt</a>
-                                <a href="${getPagePath('kontakt')}">Konzultácia</a>
-                                <a href="${getPagePath('blog')}">Blog</a>
+                                <a href="${getPagePath('index')}">${getTranslation('footer.home')}</a>
+                                <a href="${getPagePath('kontakt')}">${getTranslation('footer.contact')}</a>
+                                <a href="${getPagePath('kontakt')}">${getTranslation('footer.consultation')}</a>
+                                <a href="${getPagePath('blog')}">${getTranslation('footer.blog')}</a>
                             </nav>
                         </div>
                         <div class="footer-column">
-                            <h5>Služby</h5>
+                            <h5>${getTranslation('footer.services')}</h5>
                             <nav>
-                                <a href="${getPagePath('start-upy-greenfieldy')}">START UPy</a>
-                                <a href="${getPagePath('gdpr')}">GDPR</a>
-                                <a href="${getPagePath('reality')}">Reality</a>
-                                <a href="${getPagePath('ecommerce')}">e-Commerce</a>
+                                <a href="${getPagePath('start-ups-greenfield-projects')}">${getTranslation('footer.startups')}</a>
+                                <a href="${getPagePath('gdpr')}">${getTranslation('footer.gdpr')}</a>
+                                <a href="${getPagePath('real-estate')}">${getTranslation('footer.real_estate')}</a>
+                                <a href="${getPagePath('ecommerce')}">${getTranslation('footer.ecommerce')}</a>
                             </nav>
                         </div>
                         <div class="footer-column">
-                            <h5>Právne oblasti</h5>
+                            <h5>${getTranslation('footer.legal_areas')}</h5>
                             <nav>
-                                <a href="${getPagePath('sporove-zastupovanie')}">Sporové zastupovanie</a>
-                                <a href="${getPagePath('trestne-pravo')}">Trestné právo</a>
-                                <a href="${getPagePath('danove-pravo')}">Daňové právo</a>
-                                <a href="${getPagePath('vymahanie-pohladavok')}">Vymáhanie pohľadávok</a>
+                                <a href="${getPagePath('litigations')}">${getTranslation('footer.disputes')}</a>
+                                <a href="${getPagePath('criminal-law')}">${getTranslation('footer.criminal')}</a>
+                                <a href="${getPagePath('financial-law')}">${getTranslation('footer.financial')}</a>
+                                <a href="${getPagePath('debt-collection')}">${getTranslation('footer.debt')}</a>
                             </nav>
                         </div>
                         <div class="footer-column">
-                            <h5>Ďalšie služby</h5>
+                            <h5>${getTranslation('footer.other_services')}</h5>
                             <nav>
-                                <a href="${getPagePath('optimalizacie')}">Optimalizácie</a>
-                                <a href="${getPagePath('due-diligence')}">Due Diligence</a>
+                                <a href="${getPagePath('optimization-solutions')}">${getTranslation('footer.optimization')}</a>
+                                <a href="${getPagePath('due-diligence')}">${getTranslation('footer.due_diligence')}</a>
                             </nav>
                         </div>
                     </div>
                     <div class="footer-bottom">
-                        <div class="social-links">
-                            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                                </svg>
-                            </a>
-                            <a href="https://x.com/" target="_blank" aria-label="Twitter/X">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                                </svg>
-                            </a>
-                            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.80-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.40z"/>
-                                </svg>
-                            </a>
-                        </div>
                         <div class="footer-copyright">
-                            <p>© ${new Date().getFullYear()} LegisPro, s.r.o. Všetky práva vyhradené. | <a href="${getPagePath('ochrana-osobnych-udajov')}">Ochrana osobných údajov</a></p>
-                            <p><a href="https://aebdigital.sk" target="_blank">tvorba stránky AEB Digital</a></p>
+                            <p>© ${new Date().getFullYear()} LegisPro, s.r.o. ${getTranslation('footer.all_rights')} | <a href="${getPagePath('ochrana-osobnych-udajov')}">${getTranslation('footer.privacy_policy')}</a> | <a href="#" onclick="openCookieSettings(); return false;">${getTranslation('footer.cookies')}</a></p>
+                            <p><a href="https://aebdigital.sk" target="_blank">${getTranslation('footer.website_by')}</a></p>
                         </div>
                     </div>
                 </div>
@@ -304,11 +760,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="location-content">
                         <div class="location-info">
                             <div class="location-item">
-                                <h4>Nájdite nás</h4>
+                                <h4>${getTranslation('location.find_us')}</h4>
                                 <p><a href="https://maps.google.com/?q=Sládkovičova+1+949+01+Nitra" target="_blank">Sládkovičova 1, 949 01 Nitra, Slovenská republika</a></p>
                             </div>
                             <div class="location-item">
-                                <h4>Kontaktujte nás</h4>
+                                <h4>${getTranslation('location.contact_us')}</h4>
                                 <p><a href="mailto:office@legispro.sk">office@legispro.sk</a></p>
                                 <p><a href="tel:+421 948 528 265">+421 948 528 265</a></p>
                             </div>
@@ -316,7 +772,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="map">
                             <div class="map-overlay" id="mapOverlay">
                                 <div class="map-overlay-content">
-                                    <h4>Pre interakciu s mapou kliknite</h4>
+                                    <h4>${getTranslation('location.map_interaction')}</h4>
                                 </div>
                             </div>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10498.640103596685!2d18.084437315673!3d48.3146597792368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f11.1!3m3!1m2!1s0x476a89e6a5a3a2b7%3A0x400f7d1c69788a0!2sSl%C3%A1dkovi%C4%8Dova%201%2C%20949%2001%20Nitra-Chrenov%C3%A1%2C%20Slovakia!5e0!3m2!1sen!2sus!4v1609452345678"
@@ -461,6 +917,53 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
 
+        // Language toggle functionality
+        const languageToggle = document.querySelector('.language-toggle');
+        const currentLanguage = document.querySelector('.current-language');
+        const languageDropdown = document.querySelector('.language-dropdown');
+
+        if (languageToggle && currentLanguage && languageDropdown) {
+            currentLanguage.addEventListener('click', function() {
+                languageDropdown.classList.toggle('active');
+            });
+
+            // Close language dropdown when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!languageToggle.contains(e.target)) {
+                    languageDropdown.classList.remove('active');
+                }
+            });
+
+            // Language selection - redirect to index.html of selected language
+            const langOptions = document.querySelectorAll('.lang-option');
+            langOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    const selectedLang = this.getAttribute('data-lang');
+                    
+                    // Simple and robust language switching
+                    const currentPath = window.location.pathname;
+                    
+                    // Find LegisPro root directory in the path
+                    let rootPath = '';
+                    const pathParts = currentPath.split('/');
+                    const legisProIndex = pathParts.findIndex(part => part === 'LegisPro');
+                    
+                    if (legisProIndex !== -1) {
+                        // We're in a LegisPro subdirectory structure
+                        const rootParts = pathParts.slice(0, legisProIndex + 1);
+                        rootPath = rootParts.join('/') + '/';
+                    } else {
+                        // Simple file system structure - go to root
+                        rootPath = '/';
+                    }
+                    
+                    // Construct absolute path
+                    const newUrl = window.location.origin + rootPath + selectedLang + '/index.html';
+                    window.location.href = newUrl;
+                });
+            });
+        }
+
         // Keyboard navigation
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {
@@ -473,7 +976,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Initialize after DOM is ready
-    setTimeout(initializeNavigation, 100);
+    setTimeout(() => {
+        initializeNavigation();
+        updateLanguageToggle();
+    }, 100);
 
     // Initialize map overlay functionality
     function initializeMapOverlay() {

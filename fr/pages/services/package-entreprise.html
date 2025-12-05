@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Package Entreprise LegisPro - services juridiques complets pour entreprises, création de société, contrats, GDPR et conseil continu à prix compétitifs.">
+    <title>Package Entreprise - LegisPro</title>
+    
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="sk" href="https://legispro.sk/sk/pages/sluzby/podnikatelsky-balik.html" />
+    <link rel="alternate" hreflang="en" href="https://legispro.sk/en/pages/sluzby/business-package.html" />
+    <link rel="alternate" hreflang="fr" href="https://legispro.sk/fr/pages/sluzby/package-entreprise.html" />
+    <link rel="alternate" hreflang="de" href="https://legispro.sk/de/pages/sluzby/unternehmenspaket.html" />
+    <link rel="alternate" hreflang="x-default" href="https://legispro.sk/" />
+    <link rel="icon" type="image/png" href="../../../sources/logo.png">
+    <link rel="shortcut icon" type="image/png" href="../../../sources/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/base.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/header.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/footer.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/location.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/sluzby.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/language-toggle.css?v=1764377524">
+    
+    <!-- GSAP and Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js?v=1764377524"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js?v=1764377524"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js?v=1764377524"></script>
+</head>
+<body>
+    <!-- Page Loading Overlay -->
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Global Header will be inserted here -->
+
+    <div id="serviceSidebar"></div>
+
+    <section class="service-hero fade-in-up">
+        <div class="service-hero-background">
+            <img src="../../../sources/images/tax-law-1.jpg" alt="Package Entreprise">
+        </div>
+        <div class="service-hero-overlay"></div>
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>Package Entreprise</h1>
+                <p>Pour que vous n'ayez plus besoin d'aller ailleurs - services complets pour entrepreneurs débutants sous un seul toit.</p>
+                <div class="service-hero-buttons">
+                    <a href="../contact.html" class="btn btn-primary"><span>Contactez-nous</span></a>
+                    <a href="#obsah" class="btn btn-secondary"><span>Plus d'Informations</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="obsah" class="service-content fade-in-up">
+        <div class="container">
+            <div class="content-with-image">
+                <div class="content-text">
+                    <h2>Services complets pour entrepreneurs débutants</h2>
+                    <p>Vous commencez à entreprendre ? Que ce soit en tant que société commerciale ou travailleur indépendant, nous vous fournirons sous un seul toit tout ce dont vous avez besoin pour lancer votre projet. Nous vous fournirons des conseils et proposerons la forme la plus avantageuse de votre entreprise.</p>
+                    
+                    <div class="service-feature">
+                        <h3>Création de sociétés</h3>
+                        <p>Nous créons votre nouvelle société et vous fournissons un soutien juridique complet dans le choix de la forme optimale d'entreprise.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Services économiques</h3>
+                        <p>Nous fournissons des services économiques professionnels comme la tenue de comptabilité et de paie, conseil fiscal, élaboration de rapports et TVA.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>20 ans d'expérience</h3>
+                        <p>Utilisez notre expérience de plus de 20 ans dans le domaine des finances d'entreprise et du conseil complet.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Gérants et associés</h3>
+                        <p>Vous êtes devenu gérant d'une société ? Cette position vous confère certains droits et obligations. Nous configurerons vos processus internes et vous aiderons à vous orienter dans cette problématique.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Recouvrement de créances</h3>
+                        <p>Avez-vous des factures impayées ou d'autres créances ? Nous vous conseillerons sur vos options et comment procéder pour un recouvrement réussi du montant dû avec accessoires.</p>
+                    </div>
+                </div>
+
+                <div class="content-image">
+                    <div class="sidebar-widget">
+                        <h4>Vous avez des questions?</h4>
+                        <p>N'hésitez pas à nous contacter</p>
+                        <a href="../contact.html" class="btn btn-primary btn-sm">Nous contacter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lenis Smooth Scrolling -->
+    <script src="../../../scripts/gsap-simple.js?v=1764377524"></script>
+    
+    <!-- Internationalization -->
+    
+    <!-- Main JavaScript -->
+    <script src="../../../scripts/script.js?v=1764377524"></script>
+    <script src="../../../scripts/global-nav.js?v=1764377524"></script>
+    <script src="../../../scripts/sidebar.js?v=1764377524"></script>
+
+    <!-- Page Loading Animation -->
+    <script>
+    // Enhanced page loader with fallback
+    (function() {
+        let loaderRemoved = false;
+
+        function removeLoader() {
+            if (loaderRemoved) return;
+            loaderRemoved = true;
+
+            const loader = document.querySelector('.page-loader');
+            const body = document.body;
+
+            if (loader) {
+                body.classList.add('loaded');
+                loader.classList.add('fade-out');
+
+                setTimeout(() => {
+                    if (loader.parentNode) {
+                        loader.remove();
+                    }
+                }, 800);
+            }
+        }
+
+        // Remove loader when page is fully loaded
+        window.addEventListener('load', removeLoader);
+
+        // Fallback: remove loader after 3 seconds max
+        setTimeout(removeLoader, 3000);
+
+        // Remove loader when DOM is ready (faster fallback)
+        if (document.readyState === 'complete') {
+            setTimeout(removeLoader, 100);
+        } else {
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(removeLoader, 100);
+            });
+        }
+    })();
+    </script>
+</body>
+</html>

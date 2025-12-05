@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Legal training and webinars by LegisPro - professional education in GDPR, tax law, employment law and commercial law. Interactive courses and workshops.">
+    <title>Training and Webinars - LegisPro</title>
+    <link rel="icon" type="image/png" href="../../../sources/logo.png">
+    <link rel="shortcut icon" type="image/png" href="../../../sources/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/base.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/header.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/footer.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/location.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/sluzby.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/language-toggle.css?v=1764377524">
+    
+    <!-- GSAP and Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js?v=1764377524"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js?v=1764377524"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js?v=1764377524"></script>
+</head>
+<body>
+    <!-- Page Loading Overlay -->
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Global Header will be inserted here -->
+
+    <div id="serviceSidebar"></div>
+
+    <section class="service-hero fade-in-up">
+        <div class="service-hero-background">
+            <img src="../../../sources/images/contact-office-1.jpg" alt="Professional Legal Training">
+        </div>
+        <div class="service-hero-overlay"></div>
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>Training and Webinars</h1>
+                <p>Professional legal training tailored to your needs in the form of personal lectures or webinars.</p>
+                <div class="service-hero-buttons">
+                    <a href="../contact.html" class="btn btn-primary"><span>Contact Us</span></a>
+                    <a href="#obsah" class="btn btn-secondary"><span>More Information</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="obsah" class="service-content fade-in-up">
+        <div class="container">
+            <div class="content-with-image">
+                <div class="content-text">
+                    <h2>Professional Training Tailored to Your Needs</h2>
+                    <p>We gladly offer you ready-made training programs or we will develop new topics from civil, commercial, labor, financial law, or other topics according to your needs. We present topics in the form of personal lectures or webinars.</p>
+                    
+                    <div class="service-feature">
+                        <h3>Civil Law</h3>
+                        <p>Comprehensive training in civil law including contract law, ownership relations, and liability for damages.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Commercial Law</h3>
+                        <p>Training focused on commercial obligations, business companies and their management, mergers and acquisitions.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Labor Law</h3>
+                        <p>Current topics in labor law, legislative changes, proper HR management, and resolution of employment disputes.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Financial Law</h3>
+                        <p>Training in tax law, transfer pricing, tax optimization, and communication with tax authorities.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Flexible Formats</h3>
+                        <p>We conduct training in the form of personal lectures at your premises or through online webinars according to your needs.</p>
+                    </div>
+
+                   
+                </div>
+
+                <div class="content-image">
+                    <div class="sidebar-widget">
+                        <h4>Have questions?</h4>
+                        <p>Don't hesitate to contact us</p>
+                        <a href="../contact.html" class="btn btn-primary btn-sm">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lenis Smooth Scrolling -->
+    <script src="../../../scripts/gsap-simple.js?v=1764377524"></script>
+    
+    <!-- Internationalization -->
+    
+    <!-- Main JavaScript -->
+    <script src="../../../scripts/script.js?v=1764377524"></script>
+    <script src="../../../scripts/global-nav.js?v=1764377524"></script>
+    <script src="../../../scripts/sidebar.js?v=1764377524"></script>
+
+    <!-- Page Loading Animation -->
+    <script>
+    // Enhanced page loader with fallback
+    (function() {
+        let loaderRemoved = false;
+
+        function removeLoader() {
+            if (loaderRemoved) return;
+            loaderRemoved = true;
+
+            const loader = document.querySelector('.page-loader');
+            const body = document.body;
+
+            if (loader) {
+                body.classList.add('loaded');
+                loader.classList.add('fade-out');
+
+                setTimeout(() => {
+                    if (loader.parentNode) {
+                        loader.remove();
+                    }
+                }, 800);
+            }
+        }
+
+        // Remove loader when page is fully loaded
+        window.addEventListener('load', removeLoader);
+
+        // Fallback: remove loader after 3 seconds max
+        setTimeout(removeLoader, 3000);
+
+        // Remove loader when DOM is ready (faster fallback)
+        if (document.readyState === 'complete') {
+            setTimeout(removeLoader, 100);
+        } else {
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(removeLoader, 100);
+            });
+        }
+    })();
+    </script>
+</body>
+</html>

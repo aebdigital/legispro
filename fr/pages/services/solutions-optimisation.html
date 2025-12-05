@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solutions d'optimisation par LegisPro - économies de coûts, processus efficaces, optimisation fiscale et rationalisation de votre système juridique d'entreprise.">
+    <title>Solutions d'Optimisation - LegisPro</title>
+    
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="sk" href="https://legispro.sk/sk/pages/sluzby/optimalizacie.html" />
+    <link rel="alternate" hreflang="en" href="https://legispro.sk/en/pages/sluzby/optimization-solutions.html" />
+    <link rel="alternate" hreflang="fr" href="https://legispro.sk/fr/pages/sluzby/solutions-optimisation.html" />
+    <link rel="alternate" hreflang="de" href="https://legispro.sk/de/pages/sluzby/optimierungsloesungen.html" />
+    <link rel="alternate" hreflang="x-default" href="https://legispro.sk/" />
+    <link rel="icon" type="image/png" href="../../../sources/logo.png">
+    <link rel="shortcut icon" type="image/png" href="../../../sources/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/base.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/header.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/footer.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/location.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/sluzby.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/language-toggle.css?v=1764377524">
+    
+    <!-- GSAP and Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js?v=1764377524"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js?v=1764377524"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js?v=1764377524"></script>
+</head>
+<body>
+    <!-- Page Loading Overlay -->
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Global Header will be inserted here -->
+
+    <div id="serviceSidebar"></div>
+
+    <section class="service-hero fade-in-up">
+        <div class="service-hero-background">
+            <img src="../../../sources/images/training-1.jpg" alt="Solutions d'Optimisation">
+        </div>
+        <div class="service-hero-overlay"></div>
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>Solutions d'Optimisation</h1>
+                <p>Vous cherchez des moyens d'optimiser les coûts ou la structure de votre entreprise?</p>
+                <div class="service-hero-buttons">
+                    <a href="../contact.html" class="btn btn-primary"><span>Contactez-nous</span></a>
+                    <a href="#obsah" class="btn btn-secondary"><span>Plus d'Informations</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="obsah" class="service-content fade-in-up">
+        <div class="container">
+            <div class="service-content-grid">
+                <div class="service-main">
+                    <h2>Audit et optimisation des processus</h2>
+                    <p>Lors de l'audit lui-même, sa justification se révèle souvent. L'environnement de marché en constante évolution exige notre attention.</p>
+                    
+                    <div class="service-feature">
+                        <h3>Audit des processus internes</h3>
+                        <p>Nous réalisons un audit de vos processus internes, analysons leur efficacité et identifions les domaines d'amélioration.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Proposition de solutions d'optimisation</h3>
+                        <p>Nous vous proposons des solutions d'optimisation concrètes et chiffrons les économies potentielles que vous pouvez réaliser.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Analyse de contrats</h3>
+                        <p>Nous analysons vos contrats existants du point de vue de leur avantage, possibilités de résiliation ou de modification.</p>
+                    </div>
+                </div>
+
+                <div class="service-sidebar-content">
+                    <div class="service-info-card">
+                        <h3>Domaines d'optimisation</h3>
+                        <ul>
+                            <li>Processus et procédures internes</li>
+                            <li>Relations contractuelles</li>
+                            <li>Optimisation des coûts</li>
+                            <li>Structure organisationnelle</li>
+                        </ul>
+                    </div>
+                    <div class="service-contact-card">
+                        <h3>Consultation gratuite</h3>
+                        <p>Obtenez une première évaluation de vos processus.</p>
+                        <a href="../contact.html" class="btn btn-dark">Contacter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lenis Smooth Scrolling -->
+    <script src="../../../scripts/gsap-simple.js?v=1764377524"></script>
+    
+    <!-- Internationalization -->
+    
+    <!-- Main JavaScript -->
+    <script src="../../../scripts/script.js?v=1764377524"></script>
+    <script src="../../../scripts/global-nav.js?v=1764377524"></script>
+    <script src="../../../scripts/sidebar.js?v=1764377524"></script>
+
+    <!-- Page Loading Animation -->
+    <script>
+    // Enhanced page loader with fallback
+    (function() {
+        let loaderRemoved = false;
+
+        function removeLoader() {
+            if (loaderRemoved) return;
+            loaderRemoved = true;
+
+            const loader = document.querySelector('.page-loader');
+            const body = document.body;
+
+            if (loader) {
+                body.classList.add('loaded');
+                loader.classList.add('fade-out');
+
+                setTimeout(() => {
+                    if (loader.parentNode) {
+                        loader.remove();
+                    }
+                }, 800);
+            }
+        }
+
+        // Remove loader when page is fully loaded
+        window.addEventListener('load', removeLoader);
+
+        // Fallback: remove loader after 3 seconds max
+        setTimeout(removeLoader, 3000);
+
+        // Remove loader when DOM is ready (faster fallback)
+        if (document.readyState === 'complete') {
+            setTimeout(removeLoader, 100);
+        } else {
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(removeLoader, 100);
+            });
+        }
+    })();
+    </script>
+</body>
+</html>

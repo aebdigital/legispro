@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Services juridiques e-commerce par LegisPro - conditions générales, conformité GDPR, gestion contractuelle et conseil juridique pour entreprises en ligne.">
+    <title>e-Commerce - LegisPro</title>
+    
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="sk" href="https://legispro.sk/sk/pages/sluzby/ecommerce.html" />
+    <link rel="alternate" hreflang="en" href="https://legispro.sk/en/pages/sluzby/e-commerce.html" />
+    <link rel="alternate" hreflang="fr" href="https://legispro.sk/fr/pages/sluzby/e-commerce.html" />
+    <link rel="alternate" hreflang="de" href="https://legispro.sk/de/pages/sluzby/e-commerce.html" />
+    <link rel="alternate" hreflang="x-default" href="https://legispro.sk/" />
+    <link rel="icon" type="image/png" href="../../../sources/logo.png">
+    <link rel="shortcut icon" type="image/png" href="../../../sources/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/base.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/header.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/footer.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/location.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/sluzby.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/language-toggle.css?v=1764377524">
+    
+    <!-- GSAP and Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js?v=1764377524"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js?v=1764377524"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js?v=1764377524"></script>
+</head>
+<body>
+    <!-- Page Loading Overlay -->
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Global Header will be inserted here -->
+
+    <div id="serviceSidebar"></div>
+
+    <section class="service-hero fade-in-up">
+        <div class="service-hero-background">
+            <img src="../../../sources/images/ecommerce-1.jpg" alt="e-Commerce">
+        </div>
+        <div class="service-hero-overlay"></div>
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>e-Commerce</h1>
+                <p>Nous préparerons pour vous une documentation complète et personnalisée pour votre nouveau projet Internet.</p>
+                <div class="service-hero-buttons">
+                    <a href="../contact.html" class="btn btn-primary"><span>Contactez-nous</span></a>
+                    <a href="#obsah" class="btn btn-secondary"><span>Plus d'Informations</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="obsah" class="service-content fade-in-up">
+        <div class="container">
+            <div class="service-content-grid">
+                <div class="service-main">
+                    <h2>Solutions e-Commerce complètes</h2>
+                    <p>Vous n'avez pas besoin de vous soucier du contenu des conditions générales de vente, de l'apparence du formulaire de commande ou de réclamation. Nous préparerons pour vous tous les documents nécessaires, y compris le GDPR.</p>
+                    
+                    <div class="service-feature">
+                        <h3>Conditions générales de vente</h3>
+                        <p>Nous créerons des CGV sur mesure pour votre e-shop, qui seront en conformité avec la législation actuelle et protégeront vos intérêts.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>GDPR pour e-shop</h3>
+                        <p>Documentation GDPR complète spécialement adaptée aux besoins de la vente en ligne et au traitement des données personnelles des clients.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Procédure de réclamation</h3>
+                        <p>Procédure de réclamation professionnelle et formulaires qui assureront une résolution adéquate des réclamations et une protection contre les revendications injustifiées.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Support marketing</h3>
+                        <p>Par l'intermédiaire de notre société partenaire, nous vous aiderons volontiers avec la publicité et la promotion de votre nouvel e-shop ou site web.</p>
+                    </div>
+                </div>
+
+                <div class="service-sidebar-content">
+                    <div class="service-info-card">
+                        <h3>Documents pour e-shop</h3>
+                        <ul>
+                            <li>Conditions générales de vente</li>
+                            <li>Documentation GDPR</li>
+                            <li>Procédure de réclamation</li>
+                            <li>Cookies policy</li>
+                            <li>Conditions de livraison</li>
+                        </ul>
+                    </div>
+                    <div class="service-contact-card">
+                        <h3>Vous lancez un e-shop?</h3>
+                        <p>Obtenez tous les documents nécessaires en un seul endroit.</p>
+                        <a href="../contact.html" class="btn btn-dark">Contacter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lenis Smooth Scrolling -->
+    <script src="../../../scripts/gsap-simple.js?v=1764377524"></script>
+    
+    <!-- Internationalization -->
+    
+    <!-- Main JavaScript -->
+    <script src="../../../scripts/script.js?v=1764377524"></script>
+    <script src="../../../scripts/global-nav.js?v=1764377524"></script>
+    <script src="../../../scripts/sidebar.js?v=1764377524"></script>
+
+    <!-- Page Loading Animation -->
+    <script>
+    // Enhanced page loader with fallback
+    (function() {
+        let loaderRemoved = false;
+
+        function removeLoader() {
+            if (loaderRemoved) return;
+            loaderRemoved = true;
+
+            const loader = document.querySelector('.page-loader');
+            const body = document.body;
+
+            if (loader) {
+                body.classList.add('loaded');
+                loader.classList.add('fade-out');
+
+                setTimeout(() => {
+                    if (loader.parentNode) {
+                        loader.remove();
+                    }
+                }, 800);
+            }
+        }
+
+        // Remove loader when page is fully loaded
+        window.addEventListener('load', removeLoader);
+
+        // Fallback: remove loader after 3 seconds max
+        setTimeout(removeLoader, 3000);
+
+        // Remove loader when DOM is ready (faster fallback)
+        if (document.readyState === 'complete') {
+            setTimeout(removeLoader, 100);
+        } else {
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(removeLoader, 100);
+            });
+        }
+    })();
+    </script>
+</body>
+</html>

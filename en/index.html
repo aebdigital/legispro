@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LegisPro provides professional legal services for companies and entrepreneurs. We specialize in START UPs, GDPR, real estate and commercial law. Contact us.">
+    <title>LegisPro, s.r.o.</title>
+    
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="sk" href="https://legispro.sk/sk/" />
+    <link rel="alternate" hreflang="en" href="https://legispro.sk/en/" />
+    <link rel="alternate" hreflang="fr" href="https://legispro.sk/fr/" />
+    <link rel="alternate" hreflang="de" href="https://legispro.sk/de/" />
+    <link rel="alternate" hreflang="x-default" href="https://legispro.sk/" />
+    <link rel="icon" type="image/png" href="../sources/logo.png">
+    <link rel="shortcut icon" type="image/png" href="../sources/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/base.css?v=1764377524">
+    <link rel="stylesheet" href="../styles/header.css?v=1764377524">
+    <link rel="stylesheet" href="../styles/footer.css?v=1764377524">
+    <link rel="stylesheet" href="../styles/location.css?v=1764377524">
+    <link rel="stylesheet" href="../styles/home.css?v=1764377524">
+    <link rel="stylesheet" href="../styles/language-toggle.css?v=1764377524">
+    <link rel="stylesheet" href="../styles/cookies.css?v=1764377524">
+    
+    <!-- GSAP and Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js?v=1764377524"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js?v=1764377524"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js?v=1764377524"></script>
+</head>
+<body>
+    <!-- Page Loading Overlay -->
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Global Header will be inserted here -->
+
+    <!-- Hero Section -->
+    <section class="hero fade-in-up" id="banner">
+        <div class="hero-carousel">
+            <!-- Slide 1: General -->
+            <div class="hero-slide active" data-service="general">
+                <div class="hero-background">
+                    <img src="../sources/images/legal-office-1.jpg" alt="LegisPro, s.r.o.">
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Professional Legal Services</h1>
+                        <p>We specialize in START UPs & Greenfield projects, GDPR, REAL ESTATE, FINANCIAL LAW and business transactions.</p>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="pages/contact.html" class="btn btn-primary">Book Consultation</a>
+                        <a href="#about" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: START UPy -->
+            <div class="hero-slide" data-service="start-upy">
+                <div class="hero-background">
+                    <img src="../sources/images/startup-1.jpg" alt="START UPy a GREENFIELDY">
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>START UPS & GREENFIELDS</h1>
+                        <p>Have a great idea and want to start a new business? We'll handle it comprehensively and quickly for you.</p>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="pages/contact.html" class="btn btn-primary">Contact Us</a>
+                        <a href="pages/services/start-ups-greenfield-projects.html" class="btn btn-secondary">More Information</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: GDPR -->
+            <div class="hero-slide" data-service="gdpr">
+                <div class="hero-background">
+                    <img src="../sources/images/privacy-gdpr-1.jpg" alt="GDPR">
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>GDPR</h1>
+                        <p>Protect your customers' personal data in compliance with legislation. Custom GDPR documentation.</p>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="pages/contact.html" class="btn btn-primary">Contact Us</a>
+                        <a href="pages/services/gdpr.html" class="btn btn-secondary">More Information</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Optimization Solutions -->
+            <div class="hero-slide" data-service="optimalizacie">
+                <div class="hero-background">
+                    <img src="../sources/images/optimization-1.jpg" alt="Optimization Solutions">
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Optimization Solutions</h1>
+                        <p>Looking for ways to optimize costs or structure of your business or trading company?</p>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="pages/contact.html" class="btn btn-primary">Contact Us</a>
+                        <a href="pages/services/optimization-solutions.html" class="btn btn-secondary">More Information</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: Due Diligence -->
+            <div class="hero-slide" data-service="due-diligence">
+                <div class="hero-background">
+                    <img src="../sources/images/due-diligence-1.jpg" alt="Due Diligence">
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Due Diligence</h1>
+                        <p>Want to buy or sell your company or part of it? We'll provide comprehensive due diligence for you.</p>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="pages/contact.html" class="btn btn-primary">Contact Us</a>
+                        <a href="pages/services/due-diligence.html" class="btn btn-secondary">More Information</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 6: Debt Collection -->
+            <div class="hero-slide" data-service="vymahanie">
+                <div class="hero-background">
+                    <img src="../sources/images/debt-collection-1.jpg" alt="Debt Collection">
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Debt Collection</h1>
+                        <p>Poor customers cost you money. We'll help you collect debts from defaulters quickly and efficiently.</p>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="pages/contact.html" class="btn btn-primary">Contact Us</a>
+                        <a href="pages/services/debt-collection.html" class="btn btn-secondary">More Information</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 7: Tax Law -->
+            <div class="hero-slide" data-service="danove">
+                <div class="hero-background">
+                    <img src="../sources/images/tax-law-1.jpg" alt="Tax Law">
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Tax & Financial Law</h1>
+                        <p>We understand corporations and corporate finance. We have years of experience in corporate finance, accounting and taxes.</p>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="pages/contact.html" class="btn btn-primary">Contact Us</a>
+                        <a href="pages/services/financial-law.html" class="btn btn-secondary">More Information</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 8: e-Commerce -->
+            <div class="hero-slide" data-service="ecommerce">
+                <div class="hero-background">
+                    <img src="../sources/images/ecommerce-1.jpg" alt="e-Commerce">
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>e-Commerce</h1>
+                        <p>We'll prepare complete and customized documentation for your new internet project.</p>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="pages/contact.html" class="btn btn-primary">Contact Us</a>
+                        <a href="pages/services/ecommerce.html" class="btn btn-secondary">More Information</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 9: Reality -->
+            <div class="hero-slide" data-service="reality">
+                <div class="hero-background">
+                    <img src="../sources/images/real-estate-1.jpg" alt="Reality">
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Real Estate</h1>
+                        <p>Need to buy or sell real estate? We have years of experience in the real estate market.</p>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="pages/contact.html" class="btn btn-primary">Contact Us</a>
+                        <a href="pages/services/real-estate.html" class="btn btn-secondary">More Information</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 10: Litigation -->
+            <div class="hero-slide" data-service="sporove">
+                <div class="hero-background">
+                    <img src="../sources/images/litigation-1.jpg" alt="Litigation">
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Litigation</h1>
+                        <p>We'll represent you in asserting your civil or commercial legal claims.</p>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="pages/contact.html" class="btn btn-primary">Contact Us</a>
+                        <a href="pages/services/litigations.html" class="btn btn-secondary">More Information</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 11: Criminal Law -->
+            <div class="hero-slide" data-service="trestne">
+                <div class="hero-background">
+                    <img src="../sources/images/criminal-law-1.jpg" alt="Criminal Law">
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Criminal Law</h1>
+                        <p>Our law firm also handles client representation in criminal proceedings, especially in tax and other economic crimes.</p>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="pages/contact.html" class="btn btn-primary">Contact Us</a>
+                        <a href="pages/services/criminal-law.html" class="btn btn-secondary">More Information</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-services">
+            <div class="service-row">
+                <div class="service-box" data-service="start-upy">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.663 17h4.673M12 3l1.5 4.5 4.5 1.5-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="service-name">START UPs</div>
+                </div>
+                <div class="service-box" data-service="gdpr">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="16" r="1" fill="currentColor"/><path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <div class="service-name">GDPR</div>
+                </div>
+                <div class="service-box" data-service="optimalizacie">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                    </div>
+                    <div class="service-name">Optimizations</div>
+                </div>
+                <div class="service-box" data-service="due-diligence">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/><path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <div class="service-name">Due Diligence</div>
+                </div>
+                <div class="service-box" data-service="vymahanie">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke="currentColor" stroke-width="2"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 6l2 2M6 16l2 2M16 18l2-2M6 8l2-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <div class="service-name">Debt Collection</div>
+                </div>
+            </div>
+            <div class="service-row">
+                <div class="service-box" data-service="danove">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M6 6h4v4H6zM14 6h4v2h-4zM14 10h4v2h-4zM6 12h12v2H6zM6 16h12v2H6z" stroke="currentColor" stroke-width="1.5"/><path d="M21 8h2v2h-2zM21 12h2v2h-2z" fill="currentColor"/></svg>
+                    </div>
+                    <div class="service-name">Tax Law</div>
+                </div>
+                <div class="service-box" data-service="ecommerce">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="21" r="1" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="21" r="1" stroke="currentColor" stroke-width="2"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <div class="service-name">e-Commerce</div>
+                </div>
+                <div class="service-box" data-service="reality">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="2"/><polyline points="9,22 9,12 15,12 15,22" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <div class="service-name">Real Estate</div>
+                </div>
+                <div class="service-box" data-service="sporove">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" stroke="currentColor" stroke-width="2"/><polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="2"/><line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="2"/><line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="2"/><polyline points="10,9 9,9 8,9" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <div class="service-name">Litigation</div>
+                </div>
+                <div class="service-box" data-service="trestne">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <div class="service-name">Criminal Law</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about fade-in-up" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>LegisPro Law Firm</h2>
+                    <p>The LegisPro law firm provides legal services in the Slovak Republic for domestic and foreign clients. We specialize in supporting and implementing new green field projects as well as optimizing solutions for existing processes and structures. A significant part of our agenda represents ​​financial law and corporate finance. In addition, we also provide wide scope services in GDPR, DEBT COLLECTION, LITIGATIONS and CRIMINAL LAW.</p>
+                    
+                    <div class="about-founder">
+                        <h3>JUDr. Ing. Jozef Kubaský – Founding Partner</h3>
+                        <p>Advocate and economist. Graduate of the Faculty of Law of Comenius University in Bratislava and the Faculty of Economics and Management of the Slovak Agricultural University in Nitra. I have 18 years of experience working for international corporations. I specialize in green field projects, creating new structures or reallocating existing structures of foreign companies to Slovak Republic. My domain are mainly start-ups, green fields, optimization solutions, financial and commercial law. I speak French, English and German.</p>
+                    </div>
+                    <div class="about-buttons">
+                        <a href="#services" class="btn btn-dark">Learn More</a>
+                        <a href="pages/contact.html" class="btn btn-outline">Contact Us</a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="../sources/images/legal-office-1.jpg" alt="Scales of Justice and Legal Books">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Services Section -->
+    <section class="services fade-in-up" id="services">
+        <div class="container">
+            <div class="services-header">
+                <div class="services-text">
+                    <h2>Services</h2>
+                    <p>We provide comprehensive legal services for companies and entrepreneurs. We specialize in start-ups, GDPR, real estate and commercial law.</p>
+                </div>
+                <a href="pages/services/start-ups-greenfield-projects.html" class="btn btn-dark">Explore All</a>
+            </div>
+            <div class="services-grid">
+                <a href="pages/services/start-ups-greenfield-projects.html" class="service-card">
+                    <div class="service-image">
+                        <img src="../sources/images/startup-1.jpg" alt="START UPy a Greenfieldy">
+                    </div>
+                    <div class="service-content">
+                        <h6>START UPs & Greenfields</h6>
+                        <p>We love new and interesting ideas. We'll help you launch, develop and grow your new projects. We'll guide you through the entire, often complicated process.</p>
+                    </div>
+                    <div class="service-category">Business</div>
+                </a>
+                <a href="pages/services/gdpr.html" class="service-card">
+                    <div class="service-image">
+                        <img src="../sources/images/gdpr-special-1.jpg" alt="GDPR">
+                    </div>
+                    <div class="service-content">
+                        <h6>GDPR</h6>
+                        <p>We'll prepare custom GDPR documentation and ensure compliance with current legal regulations. Personal data protection is essential for every company today.</p>
+                    </div>
+                    <div class="service-category">Data Protection</div>
+                </a>
+                <a href="pages/services/financial-law.html" class="service-card">
+                    <div class="service-image">
+                        <img src="../sources/images/tax-law-1.jpg" alt="Tax Law">
+                    </div>
+                    <div class="service-content">
+                        <h6>Tax & Financial Law</h6>
+                        <p>We understand corporations and corporate finance. We have years of experience in corporate finance, accounting and taxes.</p>
+                    </div>
+                    <div class="service-category">Tax Law</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process fade-in-up">
+        <div class="container">
+            <div class="process-content">
+                <div class="process-steps">
+                    <div class="step-item light">
+                        <div class="step-header">
+                            <h5>First Consultation</h5>
+                            <span class="step-number">01</span>
+                        </div>
+                        <p>We listen to your needs and assess your legal problem. We present possible solutions without obligations.</p>
+                    </div>
+                    <div class="step-item dark">
+                        <div class="step-header">
+                            <h5>Analysis and Strategy</h5>
+                            <span class="step-number">02</span>
+                        </div>
+                        <p>We prepare a detailed analysis of your case and propose the best legal strategy to achieve your goals.</p>
+                    </div>
+                    <div class="step-item light">
+                        <div class="step-header">
+                            <h5>Implementation and Results</h5>
+                            <span class="step-number">03</span>
+                        </div>
+                        <p>We professionally represent your interests and handle your case until successful completion.</p>
+                    </div>
+                </div>
+                <div class="process-text">
+                    <h2>Our Process</h2>
+                    <p>Our work is based on a systematic approach that ensures the best results for our clients. From first contact to case closure, we guide you through every step of the legal process.</p>
+                    <a href="pages/contact.html" class="btn btn-dark">Schedule a Meeting</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section fade-in-up">
+        <div class="video-background">
+            <img src="../sources/images/criminal-law-1.jpg" alt="Justice and Legal Services">
+        </div>
+        <div class="video-overlay"></div>
+        <div class="video-content">
+            <div class="video-text">
+                <h2>Our Vision and Values</h2>
+                <p>We have been here for you for years and our experience speaks for itself. Trust experts who understand your needs and will provide you with the best solutions.</p>
+            </div>
+            <div class="vision-values">
+                <div class="value-item">
+                    <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Professionalism and Expertise</span>
+                </div>
+                <div class="value-item">
+                    <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Transparency in Every Step</span>
+                </div>
+                <div class="value-item">
+                    <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Individual Approach to Clients</span>
+                </div>
+                <div class="value-item">
+                    <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Long-term Partnership</span>
+                </div>
+                <div class="value-item">
+                    <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Effective Solutions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+   
+
+    <!-- Blog Section -->
+    <section class="blog fade-in-up" id="blog">
+        <div class="container">
+            <div class="blog-header">
+                <div class="blog-text">
+                    <h2>Blog</h2>
+                    <p>Current legal topics and practical advice from experts.</p>
+                </div>
+                <a href="pages/blog.html" class="btn btn-dark">Explore All</a>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="../sources/images/tax-law-1.jpg" alt="Tax Control and the Most Common Deficiencies in Transfer Pricing">
+                    </div>
+                    <div class="blog-content">
+                        <h6>Tax Control and the Most Common Deficiencies in Transfer Pricing</h6>
+                        <p>The general course of tax control is regulated in § 44 to § 47 of Act No. 563/2009 Coll. on Tax Administration (Tax Code) and on amendments to certain laws. The purpose of tax control is to examine taxpayer procedures in setting transfer prices, i.e., whether they chose an appropriate transfer method, have sufficient documentation for verified transactions, can transparently provide explanations for individual cases, chose the correct basis for comparability analysis, and can adequately demonstrate the application of the arm's length principle in related party transactions carried out in the given tax period.</p>
+                        <a href="pages/blog.html?post=danove-kontroly-transfer-pricing" class="blog-link">Read Full Article</a>
+                    </div>
+                    <div class="blog-category">Tax Law</div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="../sources/images/litigation-1.jpg" alt="Selected Case Law in Transfer Pricing">
+                    </div>
+                    <div class="blog-content">
+                        <h6>Selected Case Law in Transfer Pricing</h6>
+                        <p>Transfer pricing issues are a dynamically developing area, and it could be said that its legal regulation is insufficient and ambiguous, which is also reflected in different views on it from the perspective of the tax administrator and the taxpayer. In practice, this often results in additional tax assessments for the taxpayer and subsequent court disputes. For the purposes of this article, we will focus on different perspectives regarding the transfer method used, legal binding of transfer pricing guidelines, and burden of proof.</p>
+                        <a href="pages/blog.html?post=judikatura-transfer-pricing" class="blog-link">Read Full Article</a>
+                    </div>
+                    <div class="blog-category">Court Practice</div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="../sources/images/debt-collection-1.jpg" alt="When Is It Possible to Set Off Claims">
+                    </div>
+                    <div class="blog-content">
+                        <h6>When Is It Possible to Set Off Claims</h6>
+                        <p>The extinction of claims by set-off represents a form of cashless settlement between debtor and creditor, where no real performance occurs between them, which undoubtedly brings cost savings that these parties would otherwise have to incur. It could be said that this is a form of substitute performance of the obligation to the creditor, which satisfies their claim. Given the relative simplicity and efficiency of fulfilling obligations in this way, this is a frequently used institute in practice.</p>
+                        <a href="pages/blog.html?post=zapocitanie-pohladavok" class="blog-link">Read Full Article</a>
+                    </div>
+                    <div class="blog-category">Commercial Law</div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location">
+        <div class="location-background"></div>
+        <div class="container">
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="location-item">
+                        <h4>Find Us</h4>
+                        <p><a href="https://maps.google.com/?q=Sládkovičova+1+949+01+Nitra" target="_blank">Sládkovičova 1, 949 01 Nitra, Slovak Republic</a></p>
+                    </div>
+                    <div class="location-item">
+                        <h4>Contact Us</h4>
+                        <p><a href="mailto:office@legispro.sk">office@legispro.sk</a></p>
+                        <p><a href="tel:+421 948 528 265">+421 948 528 265</a></p>
+                    </div>
+                </div>
+                <div class="map">
+                    <div class="map-overlay" id="mapOverlayHome">
+                        <div class="map-overlay-content">
+                            <h4>Click to interact with map</h4>
+                        </div>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10498.640103596685!2d18.084437315673!3d48.3146597792368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f11.1!3m3!1m2!1s0x476a89e6a5a3a2b7%3A0x400f7d1c69788a0!2sSl%C3%A1dkovi%C4%8Dova%201%2C%20949%2001%20Nitra-Chrenov%C3%A1%2C%20Slovakia!5e0!3m2!1sen!2sus!4v1609452345678"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Footer will be inserted here -->
+
+    <!-- Lenis Smooth Scrolling -->
+    <script src="../scripts/gsap-simple.js?v=1764377524"></script>
+    
+    <!-- Main JavaScript -->
+    <script src="../scripts/script.js?v=1764377524"></script>
+    <script src="../scripts/global-nav.js?v=1764377524"></script>
+    <script src="../scripts/hero-carousel.js?v=1764377524"></script>
+    <script src="../scripts/cookie-consent.js?v=1764377524"></script>
+    
+    <!-- Internationalization - Load after DOM elements are created -->
+
+    <!-- Page Loading Animation -->
+    <script>
+    // Enhanced page loader with fallback
+    (function() {
+        let loaderRemoved = false;
+
+        function removeLoader() {
+            if (loaderRemoved) return;
+            loaderRemoved = true;
+
+            const loader = document.querySelector('.page-loader');
+            const body = document.body;
+
+            if (loader) {
+                body.classList.add('loaded');
+                loader.classList.add('fade-out');
+
+                setTimeout(() => {
+                    if (loader.parentNode) {
+                        loader.remove();
+                    }
+                }, 800);
+            }
+        }
+
+        // Remove loader when page is fully loaded
+        window.addEventListener('load', removeLoader);
+
+        // Fallback: remove loader after 3 seconds max
+        setTimeout(removeLoader, 3000);
+
+        // Remove loader when DOM is ready (faster fallback)
+        if (document.readyState === 'complete') {
+            setTimeout(removeLoader, 100);
+        } else {
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(removeLoader, 100);
+            });
+        }
+    })();
+    </script>
+</body>
+</html>

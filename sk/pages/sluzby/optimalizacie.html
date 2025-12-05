@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Optimalizačné riešenia LegisPro - úspory nákladov, efektívne procesy, daňové optimalizacie a zefektívnenie podnikového právneho systému.">
+    <title>Optimalizačné riešenia - LegisPro</title>
+    
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="sk" href="https://legispro.sk/sk/pages/sluzby/optimalizacie.html" />
+    <link rel="alternate" hreflang="en" href="https://legispro.sk/en/pages/sluzby/optimization-solutions.html" />
+    <link rel="alternate" hreflang="fr" href="https://legispro.sk/fr/pages/sluzby/solutions-optimisation.html" />
+    <link rel="alternate" hreflang="de" href="https://legispro.sk/de/pages/sluzby/optimierungsloesungen.html" />
+    <link rel="alternate" hreflang="x-default" href="https://legispro.sk/" />
+    
+    <link rel="icon" type="image/png" href="../../../sources/logo.png">
+    <link rel="shortcut icon" type="image/png" href="../../../sources/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/base.css?v=1764377524">
+    
+    
+    <link rel="stylesheet" href="../../../styles/header.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/footer.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/location.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/sluzby.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/language-toggle.css?v=1764377524">
+    
+    <!-- GSAP and Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js?v=1764377524"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js?v=1764377524"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js?v=1764377524"></script>
+</head>
+<body>
+    <!-- Page Loading Overlay -->
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Global Header will be inserted here -->
+
+    <div id="serviceSidebar"></div>
+
+    <section class="service-hero fade-in-up">
+        <div class="service-hero-background">
+            <img src="../../../sources/images/training-1.jpg" alt="Optimalizačné riešenia">
+        </div>
+        <div class="service-hero-overlay"></div>
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>Optimalizačné riešenia</h1>
+                <p>Nie vždy si je spoločnosť vedomá toho, že potrebuje optimalizovať alebo aktualizovať svoje podnikové procesy.</p>
+                <div class="service-hero-buttons">
+                    <a href="../kontakt.html" class="btn btn-primary"><span>Kontaktujte nás</span></a>
+                    <a href="#obsah" class="btn btn-secondary"><span>Viac informácií</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="obsah" class="service-content fade-in-up">
+        <div class="container">
+            <div class="service-content-grid">
+                <div class="service-main">
+                    <h2>Audit a optimalizácia procesov</h2>
+                    <p>Pri samotnom audite sa ale častokrát preukáže jeho opodstatnenie. Neustále sa meniace trhové prostredie si vyžaduje našu pozornosť.</p>
+                    
+                    <div class="service-feature">
+                        <h3>Audit interných procesov</h3>
+                        <p>Uskutočníme audit Vašich interných procesov, analyzujeme ich efektívnosť a identifikujeme oblasti pre zlepšenie.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Návrh optimalizačných riešení</h3>
+                        <p>Navrhneme Vám konkrétne optimalizačné riešenia a vyčíslime potenciálne úspory, ktoré môžete dosiahnuť.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Analýza zmlúv</h3>
+                        <p>Analyzujeme Vaše jestvujúce zmluvy z hľadiska ich výhodnosti, možnosti výpovede či zmeny.</p>
+                    </div>
+                </div>
+
+                <div class="service-sidebar-content">
+                    <div class="service-info-card">
+                        <h3>Oblasti optimalizácie</h3>
+                        <ul>
+                            <li>Interné procesy a postupy</li>
+                            <li>Zmluvné vzťahy</li>
+                            <li>Nákladová optimalizácia</li>
+                            <li>Organizačná štruktúra</li>
+                        </ul>
+                    </div>
+                    <div class="service-contact-card">
+                        <h3>Bezplatná konzultácia</h3>
+                        <p>Získajte prvotné hodnotenie Vašich procesov.</p>
+                        <a href="../kontakt.html" class="btn btn-dark">Kontaktovať</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lenis Smooth Scrolling -->
+    <script src="../../../scripts/gsap-simple.js?v=1764377524"></script>
+    
+    <!-- Internationalization -->
+    
+    <!-- Main JavaScript -->
+    <script src="../../../scripts/script.js?v=1764377524"></script>
+    <script src="../../../scripts/global-nav.js?v=1764377524"></script>
+    <script src="../../../scripts/sidebar.js?v=1764377524"></script>
+
+    <!-- Page Loading Animation -->
+    <script>
+    // Enhanced page loader with fallback
+    (function() {
+        let loaderRemoved = false;
+
+        function removeLoader() {
+            if (loaderRemoved) return;
+            loaderRemoved = true;
+
+            const loader = document.querySelector('.page-loader');
+            const body = document.body;
+
+            if (loader) {
+                body.classList.add('loaded');
+                loader.classList.add('fade-out');
+
+                setTimeout(() => {
+                    if (loader.parentNode) {
+                        loader.remove();
+                    }
+                }, 800);
+            }
+        }
+
+        // Remove loader when page is fully loaded
+        window.addEventListener('load', removeLoader);
+
+        // Fallback: remove loader after 3 seconds max
+        setTimeout(removeLoader, 3000);
+
+        // Remove loader when DOM is ready (faster fallback)
+        if (document.readyState === 'complete') {
+            setTimeout(removeLoader, 100);
+        } else {
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(removeLoader, 100);
+            });
+        }
+    })();
+    </script>
+</body>
+</html>

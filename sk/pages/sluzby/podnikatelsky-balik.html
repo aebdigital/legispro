@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Podnikateľský balík LegisPro - komplexné právne služby pre firmy, založenie spoločnosti, zmluvy, GDPR a priebežné poradenstvo za výhodnú cenu.">
+    <title>Podnikateľský balík - LegisPro</title>
+    <link rel="icon" type="image/png" href="../../../sources/logo.png">
+    <link rel="shortcut icon" type="image/png" href="../../../sources/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/base.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/header.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/footer.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/location.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/sluzby.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/language-toggle.css?v=1764377524">
+    
+    <!-- GSAP and Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js?v=1764377524"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js?v=1764377524"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js?v=1764377524"></script>
+</head>
+<body>
+    <!-- Page Loading Overlay -->
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Global Header will be inserted here -->
+
+    <div id="serviceSidebar"></div>
+
+    <section class="service-hero fade-in-up">
+        <div class="service-hero-background">
+            <img src="../../../sources/images/tax-law-1.jpg" alt="Podnikateľský balík">
+        </div>
+        <div class="service-hero-overlay"></div>
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>Podnikateľský balík</h1>
+                <p>Aby ste už nemuseli nikam chodiť - komplexné služby pre začínajúcich podnikateľov pod jednou strechou.</p>
+                <div class="service-hero-buttons">
+                    <a href="../kontakt.html" class="btn btn-primary"><span>Kontaktujte nás</span></a>
+                    <a href="#obsah" class="btn btn-secondary"><span>Viac informácií</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="obsah" class="service-content fade-in-up">
+        <div class="container">
+            <div class="content-with-image">
+                <div class="content-text">
+                    <h2>Komplexné služby pre začínajúcich podnikateľov</h2>
+                    <p>Začínate podnikať? Či už ako obchodná spoločnosť, alebo SZČO, zabezpečíme pre Vás pod jednou strechou všetko, čo k rozbehu Vášho projektu potrebujete. Poskytneme Vám poradenstvo a navrhneme najvýhodnejšiu formu Vášho podnikania.</p>
+                    
+                    <div class="service-feature">
+                        <h3>Zakladanie spoločností</h3>
+                        <p>Založíme Vašu novú spoločnosť a poskytneme Vám kompletnú právnu podporu pri výbere optimálnej formy podnikania.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Ekonomické služby</h3>
+                        <p>Poskytujeme profesionálne ekonomické služby ako vedenie účtovníctva a miezd, daňové poradenstvo, vypracovanie výkazov a DPH.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>20-ročné skúsenosti</h3>
+                        <p>Využite naše viac než 20 ročné skúsenosti v oblasti podnikových financií a komplexného poradenstva.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Konatelia a spoločníci</h3>
+                        <p>Stali ste sa konateľom spoločnosti? Z tohto postavenia Vám vyplývajú určité práva a povinnosti. Nastavíme Vaše interné procesy a pomôžeme sa v tejto problematike zorientovať.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Vymáhanie pohľadávok</h3>
+                        <p>Máte neuhradené faktúry či iné pohľadávky? Poradíme Vám aké sú Vaše možnosti a ako postupovať pre úspešné vymoženie dlžnej sumy vrátane príslušenstva.</p>
+                    </div>
+                </div>
+
+                <div class="content-image">
+                    <div class="sidebar-widget">
+                        <h4>Máte otázky?</h4>
+                        <p>Neváhajte nás kontaktovať</p>
+                        <a href="../kontakt.html" class="btn btn-primary btn-sm">Kontaktovať nás</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lenis Smooth Scrolling -->
+    <script src="../../../scripts/gsap-simple.js?v=1764377524"></script>
+    
+    <!-- Internationalization -->
+    
+    <!-- Main JavaScript -->
+    <script src="../../../scripts/script.js?v=1764377524"></script>
+    <script src="../../../scripts/global-nav.js?v=1764377524"></script>
+    <script src="../../../scripts/sidebar.js?v=1764377524"></script>
+
+    <!-- Page Loading Animation -->
+    <script>
+    // Enhanced page loader with fallback
+    (function() {
+        let loaderRemoved = false;
+
+        function removeLoader() {
+            if (loaderRemoved) return;
+            loaderRemoved = true;
+
+            const loader = document.querySelector('.page-loader');
+            const body = document.body;
+
+            if (loader) {
+                body.classList.add('loaded');
+                loader.classList.add('fade-out');
+
+                setTimeout(() => {
+                    if (loader.parentNode) {
+                        loader.remove();
+                    }
+                }, 800);
+            }
+        }
+
+        // Remove loader when page is fully loaded
+        window.addEventListener('load', removeLoader);
+
+        // Fallback: remove loader after 3 seconds max
+        setTimeout(removeLoader, 3000);
+
+        // Remove loader when DOM is ready (faster fallback)
+        if (document.readyState === 'complete') {
+            setTimeout(removeLoader, 100);
+        } else {
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(removeLoader, 100);
+            });
+        }
+    })();
+    </script>
+</body>
+</html>

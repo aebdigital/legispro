@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LegisPro Unternehmenspaket - umfassende Rechtsdienstleistungen für Firmen, Unternehmensgründung, Verträge, DSGVO und laufende Beratung zu günstigen Preisen.">
+    <title>Unternehmenspaket - LegisPro</title>
+    <link rel="icon" type="image/png" href="../../../sources/logo.png">
+    <link rel="shortcut icon" type="image/png" href="../../../sources/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/base.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/header.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/footer.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/location.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/sluzby.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/language-toggle.css?v=1764377524">
+    
+    <!-- GSAP and Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js?v=1764377524"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js?v=1764377524"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js?v=1764377524"></script>
+</head>
+<body>
+    <!-- Page Loading Overlay -->
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Global Header will be inserted here -->
+
+    <div id="serviceSidebar"></div>
+
+    <section class="service-hero fade-in-up">
+        <div class="service-hero-background">
+            <img src="../../../sources/images/tax-law-1.jpg" alt="Unternehmenspaket">
+        </div>
+        <div class="service-hero-overlay"></div>
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>Unternehmenspaket</h1>
+                <p>Damit Sie nirgendwo mehr hinfahren müssen - umfassende Dienstleistungen für Jungunternehmer unter einem Dach.</p>
+                <div class="service-hero-buttons">
+                    <a href="../kontakt.html" class="btn btn-primary"><span>Kontaktieren Sie uns</span></a>
+                    <a href="#obsah" class="btn btn-secondary"><span>Weitere Informationen</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="obsah" class="service-content fade-in-up">
+        <div class="container">
+            <div class="content-with-image">
+                <div class="content-text">
+                    <h2>Komplexe Dienstleistungen für Jungunternehmer</h2>
+                    <p>Beginnen Sie mit der Unternehmensgründung? Ob als Handelsgesellschaft oder Selbstständige, wir stellen Ihnen unter einem Dach alles zur Verfügung, was Sie für den Start Ihres Projekts benötigen. Wir beraten Sie und schlagen die vorteilhafteste Form Ihrer Geschäftstätigkeit vor.</p>
+                    
+                    <div class="service-feature">
+                        <h3>Gesellschaftsgründung</h3>
+                        <p>Wir gründen Ihre neue Gesellschaft und bieten Ihnen umfassende Rechtsberatung bei der Auswahl der optimalen Form der Geschäftstätigkeit.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Wirtschaftsdienstleistungen</h3>
+                        <p>Wir bieten professionelle Wirtschaftsdienstleistungen wie Buchhaltung und Lohnabrechnung, Steuerberatung, Erstellung von Abschlüssen und Umsatzsteuer.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>20-jährige Erfahrung</h3>
+                        <p>Nutzen Sie unsere mehr als 20-jährige Erfahrung im Bereich Unternehmensfinanzen und umfassende Beratung.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Geschäftsführer und Gesellschafter</h3>
+                        <p>Sind Sie Geschäftsführer einer Gesellschaft geworden? Aus dieser Position ergeben sich für Sie bestimmte Rechte und Pflichten. Wir richten Ihre internen Prozesse ein und helfen Ihnen, sich in dieser Problematik zu orientieren.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Forderungseintreibung</h3>
+                        <p>Haben Sie unbezahlte Rechnungen oder andere Forderungen? Wir beraten Sie, welche Möglichkeiten Sie haben und wie Sie vorgehen können, um den geschuldeten Betrag einschließlich Zubehör erfolgreich einzutreiben.</p>
+                    </div>
+                </div>
+
+                <div class="content-image">
+                    <div class="sidebar-widget">
+                        <h4>Haben Sie Fragen?</h4>
+                        <p>Zögern Sie nicht, uns zu kontaktieren</p>
+                        <a href="../kontakt.html" class="btn btn-primary btn-sm">Kontaktieren Sie uns</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lenis Smooth Scrolling -->
+    <script src="../../../scripts/gsap-simple.js?v=1764377524"></script>
+    
+    <!-- Internationalization -->
+    
+    <!-- Main JavaScript -->
+    <script src="../../../scripts/script.js?v=1764377524"></script>
+    <script src="../../../scripts/global-nav.js?v=1764377524"></script>
+    <script src="../../../scripts/sidebar.js?v=1764377524"></script>
+
+    <!-- Page Loading Animation -->
+    <script>
+    // Enhanced page loader with fallback
+    (function() {
+        let loaderRemoved = false;
+
+        function removeLoader() {
+            if (loaderRemoved) return;
+            loaderRemoved = true;
+
+            const loader = document.querySelector('.page-loader');
+            const body = document.body;
+
+            if (loader) {
+                body.classList.add('loaded');
+                loader.classList.add('fade-out');
+
+                setTimeout(() => {
+                    if (loader.parentNode) {
+                        loader.remove();
+                    }
+                }, 800);
+            }
+        }
+
+        // Remove loader when page is fully loaded
+        window.addEventListener('load', removeLoader);
+
+        // Fallback: remove loader after 3 seconds max
+        setTimeout(removeLoader, 3000);
+
+        // Remove loader when DOM is ready (faster fallback)
+        if (document.readyState === 'complete') {
+            setTimeout(removeLoader, 100);
+        } else {
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(removeLoader, 100);
+            });
+        }
+    })();
+    </script>
+</body>
+</html>

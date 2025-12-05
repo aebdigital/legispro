@@ -24,9 +24,9 @@
             });
         });
         
-        // Set initial slide (first service slide to start auto-rotation)
-        showSlide(1);
-        setActiveServiceButton(1);
+        // Set initial slide (start with general slide)
+        showSlide(0);
+        setActiveServiceButton(null);
         
         // Start auto-slide immediately
         startAutoSlide();

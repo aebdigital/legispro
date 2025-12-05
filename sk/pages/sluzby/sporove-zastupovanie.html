@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sporové zastupovanie LegisPro - zastupovanie pred súddmi, obchodné spory, pracovné právo a komplexé riešenie právnych sporov. Odborná obhajoba.">
+    <title>Sporové zastupovanie - LegisPro</title>
+    <link rel="icon" type="image/png" href="../../../sources/logo.png">
+    <link rel="shortcut icon" type="image/png" href="../../../sources/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/base.css?v=1764377524">
+    
+    
+    <link rel="stylesheet" href="../../../styles/header.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/footer.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/location.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/sluzby.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/language-toggle.css?v=1764377524">
+    
+    <!-- GSAP and Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js?v=1764377524"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js?v=1764377524"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js?v=1764377524"></script>
+</head>
+<body>
+    <!-- Page Loading Overlay -->
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Global Header will be inserted here -->
+
+    <div id="serviceSidebar"></div>
+
+    <section class="service-hero fade-in-up">
+        <div class="service-hero-background">
+            <img src="../../../sources/images/litigation-1.jpg" alt="Sporové zastupovanie">
+        </div>
+        <div class="service-hero-overlay"></div>
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>Sporové zastupovanie</h1>
+                <p>Zastúpime Vás pri uplatňovaní si Vašich občiansko-právnych či obchodno-právnych nárokov.</p>
+                <div class="service-hero-buttons">
+                    <a href="../kontakt.html" class="btn btn-primary"><span>Kontaktujte nás</span></a>
+                    <a href="#obsah" class="btn btn-secondary"><span>Viac informácií</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="obsah" class="service-content fade-in-up">
+        <div class="container">
+            <div class="service-content-grid">
+                <div class="service-main">
+                    <h2>Profesionálne zastupovanie v sporoch</h2>
+                    <p>Radi si s Vami prejdeme daný prípad a posúdime mieru jeho úspešnosti. V záujme efektívnosti a v neposlednom rade ušetrenia prostriedkov našich klientov sa vždy najskôr pokúsime vyriešiť danú vec mimosúdnou cestou.</p>
+                    
+                    <div class="service-feature">
+                        <h3>Občianskoprávne spory</h3>
+                        <p>Zastupovanie v občianskoprávnych sporoch vrátane zmluvných sporov, náhrady škody a iných civilných záležitostí.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Obchodnoprávne spory</h3>
+                        <p>Riešenie obchodných sporov, porušenie zmlúv, problémy s dodávateľmi a odberateľmi, konkurenčné spory.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Mimosúdne riešenie</h3>
+                        <p>Snažíme sa vždy najprv vyriešiť spor mimosúdnou cestou, čo šetrí čas, náklady a zachováva obchodné vzťahy.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Súdne konania</h3>
+                        <p>Ak je súdne konanie nevyhnutné, poskytujeme komplexné zastupovanie vo všetkých stupňoch súdneho konania.</p>
+                    </div>
+                </div>
+
+                <div class="service-sidebar-content">
+                    <div class="service-info-card">
+                        <h3>Typy sporov</h3>
+                        <ul>
+                            <li>Zmluvné spory</li>
+                            <li>Náhrada škody</li>
+                            <li>Obchodné spory</li>
+                            <li>Pracovnoprávne spory</li>
+                            <li>Konkurenčné spory</li>
+                        </ul>
+                    </div>
+                    <div class="service-contact-card">
+                        <h3>Právny spor?</h3>
+                        <p>Získajte profesionálne zastupovanie v súdnom konaní.</p>
+                        <a href="../kontakt.html" class="btn btn-dark">Kontaktovať</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lenis Smooth Scrolling -->
+    <script src="../../../scripts/gsap-simple.js?v=1764377524"></script>
+    
+    <!-- Internationalization -->
+    
+    <!-- Main JavaScript -->
+    <script src="../../../scripts/script.js?v=1764377524"></script>
+    <script src="../../../scripts/global-nav.js?v=1764377524"></script>
+    <script src="../../../scripts/sidebar.js?v=1764377524"></script>
+
+    <!-- Page Loading Animation -->
+    <script>
+    // Enhanced page loader with fallback
+    (function() {
+        let loaderRemoved = false;
+
+        function removeLoader() {
+            if (loaderRemoved) return;
+            loaderRemoved = true;
+
+            const loader = document.querySelector('.page-loader');
+            const body = document.body;
+
+            if (loader) {
+                body.classList.add('loaded');
+                loader.classList.add('fade-out');
+
+                setTimeout(() => {
+                    if (loader.parentNode) {
+                        loader.remove();
+                    }
+                }, 800);
+            }
+        }
+
+        // Remove loader when page is fully loaded
+        window.addEventListener('load', removeLoader);
+
+        // Fallback: remove loader after 3 seconds max
+        setTimeout(removeLoader, 3000);
+
+        // Remove loader when DOM is ready (faster fallback)
+        if (document.readyState === 'complete') {
+            setTimeout(removeLoader, 100);
+        } else {
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(removeLoader, 100);
+            });
+        }
+    })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daňové a finančné právo LegisPro - transferové oceňovanie, daňové optimalizacie, vymáhanie pohľadávok a finančné poradenstvo. Expertné služby.">
+    <title>Daňové a Finančné právo - LegisPro</title>
+    <link rel="icon" type="image/png" href="../../../sources/logo.png">
+    <link rel="shortcut icon" type="image/png" href="../../../sources/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/base.css?v=1764377524">
+    
+    
+    <link rel="stylesheet" href="../../../styles/header.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/footer.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/location.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/sluzby.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/language-toggle.css?v=1764377524">
+    
+    <!-- GSAP and Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js?v=1764377524"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js?v=1764377524"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js?v=1764377524"></script>
+</head>
+<body>
+    <!-- Page Loading Overlay -->
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Global Header will be inserted here -->
+
+    <div id="serviceSidebar"></div>
+
+    <section class="service-hero fade-in-up">
+        <div class="service-hero-background">
+            <img src="../../../sources/images/tax-law-1.jpg" alt="Daňové právo">
+        </div>
+        <div class="service-hero-overlay"></div>
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>Daňové a Finančné právo</h1>
+                <p>Rozumieme korporátom a podnikovým financiám. Máme dlhoročné skúsenosti v oblasti korporátnych financií, účtovníctva a daní.</p>
+                <div class="service-hero-buttons">
+                    <a href="../kontakt.html" class="btn btn-primary"><span>Kontaktujte nás</span></a>
+                    <a href="#obsah" class="btn btn-secondary"><span>Viac informácií</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="obsah" class="service-content fade-in-up">
+        <div class="container">
+            <div class="service-content-grid">
+                <div class="service-main">
+                    <h2>Daňová optimalizácia a poradenstvo</h2>
+                    <p>Posúdime Váš biznis model a navrhneme opatrenia pre jeho daňovo-ekonomickú optimalizáciu. Zastúpime Vás v správnom konaní pred orgánmi finančnej správy.</p>
+                    
+                    <div class="service-feature">
+                        <h3>Daňová optimalizácia</h3>
+                        <p>Analyzujeme Váš biznis model a navrhneme legálne spôsoby optimalizácie daňovej záťaže pri zachovaní súladu s legislatívou.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Korporátne financie</h3>
+                        <p>Poskytujeme poradenstvo v oblasti korporátnych financií, štruktúrovania transakcií a finančného plánovania.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Zastupovanie pred finančnou správou</h3>
+                        <p>Zastúpime Vás v správnom konaní pred orgánmi finančnej správy, pomôžeme pri daňových kontrolách a odvolaniach.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Transfer pricing</h3>
+                        <p>Poradenstvo v oblasti transfer pricing, príprava dokumentácie a zastupovanie pri kontrolách.</p>
+                    </div>
+                </div>
+
+                <div class="service-sidebar-content">
+                    <div class="service-info-card">
+                        <h3>Naše služby</h3>
+                        <ul>
+                            <li>Daňová optimalizácia</li>
+                            <li>Korporátne poradenstvo</li>
+                            <li>Transfer pricing</li>
+                            <li>Zastupovanie pred úradmi</li>
+                            <li>Štruktúrovanie transakcií</li>
+                        </ul>
+                    </div>
+                    <div class="service-contact-card">
+                        <h3>Daňové poradenstvo</h3>
+                        <p>Získajte profesionálne poradenstvo v daňových otázkach.</p>
+                        <a href="../kontakt.html" class="btn btn-dark">Kontaktovať</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lenis Smooth Scrolling -->
+    <script src="../../../scripts/gsap-simple.js?v=1764377524"></script>
+    
+    <!-- Internationalization -->
+    
+    <!-- Main JavaScript -->
+    <script src="../../../scripts/script.js?v=1764377524"></script>
+    <script src="../../../scripts/global-nav.js?v=1764377524"></script>
+    <script src="../../../scripts/sidebar.js?v=1764377524"></script>
+
+    <!-- Page Loading Animation -->
+    <script>
+    // Enhanced page loader with fallback
+    (function() {
+        let loaderRemoved = false;
+
+        function removeLoader() {
+            if (loaderRemoved) return;
+            loaderRemoved = true;
+
+            const loader = document.querySelector('.page-loader');
+            const body = document.body;
+
+            if (loader) {
+                body.classList.add('loaded');
+                loader.classList.add('fade-out');
+
+                setTimeout(() => {
+                    if (loader.parentNode) {
+                        loader.remove();
+                    }
+                }, 800);
+            }
+        }
+
+        // Remove loader when page is fully loaded
+        window.addEventListener('load', removeLoader);
+
+        // Fallback: remove loader after 3 seconds max
+        setTimeout(removeLoader, 3000);
+
+        // Remove loader when DOM is ready (faster fallback)
+        if (document.readyState === 'complete') {
+            setTimeout(removeLoader, 100);
+        } else {
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(removeLoader, 100);
+            });
+        }
+    })();
+    </script>
+</body>
+</html>

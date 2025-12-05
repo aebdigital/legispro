@@ -105,7 +105,9 @@ document.querySelectorAll('.qa-item').forEach(item => {
 });
 
 // Form submission handler
-document.querySelector('.contact-form-content').addEventListener('submit', function(e) {
+const contactForm = document.querySelector('.contact-form-content');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
     
     // Get form data
@@ -128,7 +130,8 @@ document.querySelector('.contact-form-content').addEventListener('submit', funct
         submitButton.textContent = originalText;
         submitButton.disabled = false;
     }, 2000);
-});
+    });
+}
 
 // Intersection Observer for animations
 const observerOptions = {
@@ -271,7 +274,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Toggle menu when hamburger is clicked
-    mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+    if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+    }
 
     // Close menu when a link is clicked
     mobileMenuLinks.forEach(link => {

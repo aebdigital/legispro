@@ -1,0 +1,83 @@
+[build]
+  # No build command needed - static site
+  publish = "."
+
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = false
+  minify = true
+
+[build.processing.js]
+  bundle = false
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+[[redirects]]
+  from = "/"
+  to = "/sk/"
+  status = 302
+  conditions = {Language = ["sk"]}
+
+[[redirects]]
+  from = "/"
+  to = "/en/"
+  status = 302
+  conditions = {Language = ["en"]}
+
+[[redirects]]
+  from = "/"
+  to = "/de/"
+  status = 302
+  conditions = {Language = ["de"]}
+
+[[redirects]]
+  from = "/"
+  to = "/fr/"
+  status = 302
+  conditions = {Language = ["fr"]}
+
+[[redirects]]
+  from = "/"
+  to = "/sk/"
+  status = 302
+
+# Handle 404s by serving language-specific 404 pages or redirect to home
+[[redirects]]
+  from = "/sk/*"
+  to = "/sk/"
+  status = 404
+  force = false
+
+[[redirects]]
+  from = "/en/*"
+  to = "/en/"
+  status = 404
+  force = false
+
+[[redirects]]
+  from = "/de/*"
+  to = "/de/"
+  status = 404
+  force = false
+
+[[redirects]]
+  from = "/fr/*"
+  to = "/fr/"
+  status = 404
+  force = false
+
+# Global 404 fallback
+[[redirects]]
+  from = "/*"
+  to = "/sk/"
+  status = 404
+
+[context.production.environment]
+  NODE_VERSION = "18"
+
+[dev]
+  command = "echo 'Static site - no dev server needed'"

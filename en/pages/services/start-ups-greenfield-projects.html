@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="START UPs and Greenfield projects by LegisPro - legal support for company formation, fundraising, investor agreements and innovation project development.">
+    <title>START UPs & Greenfields - LegisPro</title>
+    
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="sk" href="https://legispro.sk/sk/pages/sluzby/start-upy-greenfieldy.html" />
+    <link rel="alternate" hreflang="en" href="https://legispro.sk/en/pages/sluzby/start-ups-greenfields.html" />
+    <link rel="alternate" hreflang="fr" href="https://legispro.sk/fr/pages/sluzby/start-ups-greenfields.html" />
+    <link rel="alternate" hreflang="de" href="https://legispro.sk/de/pages/sluzby/start-ups-greenfields.html" />
+    <link rel="alternate" hreflang="x-default" href="https://legispro.sk/" />
+    <link rel="icon" type="image/png" href="../../../sources/logo.png">
+    <link rel="shortcut icon" type="image/png" href="../../../sources/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/base.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/header.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/footer.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/location.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/sluzby.css?v=1764377524">
+    <link rel="stylesheet" href="../../../styles/language-toggle.css?v=1764377524">
+    
+    <!-- GSAP and Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js?v=1764377524"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js?v=1764377524"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js?v=1764377524"></script>
+    
+</head>
+<body>
+    <!-- Page Loading Overlay -->
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Global Header will be inserted here -->
+
+    <!-- Service Sidebar -->
+    <div id="serviceSidebar"></div>
+
+    <!-- Service Hero -->
+    <section class="service-hero fade-in-up">
+        <div class="service-hero-background">
+            <img src="../../../sources/images/startup-1.jpg" alt="Startup Legal Services">
+        </div>
+        <div class="service-hero-overlay"></div>
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>START UPs & Greenfields</h1>
+                <p>We love new and interesting ideas. We'll help you launch, develop and grow your new projects.</p>
+                <div class="service-hero-buttons">
+                    <a href="../contact.html" class="btn btn-primary">Contact Us</a>
+                    <a href="#obsah" class="btn btn-secondary">More Information</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Content -->
+    <section id="obsah" class="service-content fade-in-up">
+        <div class="container">
+            <div class="service-content-grid">
+                <div class="service-main">
+                    <h2>Comprehensive services for new projects</h2>
+                    <p>We will guide you through the entire, often complicated and time-consuming process so that you can focus on the essence of your project and we will solve everything else for you.</p>
+                    
+                    <div class="service-feature">
+                        <h3>Permits and licenses</h3>
+                        <p>If your project requires specific permits, we will represent you in proceedings before the relevant state administration authorities, help you prepare the necessary documents to obtain the given permit.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Intellectual property protection</h3>
+                        <p>We ensure that your intellectual property, the results of your thinking and creativity, such as patents, procedures, trademarks, logos, programs, etc., and the rights associated with them are protected from misuse by competitors.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Investment acquisition</h3>
+                        <p>In case your project requires initial investment, we will help you obtain it. We communicate daily in French, English or German, we are happy to help you approach your future business partner and take over all subsequent communication until the successful conclusion of the contractual relationship.</p>
+                    </div>
+
+                    <div class="service-feature">
+                        <h3>Business model and optimization</h3>
+                        <p>We will advise you on building your business model so that it is as efficient as possible, not only legally, but also tax-economically.</p>
+                    </div>
+                </div>
+
+                <div class="service-sidebar-content">
+                    <!-- Service navigation will be generated by sidebar.js -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    
+
+    <!-- Scripts -->
+    <!-- Lenis Smooth Scrolling -->
+    <script src="../../../scripts/gsap-simple.js?v=1764377524"></script>
+    
+    <!-- Internationalization -->
+    
+    <!-- Main JavaScript -->
+    <script src="../../../scripts/script.js?v=1764377524"></script>
+    <script src="../../../scripts/global-nav.js?v=1764377524"></script>
+    <script src="../../../scripts/sidebar.js?v=1764377524"></script>
+
+    <!-- Page Loading Animation -->
+    <script>
+    // Enhanced page loader with fallback
+    (function() {
+        let loaderRemoved = false;
+
+        function removeLoader() {
+            if (loaderRemoved) return;
+            loaderRemoved = true;
+
+            const loader = document.querySelector('.page-loader');
+            const body = document.body;
+
+            if (loader) {
+                body.classList.add('loaded');
+                loader.classList.add('fade-out');
+
+                setTimeout(() => {
+                    if (loader.parentNode) {
+                        loader.remove();
+                    }
+                }, 800);
+            }
+        }
+
+        // Remove loader when page is fully loaded
+        window.addEventListener('load', removeLoader);
+
+        // Fallback: remove loader after 3 seconds max
+        setTimeout(removeLoader, 3000);
+
+        // Remove loader when DOM is ready (faster fallback)
+        if (document.readyState === 'complete') {
+            setTimeout(removeLoader, 100);
+        } else {
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(removeLoader, 100);
+            });
+        }
+    })();
+    </script>
+</body>
+</html>

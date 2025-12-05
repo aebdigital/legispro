@@ -1,0 +1,90 @@
+# Language detection and redirects based on Accept-Language header
+/ /sk/ 302 Language=sk
+/ /en/ 302 Language=en
+/ /de/ 302 Language=de  
+/ /fr/ 302 Language=fr
+/ /sk/ 302
+
+# Clean URLs - Remove .html extension
+# Slovak pages
+/sk/pages/kontakt /sk/pages/kontakt.html 200
+/sk/pages/blog /sk/pages/blog.html 200
+/sk/pages/ochrana-osobnych-udajov /sk/pages/ochrana-osobnych-udajov.html 200
+/sk/pages/blog/post /sk/pages/blog/post.html 200
+
+# Slovak services
+/sk/pages/sluzby/start-ups-greenfield-projects /sk/pages/sluzby/start-ups-greenfield-projects.html 200
+/sk/pages/sluzby/gdpr /sk/pages/sluzby/gdpr.html 200
+/sk/pages/sluzby/due-diligence /sk/pages/sluzby/due-diligence.html 200
+/sk/pages/sluzby/ecommerce /sk/pages/sluzby/ecommerce.html 200
+/sk/pages/sluzby/podnikatelsky-balik /sk/pages/sluzby/podnikatelsky-balik.html 200
+/sk/pages/sluzby/skolenia-webinare /sk/pages/sluzby/skolenia-webinare.html 200
+/sk/pages/sluzby/criminal-law /sk/pages/sluzby/criminal-law.html 200
+/sk/pages/sluzby/debt-collection /sk/pages/sluzby/debt-collection.html 200
+/sk/pages/sluzby/financial-law /sk/pages/sluzby/financial-law.html 200
+/sk/pages/sluzby/litigations /sk/pages/sluzby/litigations.html 200
+/sk/pages/sluzby/optimization-solutions /sk/pages/sluzby/optimization-solutions.html 200
+/sk/pages/sluzby/real-estate /sk/pages/sluzby/real-estate.html 200
+
+# English pages
+/en/pages/contact /en/pages/contact.html 200
+/en/pages/blog /en/pages/blog.html 200
+/en/pages/privacy-policy /en/pages/privacy-policy.html 200
+/en/pages/blog/post /en/pages/blog/post.html 200
+
+# English services
+/en/pages/services/start-ups-greenfield-projects /en/pages/services/start-ups-greenfield-projects.html 200
+/en/pages/services/gdpr /en/pages/services/gdpr.html 200
+/en/pages/services/due-diligence /en/pages/services/due-diligence.html 200
+/en/pages/services/ecommerce /en/pages/services/ecommerce.html 200
+/en/pages/services/business-package /en/pages/services/business-package.html 200
+/en/pages/services/trainings-webinars /en/pages/services/trainings-webinars.html 200
+/en/pages/services/criminal-law /en/pages/services/criminal-law.html 200
+/en/pages/services/debt-collection /en/pages/services/debt-collection.html 200
+/en/pages/services/financial-law /en/pages/services/financial-law.html 200
+/en/pages/services/litigations /en/pages/services/litigations.html 200
+/en/pages/services/optimization-solutions /en/pages/services/optimization-solutions.html 200
+/en/pages/services/real-estate /en/pages/services/real-estate.html 200
+
+# German pages
+/de/pages/kontakt /de/pages/kontakt.html 200
+/de/pages/blog /de/pages/blog.html 200
+/de/pages/datenschutzrichtlinie /de/pages/datenschutzrichtlinie.html 200
+/de/pages/blog/post /de/pages/blog/post.html 200
+
+# German services
+/de/pages/dienstleistungen/start-ups-greenfields /de/pages/dienstleistungen/start-ups-greenfields.html 200
+/de/pages/dienstleistungen/gdpr /de/pages/dienstleistungen/gdpr.html 200
+/de/pages/dienstleistungen/due-diligence /de/pages/dienstleistungen/due-diligence.html 200
+/de/pages/dienstleistungen/e-commerce /de/pages/dienstleistungen/e-commerce.html 200
+/de/pages/dienstleistungen/unternehmenspaket /de/pages/dienstleistungen/unternehmenspaket.html 200
+/de/pages/dienstleistungen/schulungen-webinare /de/pages/dienstleistungen/schulungen-webinare.html 200
+/de/pages/dienstleistungen/strafrecht /de/pages/dienstleistungen/strafrecht.html 200
+/de/pages/dienstleistungen/betreibung-der-aussenstande /de/pages/dienstleistungen/betreibung-der-aussenstande.html 200
+/de/pages/dienstleistungen/finanzrecht /de/pages/dienstleistungen/finanzrecht.html 200
+/de/pages/dienstleistungen/streitvertretung /de/pages/dienstleistungen/streitvertretung.html 200
+/de/pages/dienstleistungen/optimierungsloesungen /de/pages/dienstleistungen/optimierungsloesungen.html 200
+/de/pages/dienstleistungen/immobilien /de/pages/dienstleistungen/immobilien.html 200
+
+# French pages
+/fr/pages/contact /fr/pages/contact.html 200
+/fr/pages/blog /fr/pages/blog.html 200
+/fr/pages/politique-confidentialite /fr/pages/politique-confidentialite.html 200
+/fr/pages/blog/post /fr/pages/blog/post.html 200
+
+# French services
+/fr/pages/services/start-ups-projets-verts /fr/pages/services/start-ups-projets-verts.html 200
+/fr/pages/services/rgpd /fr/pages/services/rgpd.html 200
+/fr/pages/services/due-diligence /fr/pages/services/due-diligence.html 200
+/fr/pages/services/e-commerce /fr/pages/services/e-commerce.html 200
+/fr/pages/services/forfait-entreprise /fr/pages/services/forfait-entreprise.html 200
+/fr/pages/services/formations-webinaires /fr/pages/services/formations-webinaires.html 200
+/fr/pages/services/droit-penal /fr/pages/services/droit-penal.html 200
+/fr/pages/services/recouvrement-creances /fr/pages/services/recouvrement-creances.html 200
+/fr/pages/services/droit-financier /fr/pages/services/droit-financier.html 200
+/fr/pages/services/representation-contentieux /fr/pages/services/representation-contentieux.html 200
+/fr/pages/services/solutions-optimisation /fr/pages/services/solutions-optimisation.html 200
+/fr/pages/services/immobilier /fr/pages/services/immobilier.html 200
+
+# Fallback for any URLs with .html extension - strip them
+/*.html /:splat 301
