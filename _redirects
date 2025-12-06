@@ -1,9 +1,45 @@
 # Language detection and redirects based on Accept-Language header
 / /sk/ 302 Language=sk
 / /en/ 302 Language=en
-/ /de/ 302 Language=de  
+/ /de/ 302 Language=de
 / /fr/ 302 Language=fr
 / /sk/ 302
+
+# Remove /pages/ from URLs - Permanent redirects (301)
+# Root level Slovak
+/pages/kontakt /kontakt 301
+/pages/blog /blog 301
+/pages/blog/post /blog/post 301
+/pages/ochrana-osobnych-udajov /ochrana-osobnych-udajov 301
+/pages/sluzby/* /sluzby/:splat 301
+
+# Slovak /sk/
+/sk/pages/kontakt /sk/kontakt 301
+/sk/pages/blog /sk/blog 301
+/sk/pages/blog/post /sk/blog/post 301
+/sk/pages/ochrana-osobnych-udajov /sk/ochrana-osobnych-udajov 301
+/sk/pages/sluzby/* /sk/sluzby/:splat 301
+
+# English /en/
+/en/pages/contact /en/contact 301
+/en/pages/blog /en/blog 301
+/en/pages/blog/post /en/blog/post 301
+/en/pages/privacy-policy /en/privacy-policy 301
+/en/pages/services/* /en/services/:splat 301
+
+# German /de/
+/de/pages/kontakt /de/kontakt 301
+/de/pages/blog /de/blog 301
+/de/pages/blog/post /de/blog/post 301
+/de/pages/datenschutzrichtlinie /de/datenschutzrichtlinie 301
+/de/pages/dienstleistungen/* /de/dienstleistungen/:splat 301
+
+# French /fr/
+/fr/pages/contact /fr/contact 301
+/fr/pages/blog /fr/blog 301
+/fr/pages/blog/post /fr/blog/post 301
+/fr/pages/politique-confidentialite /fr/politique-confidentialite 301
+/fr/pages/services/* /fr/services/:splat 301
 
 # Clean URLs - Remove .html extension
 # Slovak pages

@@ -13,84 +13,84 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/pages/kontakt.html</loc>
+    <loc>https://legispro.sk/kontakt</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/pages/blog.html</loc>
+    <loc>https://legispro.sk/blog</loc>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/pages/blog/post.html</loc>
+    <loc>https://legispro.sk/blog/post</loc>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/pages/ochrana-osobnych-udajov.html</loc>
+    <loc>https://legispro.sk/ochrana-osobnych-udajov</loc>
     <priority>0.5</priority>
     <changefreq>yearly</changefreq>
   </url>
-  
+
   <!-- Slovak Service Pages (Root Level) -->
   <url>
-    <loc>https://legispro.sk/pages/sluzby/start-ups-greenfield-projects.html</loc>
+    <loc>https://legispro.sk/sluzby/start-ups-greenfield-projects</loc>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/pages/sluzby/gdpr.html</loc>
+    <loc>https://legispro.sk/sluzby/gdpr</loc>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/pages/sluzby/due-diligence.html</loc>
+    <loc>https://legispro.sk/sluzby/due-diligence</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/pages/sluzby/ecommerce.html</loc>
+    <loc>https://legispro.sk/sluzby/ecommerce</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/pages/sluzby/financial-law.html</loc>
+    <loc>https://legispro.sk/sluzby/financial-law</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/pages/sluzby/criminal-law.html</loc>
+    <loc>https://legispro.sk/sluzby/criminal-law</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/pages/sluzby/debt-collection.html</loc>
+    <loc>https://legispro.sk/sluzby/debt-collection</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/pages/sluzby/real-estate.html</loc>
+    <loc>https://legispro.sk/sluzby/real-estate</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/pages/sluzby/litigations.html</loc>
+    <loc>https://legispro.sk/sluzby/litigations</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/pages/sluzby/optimization-solutions.html</loc>
+    <loc>https://legispro.sk/sluzby/optimization-solutions</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/pages/sluzby/skolenia-webinare.html</loc>
+    <loc>https://legispro.sk/sluzby/skolenia-webinare</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/pages/sluzby/podnikatelsky-balik.html</loc>
+    <loc>https://legispro.sk/sluzby/podnikatelsky-balik</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -106,84 +106,84 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/sk/pages/kontakt.html</loc>
+    <loc>https://legispro.sk/sk/kontakt</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/sk/pages/blog.html</loc>
+    <loc>https://legispro.sk/sk/blog</loc>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/sk/pages/blog/post.html</loc>
+    <loc>https://legispro.sk/sk/blog/post</loc>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/sk/pages/ochrana-osobnych-udajov.html</loc>
+    <loc>https://legispro.sk/sk/ochrana-osobnych-udajov</loc>
     <priority>0.5</priority>
     <changefreq>yearly</changefreq>
   </url>
-  
+
   <!-- Slovak Service Pages (/sk/ folder) -->
   <url>
-    <loc>https://legispro.sk/sk/pages/sluzby/start-upy-greenfieldy.html</loc>
+    <loc>https://legispro.sk/sk/sluzby/start-upy-greenfieldy</loc>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/sk/pages/sluzby/gdpr.html</loc>
+    <loc>https://legispro.sk/sk/sluzby/gdpr</loc>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/sk/pages/sluzby/due-diligence.html</loc>
+    <loc>https://legispro.sk/sk/sluzby/due-diligence</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/sk/pages/sluzby/ecommerce.html</loc>
+    <loc>https://legispro.sk/sk/sluzby/ecommerce</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/sk/pages/sluzby/danove-pravo.html</loc>
+    <loc>https://legispro.sk/sk/sluzby/danove-pravo</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/sk/pages/sluzby/trestne-pravo.html</loc>
+    <loc>https://legispro.sk/sk/sluzby/trestne-pravo</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/sk/pages/sluzby/vymahanie-pohladavok.html</loc>
+    <loc>https://legispro.sk/sk/sluzby/vymahanie-pohladavok</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/sk/pages/sluzby/reality.html</loc>
+    <loc>https://legispro.sk/sk/sluzby/reality</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/sk/pages/sluzby/sporove-zastupovanie.html</loc>
+    <loc>https://legispro.sk/sk/sluzby/sporove-zastupovanie</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/sk/pages/sluzby/optimalizacie.html</loc>
+    <loc>https://legispro.sk/sk/sluzby/optimalizacie</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/sk/pages/sluzby/skolenia-webinare.html</loc>
+    <loc>https://legispro.sk/sk/sluzby/skolenia-webinare</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/sk/pages/sluzby/podnikatelsky-balik.html</loc>
+    <loc>https://legispro.sk/sk/sluzby/podnikatelsky-balik</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -199,84 +199,84 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/en/pages/contact.html</loc>
+    <loc>https://legispro.sk/en/contact</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/en/pages/blog.html</loc>
+    <loc>https://legispro.sk/en/blog</loc>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/en/pages/blog/post.html</loc>
+    <loc>https://legispro.sk/en/blog/post</loc>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/en/pages/privacy-policy.html</loc>
+    <loc>https://legispro.sk/en/privacy-policy</loc>
     <priority>0.5</priority>
     <changefreq>yearly</changefreq>
   </url>
-  
+
   <!-- English Service Pages -->
   <url>
-    <loc>https://legispro.sk/en/pages/services/start-ups-greenfield-projects.html</loc>
+    <loc>https://legispro.sk/en/services/start-ups-greenfield-projects</loc>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/en/pages/services/gdpr.html</loc>
+    <loc>https://legispro.sk/en/services/gdpr</loc>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/en/pages/services/due-diligence.html</loc>
+    <loc>https://legispro.sk/en/services/due-diligence</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/en/pages/services/ecommerce.html</loc>
+    <loc>https://legispro.sk/en/services/ecommerce</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/en/pages/services/financial-law.html</loc>
+    <loc>https://legispro.sk/en/services/financial-law</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/en/pages/services/criminal-law.html</loc>
+    <loc>https://legispro.sk/en/services/criminal-law</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/en/pages/services/debt-collection.html</loc>
+    <loc>https://legispro.sk/en/services/debt-collection</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/en/pages/services/real-estate.html</loc>
+    <loc>https://legispro.sk/en/services/real-estate</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/en/pages/services/litigations.html</loc>
+    <loc>https://legispro.sk/en/services/litigations</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/en/pages/services/optimization-solutions.html</loc>
+    <loc>https://legispro.sk/en/services/optimization-solutions</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/en/pages/services/training-webinars.html</loc>
+    <loc>https://legispro.sk/en/services/training-webinars</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/en/pages/services/business-package.html</loc>
+    <loc>https://legispro.sk/en/services/business-package</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -292,84 +292,84 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/de/pages/kontakt.html</loc>
+    <loc>https://legispro.sk/de/kontakt</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/de/pages/blog.html</loc>
+    <loc>https://legispro.sk/de/blog</loc>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/de/pages/blog/post.html</loc>
+    <loc>https://legispro.sk/de/blog/post</loc>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/de/pages/datenschutzrichtlinie.html</loc>
+    <loc>https://legispro.sk/de/datenschutzrichtlinie</loc>
     <priority>0.5</priority>
     <changefreq>yearly</changefreq>
   </url>
-  
+
   <!-- German Service Pages -->
   <url>
-    <loc>https://legispro.sk/de/pages/dienstleistungen/start-ups-greenfields.html</loc>
+    <loc>https://legispro.sk/de/dienstleistungen/start-ups-greenfields</loc>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/de/pages/dienstleistungen/gdpr.html</loc>
+    <loc>https://legispro.sk/de/dienstleistungen/gdpr</loc>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/de/pages/dienstleistungen/due-diligence.html</loc>
+    <loc>https://legispro.sk/de/dienstleistungen/due-diligence</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/de/pages/dienstleistungen/e-commerce.html</loc>
+    <loc>https://legispro.sk/de/dienstleistungen/e-commerce</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/de/pages/dienstleistungen/finanzrecht.html</loc>
+    <loc>https://legispro.sk/de/dienstleistungen/finanzrecht</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/de/pages/dienstleistungen/strafrecht.html</loc>
+    <loc>https://legispro.sk/de/dienstleistungen/strafrecht</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/de/pages/dienstleistungen/betreibung-der-aussenstande.html</loc>
+    <loc>https://legispro.sk/de/dienstleistungen/betreibung-der-aussenstande</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/de/pages/dienstleistungen/immobilien.html</loc>
+    <loc>https://legispro.sk/de/dienstleistungen/immobilien</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/de/pages/dienstleistungen/streitvertretung.html</loc>
+    <loc>https://legispro.sk/de/dienstleistungen/streitvertretung</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/de/pages/dienstleistungen/optimierungsloesungen.html</loc>
+    <loc>https://legispro.sk/de/dienstleistungen/optimierungsloesungen</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/de/pages/dienstleistungen/schulungen-webinare.html</loc>
+    <loc>https://legispro.sk/de/dienstleistungen/schulungen-webinare</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/de/pages/dienstleistungen/unternehmenspaket.html</loc>
+    <loc>https://legispro.sk/de/dienstleistungen/unternehmenspaket</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -385,84 +385,84 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/fr/pages/contact.html</loc>
+    <loc>https://legispro.sk/fr/contact</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/fr/pages/blog.html</loc>
+    <loc>https://legispro.sk/fr/blog</loc>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/fr/pages/blog/post.html</loc>
+    <loc>https://legispro.sk/fr/blog/post</loc>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/fr/pages/politique-confidentialite.html</loc>
+    <loc>https://legispro.sk/fr/politique-confidentialite</loc>
     <priority>0.5</priority>
     <changefreq>yearly</changefreq>
   </url>
-  
+
   <!-- French Service Pages -->
   <url>
-    <loc>https://legispro.sk/fr/pages/services/start-ups-greenfields.html</loc>
+    <loc>https://legispro.sk/fr/services/start-ups-greenfields</loc>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/fr/pages/services/gdpr.html</loc>
+    <loc>https://legispro.sk/fr/services/gdpr</loc>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/fr/pages/services/due-diligence.html</loc>
+    <loc>https://legispro.sk/fr/services/due-diligence</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/fr/pages/services/e-commerce.html</loc>
+    <loc>https://legispro.sk/fr/services/e-commerce</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/fr/pages/services/droit-financier.html</loc>
+    <loc>https://legispro.sk/fr/services/droit-financier</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/fr/pages/services/droit-penal.html</loc>
+    <loc>https://legispro.sk/fr/services/droit-penal</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/fr/pages/services/recouvrement-des-dettes.html</loc>
+    <loc>https://legispro.sk/fr/services/recouvrement-des-dettes</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/fr/pages/services/biens-immobiliers.html</loc>
+    <loc>https://legispro.sk/fr/services/biens-immobiliers</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/fr/pages/services/litiges.html</loc>
+    <loc>https://legispro.sk/fr/services/litiges</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/fr/pages/services/solutions-optimisation.html</loc>
+    <loc>https://legispro.sk/fr/services/solutions-optimisation</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/fr/pages/services/formations-webinaires.html</loc>
+    <loc>https://legispro.sk/fr/services/formations-webinaires</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/fr/pages/services/package-entreprise.html</loc>
+    <loc>https://legispro.sk/fr/services/package-entreprise</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
