@@ -38,8 +38,11 @@ exports.handler = async (event, context) => {
             };
         }
 
-        // Get SMTP2GO API key from environment variables
+        // Get environment variables
         const apiKey = process.env.SMTP2GO_API_KEY;
+        const businessEmail = process.env.BUSINESS_EMAIL || 'office@legispro.sk';
+        const fromEmail = process.env.SMTP2GO_FROM_EMAIL || 'noreply@legispro.sk';
+
         if (!apiKey) {
             console.error('SMTP2GO_API_KEY not configured');
             return {
@@ -71,8 +74,8 @@ Sent from LegisPro Contact Form
         // SMTP2GO API payload
         const smtp2goPayload = {
             api_key: apiKey,
-            to: ['office@legispro.sk'],
-            sender: 'noreply@legispro.sk',
+            to: [businessEmail],
+            sender: fromEmail,
             subject: `New Contact Form: ${name}`,
             text_body: emailBody,
             html_body: emailBody.replace(/\n/g, '<br>')

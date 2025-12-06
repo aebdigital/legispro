@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Close menu when clicking outside
     document.addEventListener('click', function(e) {
-        if (!mobileMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+        if (mobileMenu && mobileMenuToggle && !mobileMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
             closeMobileMenu();
         }
     });
