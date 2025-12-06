@@ -5,41 +5,48 @@
 / /fr/ 302 Language=fr
 / /sk/ 302
 
-# Remove /pages/ from URLs - Permanent redirects (301)
+# Serve clean URLs without /pages/ (rewrites with 200 status)
 # Root level Slovak
-/pages/kontakt /kontakt 301
-/pages/blog /blog 301
-/pages/blog/post /blog/post 301
-/pages/ochrana-osobnych-udajov /ochrana-osobnych-udajov 301
-/pages/sluzby/* /sluzby/:splat 301
+/kontakt /pages/kontakt.html 200
+/blog /pages/blog.html 200
+/blog/post /pages/blog/post.html 200
+/ochrana-osobnych-udajov /pages/ochrana-osobnych-udajov.html 200
+/sluzby/* /pages/sluzby/:splat.html 200
 
 # Slovak /sk/
-/sk/pages/kontakt /sk/kontakt 301
-/sk/pages/blog /sk/blog 301
-/sk/pages/blog/post /sk/blog/post 301
-/sk/pages/ochrana-osobnych-udajov /sk/ochrana-osobnych-udajov 301
-/sk/pages/sluzby/* /sk/sluzby/:splat 301
+/sk/kontakt /sk/pages/kontakt.html 200
+/sk/blog /sk/pages/blog.html 200
+/sk/blog/post /sk/pages/blog/post.html 200
+/sk/ochrana-osobnych-udajov /sk/pages/ochrana-osobnych-udajov.html 200
+/sk/sluzby/* /sk/pages/sluzby/:splat.html 200
 
 # English /en/
-/en/pages/contact /en/contact 301
-/en/pages/blog /en/blog 301
-/en/pages/blog/post /en/blog/post 301
-/en/pages/privacy-policy /en/privacy-policy 301
-/en/pages/services/* /en/services/:splat 301
+/en/contact /en/pages/contact.html 200
+/en/blog /en/pages/blog.html 200
+/en/blog/post /en/pages/blog/post.html 200
+/en/privacy-policy /en/pages/privacy-policy.html 200
+/en/services/* /en/pages/services/:splat.html 200
 
 # German /de/
-/de/pages/kontakt /de/kontakt 301
-/de/pages/blog /de/blog 301
-/de/pages/blog/post /de/blog/post 301
-/de/pages/datenschutzrichtlinie /de/datenschutzrichtlinie 301
-/de/pages/dienstleistungen/* /de/dienstleistungen/:splat 301
+/de/kontakt /de/pages/kontakt.html 200
+/de/blog /de/pages/blog.html 200
+/de/blog/post /de/pages/blog/post.html 200
+/de/datenschutzrichtlinie /de/pages/datenschutzrichtlinie.html 200
+/de/dienstleistungen/* /de/pages/dienstleistungen/:splat.html 200
 
 # French /fr/
-/fr/pages/contact /fr/contact 301
-/fr/pages/blog /fr/blog 301
-/fr/pages/blog/post /fr/blog/post 301
-/fr/pages/politique-confidentialite /fr/politique-confidentialite 301
-/fr/pages/services/* /fr/services/:splat 301
+/fr/contact /fr/pages/contact.html 200
+/fr/blog /fr/pages/blog.html 200
+/fr/blog/post /fr/pages/blog/post.html 200
+/fr/politique-confidentialite /fr/pages/politique-confidentialite.html 200
+/fr/services/* /fr/pages/services/:splat.html 200
+
+# Redirect old /pages/ URLs to clean URLs (301 permanent)
+/pages/* /:splat 301
+/sk/pages/* /sk/:splat 301
+/en/pages/* /en/:splat 301
+/de/pages/* /de/:splat 301
+/fr/pages/* /fr/:splat 301
 
 # Clean URLs - Remove .html extension
 # Slovak pages
