@@ -110,14 +110,14 @@
                 <!-- Contact Form -->
                 <div class="contact-form-main" id="contact-form">
                     <h2>Schreiben Sie uns</h2>
-                    <form>
+                    <form id="contactForm">
                         <div class="form-row">
-                            <input type="text" placeholder="Name *" required>
-                            <input type="email" placeholder="Email *" required>
+                            <input type="text" name="name" placeholder="Name *" required>
+                            <input type="email" name="email" placeholder="Email *" required>
                         </div>
                         <div class="form-row">
-                            <input type="tel" placeholder="Telefon">
-                            <select>
+                            <input type="tel" name="phone" placeholder="Telefon">
+                            <select name="service">
                                 <option value="">Art der Dienstleistung</option>
                                 <option value="startup">START-UPs und Greenfields</option>
                                 <option value="gdpr">GDPR</option>
@@ -131,7 +131,7 @@
                                 <option value="criminal">Strafrecht</option>
                             </select>
                         </div>
-                        <textarea placeholder="Ihre Nachricht *" required></textarea>
+                        <textarea name="message" placeholder="Ihre Nachricht *" required></textarea>
                         <button type="submit" class="btn btn-dark">Nachricht senden</button>
                     </form>
                 </div>
@@ -143,13 +143,16 @@
     <!-- Scripts -->
     <!-- Lenis Smooth Scrolling -->
     <script src="../../scripts/gsap-simple.js?v=1764377524"></script>
-    
+
     <!-- Internationalization -->
-    
+
     <!-- Main JavaScript -->
     <script src="../../scripts/script.js?v=1764377524"></script>
     <script src="../../scripts/global-nav.js?v=1764377524"></script>
     <script src="../../scripts/sidebar.js?v=1764377524"></script>
+
+    <!-- Contact Form Handler -->
+    <script src="../../scripts/forms.js?v=1764377524"></script>
 
     <!-- Page Loading Animation -->
     <script>

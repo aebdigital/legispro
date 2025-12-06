@@ -49,10 +49,6 @@ class CookieConsent {
                     marketing: {
                         title: 'Marketingové súbory cookies',
                         description: 'Tieto súbory cookies sa používajú na sledovanie návštevníkov naprieč webovými stránkami na účely zobrazovania relevantných a zaujímavých reklám.'
-                    },
-                    functional: {
-                        title: 'Funkčné súbory cookies',
-                        description: 'Tieto súbory cookies umožňujú webovej stránke poskytovať rozšírené funkcie a personalizáciu.'
                     }
                 }
             },
@@ -85,10 +81,6 @@ class CookieConsent {
                     marketing: {
                         title: 'Marketing Cookies',
                         description: 'These cookies are used to track visitors across websites for the purpose of displaying relevant and engaging advertisements.'
-                    },
-                    functional: {
-                        title: 'Functional Cookies',
-                        description: 'These cookies enable the website to provide enhanced functionality and personalization.'
                     }
                 }
             },
@@ -121,10 +113,6 @@ class CookieConsent {
                     marketing: {
                         title: 'Marketing-Cookies',
                         description: 'Diese Cookies werden verwendet, um Besucher über Websites hinweg zu verfolgen, um relevante und ansprechende Werbung anzuzeigen.'
-                    },
-                    functional: {
-                        title: 'Funktionale Cookies',
-                        description: 'Diese Cookies ermöglichen es der Website, erweiterte Funktionalität und Personalisierung bereitzustellen.'
                     }
                 }
             },
@@ -157,10 +145,6 @@ class CookieConsent {
                     marketing: {
                         title: 'Cookies marketing',
                         description: 'Ces cookies sont utilisés pour suivre les visiteurs sur les sites web dans le but d\'afficher des publicités pertinentes et attrayantes.'
-                    },
-                    functional: {
-                        title: 'Cookies fonctionnels',
-                        description: 'Ces cookies permettent au site web de fournir des fonctionnalités améliorées et la personnalisation.'
                     }
                 }
             }
@@ -310,8 +294,7 @@ class CookieConsent {
         const preferences = currentConsent?.preferences || {
             essential: true,
             analytics: false,
-            marketing: false,
-            functional: false
+            marketing: false
         };
 
         const modalHtml = `
@@ -377,24 +360,6 @@ class CookieConsent {
                                 <p class="cookie-category-description">${translations.categories.marketing.description}</p>
                             </div>
                         </div>
-
-                        <div class="cookie-category">
-                            <div class="cookie-category-header" onclick="this.parentElement.classList.toggle('expanded')">
-                                <h4 class="cookie-category-title">${translations.categories.functional.title}</h4>
-                                <div style="display: flex; align-items: center;">
-                                    <div class="cookie-toggle">
-                                        <input type="checkbox" id="functional-toggle" ${preferences.functional ? 'checked' : ''}>
-                                        <span class="cookie-toggle-slider"></span>
-                                    </div>
-                                    <svg class="cookie-expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="6,9 12,15 18,9"></polyline>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="cookie-category-content">
-                                <p class="cookie-category-description">${translations.categories.functional.description}</p>
-                            </div>
-                        </div>
                     </div>
                     <div class="cookie-modal-footer">
                         <button class="cookie-btn cookie-btn-reject-all" onclick="cookieConsent.rejectAll()">${translations.modal.rejectAll}</button>
@@ -446,8 +411,7 @@ class CookieConsent {
         const preferences = {
             essential: true, // Always true
             analytics: document.getElementById('analytics-toggle')?.checked || false,
-            marketing: document.getElementById('marketing-toggle')?.checked || false,
-            functional: document.getElementById('functional-toggle')?.checked || false
+            marketing: document.getElementById('marketing-toggle')?.checked || false
         };
 
         this.setConsent(preferences);
@@ -459,8 +423,7 @@ class CookieConsent {
         const preferences = {
             essential: true,
             analytics: true,
-            marketing: true,
-            functional: true
+            marketing: true
         };
 
         this.setConsent(preferences);
@@ -472,8 +435,7 @@ class CookieConsent {
         const preferences = {
             essential: true, // Always true
             analytics: false,
-            marketing: false,
-            functional: false
+            marketing: false
         };
 
         this.setConsent(preferences);
@@ -499,13 +461,6 @@ class CookieConsent {
             this.initializeMarketing();
         } else {
             this.disableMarketing();
-        }
-
-        // Functional cookies
-        if (preferences.functional) {
-            this.initializeFunctional();
-        } else {
-            this.disableFunctional();
         }
     }
 
@@ -559,16 +514,6 @@ class CookieConsent {
         //         'ad_storage': 'denied'
         //     });
         // }
-    }
-
-    initializeFunctional() {
-        console.log('Functional cookies enabled');
-        // Initialize functional services (chat widgets, etc.)
-    }
-
-    disableFunctional() {
-        console.log('Functional cookies disabled');
-        // Remove functional cookies
     }
 
     bindEvents() {
