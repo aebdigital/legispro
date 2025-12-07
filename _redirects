@@ -7,11 +7,11 @@
 
 # Serve clean URLs without /pages/ (rewrites with 200 status)
 # Root level Slovak
-/kontakt /pages/kontakt.html 200
-/blog /pages/blog.html 200
-/blog/post /pages/blog/post.html 200
-/ochrana-osobnych-udajov /pages/ochrana-osobnych-udajov.html 200
-/sluzby/* /pages/sluzby/:splat.html 200
+/kontakt /sk/pages/kontakt.html 200
+/blog /sk/pages/blog.html 200
+/blog/post /sk/pages/blog/post.html 200
+/ochrana-osobnych-udajov /sk/pages/ochrana-osobnych-udajov.html 200
+/sluzby/* /sk/pages/sluzby/:splat.html 200
 
 # Slovak /sk/
 /sk/kontakt /sk/pages/kontakt.html 200

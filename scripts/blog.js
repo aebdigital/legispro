@@ -1,6 +1,65 @@
 // Dynamic Blog System
 document.addEventListener('DOMContentLoaded', function() {
     
+    // Language detection
+    const currentPath = window.location.pathname;
+    let currentLang = 'sk'; // Default
+    if (currentPath.includes('/en/')) currentLang = 'en';
+    else if (currentPath.includes('/de/')) currentLang = 'de';
+    else if (currentPath.includes('/fr/')) currentLang = 'fr';
+
+    // Translations
+    const translations = {
+        sk: {
+            related_articles: "Súvisiace články",
+            need_help: "Potrebujete právnu pomoc?",
+            help_desc: "Naši odborníci vám radi pomôžu s vašimi právnymi otázkami.",
+            contact_us: "Kontaktujte nás",
+            back_to_blog: "← Späť na blog",
+            article_not_found: "Článok sa nenašiel",
+            article_not_found_desc: "Požadovaný článok sa nenašiel.",
+            home: "Domov",
+            blog: "Blog"
+        },
+        en: {
+            related_articles: "Related Articles",
+            need_help: "Need Legal Help?",
+            help_desc: "Our experts will be happy to help you with your legal questions.",
+            contact_us: "Contact Us",
+            back_to_blog: "← Back to Blog",
+            article_not_found: "Article Not Found",
+            article_not_found_desc: "The requested article was not found.",
+            home: "Home",
+            blog: "Blog"
+        },
+        de: {
+            related_articles: "Verwandte Artikel",
+            need_help: "Benötigen Sie rechtliche Hilfe?",
+            help_desc: "Unsere Experten helfen Ihnen gerne bei Ihren rechtlichen Fragen.",
+            contact_us: "Kontaktieren Sie uns",
+            back_to_blog: "← Zurück zum Blog",
+            article_not_found: "Artikel nicht gefunden",
+            article_not_found_desc: "Der angeforderte Artikel wurde nicht gefunden.",
+            home: "Startseite",
+            blog: "Blog"
+        },
+        fr: {
+            related_articles: "Articles connexes",
+            need_help: "Besoin d'aide juridique ?",
+            help_desc: "Nos experts seront heureux de vous aider avec vos questions juridiques.",
+            contact_us: "Contactez-nous",
+            back_to_blog: "← Retour au blog",
+            article_not_found: "Article non trouvé",
+            article_not_found_desc: "L'article demandé n'a pas été trouvé.",
+            home: "Accueil",
+            blog: "Blog"
+        }
+    };
+
+    function t(key) {
+        return translations[currentLang][key] || translations['sk'][key];
+    }
+    
     // Get URL parameters
     function getUrlParameter(name) {
         name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
@@ -38,9 +97,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 <article class="blog-post">
                     <header class="post-header-clean">
                         <nav class="breadcrumb">
-                            <a href="../index.html">Domov</a>
+                            <a href="../index.html">${t('home')}</a>
                             <span>›</span>
-                            <a href="blog">Blog</a>
+                            <a href="blog">${t('blog')}</a>
                             <span>›</span>
                             <span>${post.title}</span>
                         </nav>
@@ -72,20 +131,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
                             <aside class="post-sidebar">
                                 <div class="sidebar-widget">
-                                    <h4>Súvisiace články</h4>
+                                    <h4>${t('related_articles')}</h4>
                                     <div class="related-posts">
                                         ${getRelatedPosts(post.id)}
                                     </div>
                                 </div>
 
                                 <div class="sidebar-widget">
-                                    <h4>Potrebujete právnu pomoc?</h4>
-                                    <p>Naši odborníci vám radi pomôžu s vašimi právnymi otázkami.</p>
-                                    <a href="../kontakt.html" class="btn btn-primary">Kontaktujte nás</a>
+                                    <h4>${t('need_help')}</h4>
+                                    <p>${t('help_desc')}</p>
+                                    <a href="../kontakt.html" class="btn btn-primary">${t('contact_us')}</a>
                                 </div>
 
                                 <div class="sidebar-widget">
-                                    <a href="blog" class="btn btn-outline">← Späť na blog</a>
+                                    <a href="blog" class="btn btn-outline">${t('back_to_blog')}</a>
                                 </div>
                             </aside>
                         </div>

@@ -444,13 +444,13 @@ document.addEventListener('DOMContentLoaded', function() {
         if (currentLang === 'sk') {
             // Slovak pages
             if (actualPageName === 'kontakt' || actualPageName === 'blog' || actualPageName === 'ochrana-osobnych-udajov') {
-                return basePath + actualPageName;
+                return basePath + 'sk/' + actualPageName;
             }
             if (actualPageName === 'podnikatelsky-balik' || actualPageName === 'skolenia-webinare') {
-                return basePath + 'sluzby/' + actualPageName;
+                return basePath + 'sk/sluzby/' + actualPageName;
             }
             // Service pages
-            return basePath + 'sluzby/' + actualPageName;
+            return basePath + 'sk/sluzby/' + actualPageName;
         } else {
             // Other language pages
             const regularPages = [
@@ -920,7 +920,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                     
                     // Construct absolute path
-                    const newUrl = window.location.origin + rootPath + selectedLang + '/index.html';
+                    const newUrl = window.location.origin + rootPath + selectedLang + '/';
                     window.location.href = newUrl;
                 });
             });
