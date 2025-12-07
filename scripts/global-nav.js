@@ -345,42 +345,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Determine current path and create appropriate URLs
     function getBasePath() {
-        const currentPath = window.location.pathname;
-        const currentLang = getCurrentLanguage();
-        const servicesFolder = getServicesFolder(currentLang);
+        const path = window.location.pathname;
+        // Remove trailing slash for calculation if present, unless it is just "/"
+        const cleanPath = (path.length > 1 && path.endsWith('/')) ? path.slice(0, -1) : path;
+        const segments = cleanPath.split('/').filter(Boolean); // Remove empty strings
         
-        // If we're in a language subfolder, account for it
-        if (currentLang !== 'sk') {
-            if (currentPath.includes(`/pages/${servicesFolder}/`) || currentPath.includes('/pages/blog/')) {
-                return '../../../'; // We're in lang/pages/services or lang/pages/blog subfolder
-            }
-            if (currentPath.includes('/pages/')) {
-                return '../../'; // We're in lang/pages folder
-            }
-            return '../'; // We're in the language root folder
-        } else {
-            // Slovak pages (root structure)
-            if (currentPath.includes('/pages/sluzby/') || currentPath.includes('/pages/blog/')) {
-                return '../../'; // We're in sluzby or blog subfolder
-            }
-            if (currentPath.includes('/pages/')) {
-                return '../'; // We're in pages folder
-            }
-            return './'; // We're in the root
-        }
+        // If we are at root, return './'
+        if (segments.length === 0) return './';
+        
+        // Return repeated '../'
+        return '../'.repeat(segments.length);
     }
 
     function getPagePath(page) {
         const basePath = getBasePath();
         const currentLang = getCurrentLanguage();
         
-        // For Slovak (root structure), no language prefix needed
-        // For other languages, pages are in their language subfolder
+        // For index, return root language path
         if (page === 'index') {
             if (currentLang === 'sk') {
-                return basePath + 'index.html';
+                // For Slovak (default), root is / or /sk/ ?
+                // Based on redirects, /sk/ is the language root
+                return basePath + 'sk/';
             } else {
-                return basePath + currentLang + '/index.html';
+                return basePath + currentLang + '/';
             }
         }
         
@@ -388,7 +376,6 @@ document.addEventListener('DOMContentLoaded', function() {
         let actualPageName = page;
         if (currentLang === 'sk') {
             const pageMapping = {
-                // Service page mappings to Slovak filenames
                 'start-ups-greenfield-projects': 'start-upy-greenfieldy',
                 'real-estate': 'reality',
                 'litigations': 'sporove-zastupovanie', 
@@ -451,21 +438,21 @@ document.addEventListener('DOMContentLoaded', function() {
             actualPageName = pageMapping[page] || page;
         }
         
-        // Build the full path based on current language
+        // Build the full path based on current language (Clean URLs)
         const servicesFolder = getServicesFolder(currentLang);
         
         if (currentLang === 'sk') {
-            // Slovak pages are in root structure
+            // Slovak pages
             if (actualPageName === 'kontakt' || actualPageName === 'blog' || actualPageName === 'ochrana-osobnych-udajov') {
-                return basePath + 'pages/' + actualPageName + '.html';
+                return basePath + actualPageName;
             }
             if (actualPageName === 'podnikatelsky-balik' || actualPageName === 'skolenia-webinare') {
-                return basePath + 'pages/sluzby/' + actualPageName + '.html';
+                return basePath + 'sluzby/' + actualPageName;
             }
-            // Service pages are in sluzby subfolder
-            return basePath + 'pages/sluzby/' + actualPageName + '.html';
+            // Service pages
+            return basePath + 'sluzby/' + actualPageName;
         } else {
-            // Other language pages are in their language subfolder
+            // Other language pages
             const regularPages = [
                 'contact', 'kontakt', 'blog', 'privacy-policy', 'datenschutzrichtlinie', 'politique-confidentialite'
             ];
@@ -475,13 +462,13 @@ document.addEventListener('DOMContentLoaded', function() {
             ];
             
             if (regularPages.includes(actualPageName)) {
-                return basePath + currentLang + '/pages/' + actualPageName + '.html';
+                return basePath + currentLang + '/' + actualPageName;
             }
             if (businessPages.includes(actualPageName)) {
-                return basePath + currentLang + '/pages/' + servicesFolder + '/' + actualPageName + '.html';
+                return basePath + currentLang + '/' + servicesFolder + '/' + actualPageName;
             }
-            // All other pages (service pages) are in the appropriate services subfolder
-            return basePath + currentLang + '/pages/' + servicesFolder + '/' + actualPageName + '.html';
+            // All other pages (service pages)
+            return basePath + currentLang + '/' + servicesFolder + '/' + actualPageName;
         }
     }
 
@@ -507,42 +494,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Get correct logo path relative to root
     function getLogoPath() {
-        const currentPath = window.location.pathname;
-        
-        // Debug logging
-        console.log('Current path:', currentPath);
-        
-        // Simple path-based detection
-        if (currentPath.includes('/sk/pages/sluzby/') || 
-            currentPath.includes('/en/pages/services/') ||
-            currentPath.includes('/de/pages/dienstleistungen/') ||
-            currentPath.includes('/fr/pages/services/') ||
-            currentPath.includes('/pages/sluzby/') ||
-            currentPath.includes('/pages/blog/')) {
-            console.log('Service/blog page - using ../../../sources/logo.png');
-            return '../../../sources/logo.png';
-        }
-        
-        if (currentPath.includes('/sk/pages/') ||
-            currentPath.includes('/en/pages/') ||
-            currentPath.includes('/de/pages/') ||
-            currentPath.includes('/fr/pages/') ||
-            currentPath.includes('/pages/')) {
-            console.log('Pages folder - using ../../sources/logo.png');
-            return '../../sources/logo.png';
-        }
-        
-        if (currentPath.includes('/sk/') ||
-            currentPath.includes('/en/') ||
-            currentPath.includes('/de/') ||
-            currentPath.includes('/fr/')) {
-            console.log('Language folder - using ../sources/logo.png');
-            return '../sources/logo.png';
-        }
-        
-        // Root level
-        console.log('Root level - using ./sources/logo.png');
-        return './sources/logo.png';
+        return getBasePath() + 'sources/logo.png';
     }
 
     // Update language toggle display

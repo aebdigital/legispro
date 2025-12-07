@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('postExcerpt').textContent = 'Požadovaný článok sa nenašiel.';
             document.getElementById('postMainTitle').textContent = 'Článok sa nenašiel';
             document.getElementById('postMainExcerpt').textContent = 'Požadovaný článok sa nenašiel.';
-            document.getElementById('postContent').innerHTML = '<p>Požadovaný článok sa nenašiel. <a href="../blog.html">Späť na blog</a></p>';
+            document.getElementById('postContent').innerHTML = '<p>Požadovaný článok sa nenašiel. <a href="../">Späť na blog</a></p>';
             return;
         }
 
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         filteredPosts.forEach(post => {
             const postElement = document.createElement('a');
-            postElement.href = `post.html?post=${post.id}`;
+            postElement.href = `?post=${post.id}`;
             postElement.className = 'related-post';
             
             postElement.innerHTML = `
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (e.key === 'Enter') {
                     const searchTerm = this.value.trim();
                     if (searchTerm) {
-                        window.location.href = `../blog.html?search=${encodeURIComponent(searchTerm)}`;
+                        window.location.href = `../?search=${encodeURIComponent(searchTerm)}`;
                     }
                 }
             });

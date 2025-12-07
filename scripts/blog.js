@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <nav class="breadcrumb">
                             <a href="../index.html">Domov</a>
                             <span>›</span>
-                            <a href="blog.html">Blog</a>
+                            <a href="blog">Blog</a>
                             <span>›</span>
                             <span>${post.title}</span>
                         </nav>
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 </div>
 
                                 <div class="sidebar-widget">
-                                    <a href="blog.html" class="btn btn-outline">← Späť na blog</a>
+                                    <a href="blog" class="btn btn-outline">← Späť na blog</a>
                                 </div>
                             </aside>
                         </div>

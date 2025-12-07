@@ -337,7 +337,7 @@ document.addEventListener('DOMContentLoaded', function() {
             basePath = currentPath.includes(`/${config.servicesFolder}/`) ? '../../' : '../';
         }
         
-        const contactPath = `${basePath}pages/${config.contactPage}.html`;
+        const contactPath = `${basePath}${config.contactPage}`;
         sidebarHTML += `
             <div class="sidebar-nav-item">
                 <a href="${contactPath}" class="sidebar-nav-link ${isContact ? 'active' : ''}">
@@ -351,8 +351,8 @@ document.addEventListener('DOMContentLoaded', function() {
         services.forEach(service => {
             const isActive = currentPage === service.slug;
             const servicePath = currentPath.includes(`/${config.servicesFolder}/`) 
-                ? `${service.slug}.html` 
-                : `${config.servicesFolder}/${service.slug}.html`;
+                ? `${service.slug}` 
+                : `${config.servicesFolder}/${service.slug}`;
                 
             sidebarHTML += `
                 <div class="sidebar-nav-item">
@@ -411,7 +411,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const isActive = currentPage === service.slug;
             sidebarHTML += `
                 <li>
-                    <a href="${service.slug}.html" class="${isActive ? 'active' : ''}">
+                    <a href="${service.slug}" class="${isActive ? 'active' : ''}">
                         <span class="nav-icon">${service.icon}</span>
                         ${service.name}
                     </a>
@@ -440,7 +440,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const isActive = currentPage === service.slug;
             sidebarHTML += `
                 <li>
-                    <a href="${service.slug}.html" class="${isActive ? 'current' : ''}">
+                    <a href="${service.slug}" class="${isActive ? 'current' : ''}">
                         <span class="mobile-nav-icon">${service.icon}</span>
                         ${service.name}
                     </a>
@@ -570,7 +570,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         let breadcrumbHTML = `
             <nav class="breadcrumb" aria-label="Breadcrumb">
-                <a href="${currentPath.includes(`/${config.servicesFolder}/`) ? '../../' : '../'}index.html">
+                <a href="${currentPath.includes(`/${config.servicesFolder}/`) ? '../../' : '../'}">
                     ${currentLang === 'sk' ? 'Domov' : currentLang === 'en' ? 'Home' : currentLang === 'de' ? 'Startseite' : 'Accueil'}
                 </a>
                 <span class="breadcrumb-separator">›</span>
