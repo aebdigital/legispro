@@ -1,7 +1,7 @@
 // Blog Data - English
-const blogPostsEn = {
-    'tax-control-transfer-pricing': {
-        id: 'tax-control-transfer-pricing',
+const blogPosts = {
+    'danove-kontroly-transfer-pricing': {
+        id: 'danove-kontroly-transfer-pricing',
         title: 'Tax Control and Common Deficiencies in Transfer Pricing',
         category: 'Tax Law',
         date: 'November 15, 2024',
@@ -62,8 +62,8 @@ const blogPostsEn = {
         tags: ['transfer pricing', 'tax control', 'documentation', 'compliance']
     },
 
-    'case-law-transfer-pricing': {
-        id: 'case-law-transfer-pricing',
+    'judikatura-transfer-pricing': {
+        id: 'judikatura-transfer-pricing',
         title: 'Selected Case Law in Transfer Pricing',
         category: 'Case Law',
         date: 'November 10, 2024',
@@ -104,8 +104,8 @@ const blogPostsEn = {
         tags: ['case law', 'transfer pricing', 'court decisions', 'OECD guidelines']
     },
 
-    'claims-set-off': {
-        id: 'claims-set-off',
+    'zapocitanie-pohladavok': {
+        id: 'zapocitanie-pohladavok',
         title: 'When Can Claims Be Set Off',
         category: 'Commercial Law',
         date: 'November 5, 2024',
@@ -170,8 +170,8 @@ const blogPostsEn = {
 
 // Export for use in other scripts
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = blogPostsEn;
+    module.exports = blogPosts;
 }
 
 // Make available globally
-window.blogPostsEn = blogPostsEn;
+window.blogPosts = blogPosts;

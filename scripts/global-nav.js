@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 business_package: 'Podnikateľský balík',
                 training: 'Školenia a webináre',
                 blog: 'Blog',
-                contact: 'Konzultácia'
+                contact: 'Konzultácia',
+                subtitle: 'Advokátska kancelária'
             },
             services: {
                 'start-ups-greenfield-projects': { name: 'START UPs & Greenfield projekty', description: 'Spustenie nových projektov' },
@@ -75,7 +76,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 business_package: 'Business Package',
                 training: 'Training & Webinars',
                 blog: 'Blog',
-                contact: 'Consultation'
+                contact: 'Consultation',
+                subtitle: 'Law Firm'
             },
             services: {
                 'start-ups-greenfield-projects': { name: 'START UPs & Greenfield projects', description: 'Launching new projects' },
@@ -127,7 +129,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 business_package: 'Unternehmenspaket',
                 training: 'Schulungen & Webinare',
                 blog: 'Blog',
-                contact: 'Beratung'
+                contact: 'Beratung',
+                subtitle: 'Anwaltskanzlei'
             },
             services: {
                 'start-ups-greenfield-projects': { name: 'START UPs & Greenfields', description: 'Start neuer Projekte' },
@@ -179,7 +182,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 business_package: 'Package Entreprise',
                 training: 'Formations & Webinaires',
                 blog: 'Blog',
-                contact: 'Consultation'
+                contact: 'Consultation',
+                subtitle: 'Cabinet d\'avocats'
             },
             services: {
                 'start-ups-greenfield-projects': { name: 'START UPs et Greenfields', description: 'Lancement de nouveaux projets' },
@@ -588,7 +592,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="logo">
                         <a href="${getPagePath('index')}">
                             <img src="${getLogoPath()}" alt="LegisPro" class="logo-image">
-                            <h3>LegisPro</h3>
+                            <div class="logo-text">
+                                <h3>LegisPro</h3>
+                                <span class="logo-subtitle">${getTranslation('nav.subtitle')}</span>
+                            </div>
                         </a>
                     </div>
                     <div class="nav-menu" id="navMenu">
@@ -656,7 +663,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="mobile-menu-header">
                     <div class="mobile-logo">
                         <img src="${getLogoPath()}" alt="LegisPro" class="logo-image">
-                        <h3>LegisPro</h3>
+                        <div class="logo-text">
+                            <h3>LegisPro</h3>
+                            <span class="logo-subtitle">${getTranslation('nav.subtitle')}</span>
+                        </div>
                     </div>
                     <button class="mobile-menu-close" id="mobileMenuClose">✕</button>
                 </div>

@@ -51,9 +51,34 @@
     margin: 0;
     transition: color 0.3s ease;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    line-height: 1;
 }
 
 .navbar.scrolled .logo h3 {
+    color: var(--dark-gray);
+    text-shadow: none;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.logo-subtitle {
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 2px;
+    transition: color 0.3s ease;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+}
+
+.navbar.scrolled .logo-subtitle {
     color: var(--dark-gray);
     text-shadow: none;
 }
