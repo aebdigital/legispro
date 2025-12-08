@@ -35,7 +35,7 @@
 
   <!-- Slovak Service Pages (Root Level) -->
   <url>
-    <loc>https://legispro.sk/sluzby/start-ups-greenfield-projects</loc>
+    <loc>https://legispro.sk/sluzby/start-upy-greenfieldy</loc>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -55,32 +55,32 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/sluzby/financial-law</loc>
+    <loc>https://legispro.sk/sluzby/danove-pravo</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/sluzby/criminal-law</loc>
+    <loc>https://legispro.sk/sluzby/trestne-pravo</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/sluzby/debt-collection</loc>
+    <loc>https://legispro.sk/sluzby/vymahanie-pohladavok</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/sluzby/real-estate</loc>
+    <loc>https://legispro.sk/sluzby/reality</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/sluzby/litigations</loc>
+    <loc>https://legispro.sk/sluzby/sporove-zastupovanie</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://legispro.sk/sluzby/optimization-solutions</loc>
+    <loc>https://legispro.sk/sluzby/optimalizacie</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>

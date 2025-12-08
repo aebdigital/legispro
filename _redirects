@@ -56,18 +56,18 @@
 /sk/pages/blog/post /sk/pages/blog/post.html 200
 
 # Slovak services
-/sk/pages/sluzby/start-ups-greenfield-projects /sk/pages/sluzby/start-ups-greenfield-projects.html 200
+/sk/pages/sluzby/start-upy-greenfieldy /sk/pages/sluzby/start-upy-greenfieldy.html 200
 /sk/pages/sluzby/gdpr /sk/pages/sluzby/gdpr.html 200
 /sk/pages/sluzby/due-diligence /sk/pages/sluzby/due-diligence.html 200
 /sk/pages/sluzby/ecommerce /sk/pages/sluzby/ecommerce.html 200
 /sk/pages/sluzby/podnikatelsky-balik /sk/pages/sluzby/podnikatelsky-balik.html 200
 /sk/pages/sluzby/skolenia-webinare /sk/pages/sluzby/skolenia-webinare.html 200
-/sk/pages/sluzby/criminal-law /sk/pages/sluzby/criminal-law.html 200
-/sk/pages/sluzby/debt-collection /sk/pages/sluzby/debt-collection.html 200
-/sk/pages/sluzby/financial-law /sk/pages/sluzby/financial-law.html 200
-/sk/pages/sluzby/litigations /sk/pages/sluzby/litigations.html 200
-/sk/pages/sluzby/optimization-solutions /sk/pages/sluzby/optimization-solutions.html 200
-/sk/pages/sluzby/real-estate /sk/pages/sluzby/real-estate.html 200
+/sk/pages/sluzby/trestne-pravo /sk/pages/sluzby/trestne-pravo.html 200
+/sk/pages/sluzby/vymahanie-pohladavok /sk/pages/sluzby/vymahanie-pohladavok.html 200
+/sk/pages/sluzby/danove-pravo /sk/pages/sluzby/danove-pravo.html 200
+/sk/pages/sluzby/sporove-zastupovanie /sk/pages/sluzby/sporove-zastupovanie.html 200
+/sk/pages/sluzby/optimalizacie /sk/pages/sluzby/optimalizacie.html 200
+/sk/pages/sluzby/reality /sk/pages/sluzby/reality.html 200
 
 # English pages
 /en/pages/contact /en/pages/contact.html 200
@@ -81,7 +81,7 @@
 /en/pages/services/due-diligence /en/pages/services/due-diligence.html 200
 /en/pages/services/ecommerce /en/pages/services/ecommerce.html 200
 /en/pages/services/business-package /en/pages/services/business-package.html 200
-/en/pages/services/trainings-webinars /en/pages/services/trainings-webinars.html 200
+/en/pages/services/training-webinars /en/pages/services/training-webinars.html 200
 /en/pages/services/criminal-law /en/pages/services/criminal-law.html 200
 /en/pages/services/debt-collection /en/pages/services/debt-collection.html 200
 /en/pages/services/financial-law /en/pages/services/financial-law.html 200
@@ -116,18 +116,18 @@
 /fr/pages/blog/post /fr/pages/blog/post.html 200
 
 # French services
-/fr/pages/services/start-ups-projets-verts /fr/pages/services/start-ups-projets-verts.html 200
-/fr/pages/services/rgpd /fr/pages/services/rgpd.html 200
+/fr/pages/services/start-ups-greenfields /fr/pages/services/start-ups-greenfields.html 200
+/fr/pages/services/gdpr /fr/pages/services/gdpr.html 200
 /fr/pages/services/due-diligence /fr/pages/services/due-diligence.html 200
 /fr/pages/services/e-commerce /fr/pages/services/e-commerce.html 200
-/fr/pages/services/forfait-entreprise /fr/pages/services/forfait-entreprise.html 200
+/fr/pages/services/package-entreprise /fr/pages/services/package-entreprise.html 200
 /fr/pages/services/formations-webinaires /fr/pages/services/formations-webinaires.html 200
 /fr/pages/services/droit-penal /fr/pages/services/droit-penal.html 200
-/fr/pages/services/recouvrement-creances /fr/pages/services/recouvrement-creances.html 200
+/fr/pages/services/recouvrement-des-dettes /fr/pages/services/recouvrement-des-dettes.html 200
 /fr/pages/services/droit-financier /fr/pages/services/droit-financier.html 200
-/fr/pages/services/representation-contentieux /fr/pages/services/representation-contentieux.html 200
+/fr/pages/services/litiges /fr/pages/services/litiges.html 200
 /fr/pages/services/solutions-optimisation /fr/pages/services/solutions-optimisation.html 200
-/fr/pages/services/immobilier /fr/pages/services/immobilier.html 200
+/fr/pages/services/biens-immobiliers /fr/pages/services/biens-immobiliers.html 200
 
 # Fallback for any URLs with .html extension - strip them
 /*.html /:splat 301
