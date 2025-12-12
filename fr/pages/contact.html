@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="../../styles/kontakt.css?v=1764377524">
     <link rel="stylesheet" href="../../styles/language-toggle.css?v=1764377524">
     
+    <!-- Cloudflare Turnstile -->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
     <!-- GSAP and Animation Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js?v=1764377524"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js?v=1764377524"></script>
@@ -131,6 +134,8 @@
                             </select>
                         </div>
                         <textarea name="message" placeholder="Votre message *" required></textarea>
+                        <!-- Cloudflare Turnstile Widget -->
+                        <div class="cf-turnstile" data-sitekey="0x4AAAAAACGYY6ddVugUVO8w" data-theme="light"></div>
                         <button type="submit" class="btn btn-dark">Envoyer le message</button>
                     </form>
                 </div>
