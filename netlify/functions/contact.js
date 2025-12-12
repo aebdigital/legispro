@@ -14,6 +14,30 @@ exports.handler = async (event, context) => {
         // Parse form data
         const data = JSON.parse(event.body);
         const { name, email, phone, service, message } = data;
+        const turnstileToken = data['cf-turnstile-response'];
+
+        // Verify Turnstile token
+        const turnstileSecretKey = process.env.TURNSTILE_SECRET_KEY;
+        if (turnstileSecretKey && turnstileToken) {
+            const turnstileResult = await verifyTurnstile(turnstileToken, turnstileSecretKey);
+            if (!turnstileResult.success) {
+                return {
+                    statusCode: 400,
+                    body: JSON.stringify({
+                        success: false,
+                        message: 'Security verification failed. Please try again.'
+                    })
+                };
+            }
+        } else if (turnstileSecretKey && !turnstileToken) {
+            return {
+                statusCode: 400,
+                body: JSON.stringify({
+                    success: false,
+                    message: 'Security verification required.'
+                })
+            };
+        }
 
         // Validate required fields
         if (!name || !email || !message) {
@@ -158,6 +182,51 @@ function sendEmailViaSMTP2GO(payload) {
 
         req.on('error', (error) => {
             resolve({ success: false, error: error.message });
+        });
+
+        req.write(postData);
+        req.end();
+    });
+}
+
+// Helper function to verify Turnstile token
+function verifyTurnstile(token, secretKey) {
+    return new Promise((resolve) => {
+        const postData = new URLSearchParams({
+            secret: secretKey,
+            response: token
+        }).toString();
+
+        const options = {
+            hostname: 'challenges.cloudflare.com',
+            port: 443,
+            path: '/turnstile/v0/siteverify',
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'Content-Length': Buffer.byteLength(postData)
+            }
+        };
+
+        const req = https.request(options, (res) => {
+            let responseBody = '';
+
+            res.on('data', (chunk) => {
+                responseBody += chunk;
+            });
+
+            res.on('end', () => {
+                try {
+                    const response = JSON.parse(responseBody);
+                    resolve({ success: response.success === true });
+                } catch (e) {
+                    resolve({ success: false });
+                }
+            });
+        });
+
+        req.on('error', () => {
+            resolve({ success: false });
         });
 
         req.write(postData);

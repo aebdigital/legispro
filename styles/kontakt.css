@@ -862,3 +862,14 @@ input:valid:not(:focus):not(:placeholder-shown),
 textarea:valid:not(:focus):not(:placeholder-shown) {
     border-color: #28a745;
 }
+
+/* Cloudflare Turnstile Widget */
+.cf-turnstile {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form-main .cf-turnstile,
+.contact-form-wrapper .cf-turnstile {
+    display: flex;
+    justify-content: flex-start;
+}
