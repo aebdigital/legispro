@@ -13,7 +13,8 @@
         
         if (slides.length === 0 || serviceButtons.length === 0) return;
         
-        // Add click listeners to service buttons
+        // Click listeners removed to allow direct navigation via href attributes
+        /*
         serviceButtons.forEach((button, index) => {
             button.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -23,6 +24,7 @@
                 resumeAutoSlide();
             });
         });
+        */
         
         // Set initial slide (start with general slide)
         showSlide(0);
