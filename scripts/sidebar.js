@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
             contactPage: 'kontakt',
             servicesHeader: 'Naše služby',
             contactText: 'Kontakt',
-            searchPlaceholder: 'Vyhľadať službu...',
+            searchPlaceholder: 'Vyhľadať službu...', 
             sidebarTitle: 'Zobraziť služby'
         },
         en: {
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const servicesData = {
         sk: [
             {
-                name: 'START UPs & Greenfield projekty',
+                name: 'Realizácia Start-up & Greenfield projektov',
                 slug: 'start-upy-greenfieldy',
                 icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.663 17h4.673M12 3l1.5 4.5 4.5 1.5-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
                 description: 'Spustenie nových projektov'
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 description: 'GDPR služby a poradenstvo'
             },
             {
-                name: 'Optimalizácie',
+                name: 'Optimalizačné riešenia',
                 slug: 'optimalizacie',
                 icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12" stroke="currentColor" stroke-width="2" fill="none"/></svg>',
                 description: 'Audit a optimalizácia procesov'
@@ -81,10 +81,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 description: 'Analýza obchodných transakcií'
             },
             {
-                name: 'Vymáhanie pohľadávok',
-                slug: 'vymahanie-pohladavok',
+                name: 'Obchodné právo',
+                slug: 'obchodne-pravo',
                 icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke="currentColor" stroke-width="2"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 6l2 2M6 16l2 2M16 18l2-2M6 8l2-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>',
-                description: 'Efektívne vymáhanie dlhov'
+                description: 'Komplexné služby obchodného práva'
             },
             {
                 name: 'Daňové právo',
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ],
         en: [
             {
-                name: 'START UPs & Greenfield Projects',
+                name: 'Start-up & Greenfield Projects',
                 slug: 'start-ups-greenfield-projects',
                 icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.663 17h4.673M12 3l1.5 4.5 4.5 1.5-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
                 description: 'Launch new projects'
@@ -143,10 +143,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 description: 'Business transaction analysis'
             },
             {
-                name: 'Debt Collection',
-                slug: 'debt-collection',
+                name: 'Commercial Law',
+                slug: 'commercial-law',
                 icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke="currentColor" stroke-width="2"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 6l2 2M6 16l2 2M16 18l2-2M6 8l2-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>',
-                description: 'Effective debt recovery'
+                description: 'Comprehensive commercial law services'
             },
             {
                 name: 'Financial Law',
@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ],
         de: [
             {
-                name: 'START UPs & Greenfields',
+                name: 'Start-ups & Greenfield-Projekte',
                 slug: 'start-ups-greenfields',
                 icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.663 17h4.673M12 3l1.5 4.5 4.5 1.5-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
                 description: 'Neue Projekte starten'
@@ -205,8 +205,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 description: 'Analyse von Geschäftstransaktionen'
             },
             {
-                name: 'Betreibung der Außenstände',
-                slug: 'betreibung-der-aussenstande',
+                name: 'Handelsrecht',
+                slug: 'handelsrecht',
                 icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke="currentColor" stroke-width="2"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 6l2 2M6 16l2 2M16 18l2-2M6 8l2-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>',
                 description: 'Effektive Schuldeneintreibung'
             },
@@ -267,8 +267,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 description: 'Analyse des transactions commerciales'
             },
             {
-                name: 'Recouvrement des dettes',
-                slug: 'recouvrement-des-dettes',
+                name: 'Droit Commercial',
+                slug: 'droit-commercial',
                 icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke="currentColor" stroke-width="2"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 6l2 2M6 16l2 2M16 18l2-2M6 8l2-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>',
                 description: 'Recouvrement efficace des créances'
             },
@@ -395,9 +395,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const currentPage = currentPath.split('/').pop().replace('.html', '');
         const serviceContainer = document.querySelector('.service-sidebar-content');
         
-        if (!serviceContainer) return;
+        if (!serviceContainer) return; 
         
         const currentService = services.find(s => s.slug === currentPage);
+        // If current service is not found (maybe because of slug mismatch), use the header
         const currentServiceName = currentService ? currentService.name : config.servicesHeader;
         
         let sidebarHTML = `

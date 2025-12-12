@@ -27,11 +27,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 subtitle: 'Advokátska kancelária'
             },
             services: {
-                'start-ups-greenfield-projects': { name: 'START UPs & Greenfield projekty', description: 'Spustenie nových projektov' },
+                'start-ups-greenfield-projects': { name: 'Realizácia Start-up & Greenfield projektov', description: 'Spustenie nových projektov' },
                 'gdpr': { name: 'GDPR', description: 'Ochrana osobných údajov' },
                 'optimization-solutions': { name: 'Optimalizačné riešenia', description: 'Audit a optimalizácia procesov' },
                 'due-diligence': { name: 'Due Diligence', description: 'Analýza obchodných transakcií' },
-                'debt-collection': { name: 'Vymáhanie pohľadávok', description: 'Efektívne vymáhanie dlhů' },
+                'commercial-law': { name: 'Obchodné právo', description: 'Komplexné služby obchodného práva' },
                 'financial-law': { name: 'Finančné právo', description: 'Daňové a finančné poradenstvo' },
                 'ecommerce': { name: 'e-Commerce', description: 'Právne služby pre online podnikanie' },
                 'real-estate': { name: 'Nehnuteľnosti', description: 'Právne služby v oblasti nehnuteľností' },
@@ -47,14 +47,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 contact: 'Kontakt',
                 consultation: 'Konzultácia',
                 blog: 'Blog',
-                startups: 'START UPs',
+                startups: 'Start-upy',
                 gdpr: 'GDPR',
                 real_estate: 'Nehnuteľnosti',
                 ecommerce: 'e-Commerce',
                 disputes: 'Spory',
                 criminal: 'Trestné právo',
                 financial: 'Finančné právo',
-                debt: 'Vymáhanie pohľadávok',
+                debt: 'Obchodné právo',
                 optimization: 'Optimalizácie',
                 due_diligence: 'Due Diligence',
                 need_help: 'Potrebujete poradiť?',
@@ -80,11 +80,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 subtitle: 'Law Firm'
             },
             services: {
-                'start-ups-greenfield-projects': { name: 'START UPs & Greenfield projects', description: 'Launching new projects' },
+                'start-ups-greenfield-projects': { name: 'Start-up & Greenfield Projects', description: 'Launching new projects' },
                 'gdpr': { name: 'GDPR', description: 'Personal data protection' },
                 'optimization-solutions': { name: 'Optimization Solutions', description: 'Process audit and optimization' },
                 'due-diligence': { name: 'Due Diligence', description: 'Business transaction analysis' },
-                'debt-collection': { name: 'Debt Collection', description: 'Effective debt recovery' },
+                'commercial-law': { name: 'Commercial Law', description: 'Comprehensive commercial law services' },
                 'financial-law': { name: 'Financial Law', description: 'Tax and financial consulting' },
                 'ecommerce': { name: 'e-Commerce', description: 'Legal services for online business' },
                 'real-estate': { name: 'Real Estate', description: 'Legal services in real estate' },
@@ -100,14 +100,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 contact: 'Contact',
                 consultation: 'Consultation',
                 blog: 'Blog',
-                startups: 'START UPs',
+                startups: 'Start-ups',
                 gdpr: 'GDPR',
                 real_estate: 'Real Estate',
                 ecommerce: 'e-Commerce',
                 disputes: 'Disputes',
                 criminal: 'Criminal Law',
                 financial: 'Financial Law',
-                debt: 'Debt Collection',
+                debt: 'Commercial Law',
                 optimization: 'Optimizations',
                 due_diligence: 'Due Diligence',
                 need_help: 'Need help?',
@@ -133,11 +133,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 subtitle: 'Anwaltskanzlei'
             },
             services: {
-                'start-ups-greenfield-projects': { name: 'START UPs & Greenfields', description: 'Start neuer Projekte' },
+                'start-ups-greenfield-projects': { name: 'Start-ups & Greenfield-Projekte', description: 'Start neuer Projekte' },
                 'gdpr': { name: 'GDPR', description: 'Datenschutz' },
                 'optimization-solutions': { name: 'Optimierungslösungen', description: 'Prozessaudit und -optimierung' },
                 'due-diligence': { name: 'Due Diligence', description: 'Analyse von Geschäftstransaktionen' },
-                'debt-collection': { name: 'Betreibung der Außenstände', description: 'Effektive Schuldeneintreibung' },
+                'commercial-law': { name: 'Handelsrecht', description: 'Umfassende handelsrechtliche Dienstleistungen' },
                 'financial-law': { name: 'Finanzrecht', description: 'Steuer- und Finanzberatung' },
                 'ecommerce': { name: 'e-Commerce', description: 'Rechtsdienstleistungen für Online-Geschäfte' },
                 'real-estate': { name: 'Immobilien', description: 'Rechtsdienstleistungen im Immobilienbereich' },
@@ -153,14 +153,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 contact: 'Kontakt',
                 consultation: 'Beratung',
                 blog: 'Blog',
-                startups: 'START UPs',
+                startups: 'Start-ups',
                 gdpr: 'GDPR',
                 real_estate: 'Immobilien',
                 ecommerce: 'e-Commerce',
                 disputes: 'Streitigkeiten',
                 criminal: 'Strafrecht',
                 financial: 'Finanzrecht',
-                debt: 'Forderungseinzug',
+                debt: 'Handelsrecht',
                 optimization: 'Optimierungen',
                 due_diligence: 'Due Diligence',
                 need_help: 'Brauchen Sie Hilfe?',
@@ -186,11 +186,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 subtitle: 'Cabinet d\'avocats'
             },
             services: {
-                'start-ups-greenfield-projects': { name: 'START UPs et Greenfields', description: 'Lancement de nouveaux projets' },
+                'start-ups-greenfield-projects': { name: 'START UPs & Greenfields', description: 'Lancement de nouveaux projets' },
                 'gdpr': { name: 'GDPR', description: 'Protection des données personnelles' },
                 'optimization-solutions': { name: "Solutions d'optimisation", description: 'Audit et optimisation des processus' },
                 'due-diligence': { name: 'Due Diligence', description: "Analyse des transactions commerciales" },
-                'debt-collection': { name: 'Recouvrement des dettes', description: 'Recouvrement efficace des créances' },
+                'commercial-law': { name: 'Droit Commercial', description: 'Services complets en droit commercial' },
                 'financial-law': { name: 'Droit financier', description: 'Conseil fiscal et financier' },
                 'ecommerce': { name: 'e-Commerce', description: 'Services juridiques pour le commerce en ligne' },
                 'real-estate': { name: 'Biens immobiliers', description: 'Services juridiques immobiliers' },
@@ -206,14 +206,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 contact: 'Contact',
                 consultation: 'Consultation',
                 blog: 'Blog',
-                startups: 'START UPs',
+                startups: 'Start-ups',
                 gdpr: 'GDPR',
                 real_estate: 'Immobilier',
                 ecommerce: 'e-Commerce',
                 disputes: 'Litiges',
                 criminal: 'Droit Pénal',
                 financial: 'Droit Financier',
-                debt: 'Recouvrement',
+                debt: 'Droit Commercial',
                 optimization: 'Optimisations',
                 due_diligence: 'Due Diligence',
                 need_help: 'Besoin d\'aide?',
@@ -233,64 +233,64 @@ document.addEventListener('DOMContentLoaded', function() {
     // Service pages data
     const services = [
         {
+            name: 'Commercial Law',
+            slug: 'commercial-law',
+            icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke="currentColor" stroke-width="2"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 6l2 2M6 16l2 2M16 18l2-2M6 8l2-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>',
+            description: 'Comprehensive commercial law services'
+        },
+        {
+            name: 'Financial Law',
+            slug: 'financial-law',
+            icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M6 6h4v4H6zM14 6h4v2h-4zM14 10h4v2h-4zM6 12h12v2H6zM6 16h12v2H6z" stroke="currentColor" stroke-width="1.5"/><path d="M21 8h2v2h-2zM21 12h2v2h-2z" fill="currentColor"/></svg>',
+            description: 'Tax and financial consulting'
+        },
+        {
+            name: 'Criminal Law',
+            slug: 'criminal-law',
+            icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"/></svg>',
+            description: 'Defense in criminal proceedings'
+        },
+        {
+            name: 'Litigations',
+            slug: 'litigations',
+            icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" stroke="currentColor" stroke-width="2"/><polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="2"/><line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="2"/><line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="2"/><polyline points="10,9 9,9 8,9" stroke="currentColor" stroke-width="2"/></svg>',
+            description: 'Legal representation in disputes'
+        },
+        {
             name: 'START UPs & Greenfield Projects',
             slug: 'start-ups-greenfield-projects',
             icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.663 17h4.673M12 3l1.5 4.5 4.5 1.5-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
-            description: 'Spustenie nových projektov'
+            description: 'Launching new projects'
         },
         {
-            name: 'GDPR',
-            slug: 'gdpr',
-            icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="16" r="1" fill="currentColor"/><path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="currentColor" stroke-width="2"/></svg>',
-            description: 'Ochrana osobných údajov'
-        },
-        {
-            name: 'OPTIMIZATION SOLUTIONS',
-            slug: 'optimization-solutions',
-            icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12" stroke="currentColor" stroke-width="2" fill="none"/></svg>',
-            description: 'Audit a optimalizácia procesov'
+            name: 'Real Estate',
+            slug: 'real-estate',
+            icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="2"/><polyline points="9,22 9,12 15,12 15,22" stroke="currentColor" stroke-width="2"/></svg>',
+            description: 'Real estate transactions'
         },
         {
             name: 'Due Diligence',
             slug: 'due-diligence',
             icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/><path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="2"/></svg>',
-            description: 'Analýza obchodných transakcií'
+            description: 'Business transaction analysis'
         },
         {
-            name: 'DEBT COLLECTION',
-            slug: 'debt-collection',
-            icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke="currentColor" stroke-width="2"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 6l2 2M6 16l2 2M16 18l2-2M6 8l2-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>',
-            description: 'Efektívne vymáhanie dlhů'
+            name: 'GDPR',
+            slug: 'gdpr',
+            icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="16" r="1" fill="currentColor"/><path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="currentColor" stroke-width="2"/></svg>',
+            description: 'Personal data protection'
         },
         {
-            name: 'FINANCIAL LAW',
-            slug: 'financial-law',
-            icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M6 6h4v4H6zM14 6h4v2h-4zM14 10h4v2h-4zM6 12h12v2H6zM6 16h12v2H6z" stroke="currentColor" stroke-width="1.5"/><path d="M21 8h2v2h-2zM21 12h2v2h-2z" fill="currentColor"/></svg>',
-            description: 'Daňová optimalizácia'
+            name: 'Optimization Solutions',
+            slug: 'optimization-solutions',
+            icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12" stroke="currentColor" stroke-width="2" fill="none"/></svg>',
+            description: 'Process audit and optimization'
         },
         {
             name: 'e-Commerce',
             slug: 'ecommerce',
             icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="21" r="1" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="21" r="1" stroke="currentColor" stroke-width="2"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" stroke="currentColor" stroke-width="2"/></svg>',
-            description: 'Právne služby pre e-shopy'
-        },
-        {
-            name: 'REAL ESTATE',
-            slug: 'real-estate',
-            icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="2"/><polyline points="9,22 9,12 15,12 15,22" stroke="currentColor" stroke-width="2"/></svg>',
-            description: 'Realitné transakcie'
-        },
-        {
-            name: 'LITIGATIONS',
-            slug: 'litigations',
-            icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" stroke="currentColor" stroke-width="2"/><polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="2"/><line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="2"/><line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="2"/><polyline points="10,9 9,9 8,9" stroke="currentColor" stroke-width="2"/></svg>',
-            description: 'Zastupovanie v súdnych sporoch'
-        },
-        {
-            name: 'CRIMINAL LAW',
-            slug: 'criminal-law',
-            icon: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"/></svg>',
-            description: 'Obhajoba v trestnom konaní'
+            description: 'Legal services for e-shops'
         }
     ];
 
@@ -364,8 +364,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // For index, return root language path
         if (page === 'index') {
             if (currentLang === 'sk') {
-                // For Slovak (default), root is / or /sk/ ?
-                // Based on redirects, /sk/ is the language root
                 return basePath + 'sk/';
             } else {
                 return basePath + currentLang + '/';
@@ -381,7 +379,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'litigations': 'sporove-zastupovanie', 
                 'criminal-law': 'trestne-pravo',
                 'financial-law': 'danove-pravo',
-                'debt-collection': 'vymahanie-pohladavok',
+                'commercial-law': 'obchodne-pravo',
                 'optimization-solutions': 'optimalizacie'
             };
             actualPageName = pageMapping[page] || page;
@@ -398,7 +396,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'litigations': 'litigations',
                 'criminal-law': 'criminal-law',
                 'financial-law': 'financial-law',
-                'debt-collection': 'debt-collection',
+                'commercial-law': 'commercial-law',
                 'optimization-solutions': 'optimization-solutions'
             };
             actualPageName = pageMapping[page] || page;
@@ -415,7 +413,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'litigations': 'streitvertretung',
                 'criminal-law': 'strafrecht',
                 'financial-law': 'finanzrecht',
-                'debt-collection': 'betreibung-der-aussenstande',
+                'commercial-law': 'handelsrecht',
                 'optimization-solutions': 'optimierungsloesungen'
             };
             actualPageName = pageMapping[page] || page;
@@ -432,13 +430,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 'litigations': 'litiges',
                 'criminal-law': 'droit-penal',
                 'financial-law': 'droit-financier',
-                'debt-collection': 'recouvrement-des-dettes',
+                'commercial-law': 'droit-commercial',
                 'optimization-solutions': 'solutions-optimisation'
             };
             actualPageName = pageMapping[page] || page;
         }
         
-        // Build the full path based on current language (Clean URLs)
+        // Build the full path based on current language
         const servicesFolder = getServicesFolder(currentLang);
         
         if (currentLang === 'sk') {
@@ -690,7 +688,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <a href="${getPagePath('litigations')}">${getTranslation('footer.disputes')}</a>
                                 <a href="${getPagePath('criminal-law')}">${getTranslation('footer.criminal')}</a>
                                 <a href="${getPagePath('financial-law')}">${getTranslation('footer.financial')}</a>
-                                <a href="${getPagePath('debt-collection')}">${getTranslation('footer.debt')}</a>
+                                <a href="${getPagePath('commercial-law')}">${getTranslation('footer.debt')}</a>
                             </nav>
                         </div>
                         <div class="footer-column">
