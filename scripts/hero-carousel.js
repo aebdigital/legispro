@@ -5,7 +5,7 @@
     let serviceButtons = [];
     let autoSlideInterval = null;
     let isAutoPlay = true;
-    let autoSlideDelay = 5000; // 5 seconds
+    let autoSlideDelay = 3000; // 3 seconds
     
     function initCarousel() {
         slides = document.querySelectorAll('.hero-slide');
