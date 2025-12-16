@@ -33,11 +33,18 @@
         // Start auto-slide immediately
         startAutoSlide();
         
-        // Pause on hover
-        const heroSection = document.querySelector('.hero');
-        if (heroSection) {
-            heroSection.addEventListener('mouseenter', pauseAutoSlide);
-            heroSection.addEventListener('mouseleave', resumeAutoSlide);
+        // Pause on hover over content or services only
+        const heroContent = document.querySelector('.hero-content');
+        const heroServices = document.querySelector('.hero-services');
+        
+        if (heroContent) {
+            heroContent.addEventListener('mouseenter', pauseAutoSlide);
+            heroContent.addEventListener('mouseleave', resumeAutoSlide);
+        }
+        
+        if (heroServices) {
+            heroServices.addEventListener('mouseenter', pauseAutoSlide);
+            heroServices.addEventListener('mouseleave', resumeAutoSlide);
         }
     }
     
