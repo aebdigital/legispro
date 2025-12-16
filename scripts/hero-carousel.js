@@ -46,16 +46,16 @@
         
         // Map service types to slide indices
         const serviceMap = {
-            'start-upy': 1,
-            'gdpr': 2,
-            'optimalizacie': 3,
-            'due-diligence': 4,
-            'vymahanie': 5,
-            'danove': 6,
-            'ecommerce': 7,
-            'reality': 8,
-            'sporove': 9,
-            'trestne': 10
+            'vymahanie': 1,
+            'danove': 2,
+            'trestne': 3,
+            'sporove': 4,
+            'start-upy': 5,
+            'reality': 6,
+            'due-diligence': 7,
+            'gdpr': 8,
+            'optimalizacie': 9,
+            'ecommerce': 10
         };
         
         slideIndex = serviceMap[serviceType];
@@ -108,16 +108,16 @@
     function setActiveServiceButton(slideIndex) {
         // Map slide indices back to service types
         const slideServiceMap = {
-            1: 'start-upy',
-            2: 'gdpr',
-            3: 'optimalizacie',
-            4: 'due-diligence',
-            5: 'vymahanie',
-            6: 'danove',
-            7: 'ecommerce',
-            8: 'reality',
-            9: 'sporove',
-            10: 'trestne'
+            1: 'vymahanie',
+            2: 'danove',
+            3: 'trestne',
+            4: 'sporove',
+            5: 'start-upy',
+            6: 'reality',
+            7: 'due-diligence',
+            8: 'gdpr',
+            9: 'optimalizacie',
+            10: 'ecommerce'
         };
         
         const serviceType = slideServiceMap[slideIndex];
