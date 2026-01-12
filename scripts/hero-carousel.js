@@ -140,6 +140,8 @@
     function startAutoSlide() {
         if (!isAutoPlay) return;
         
+        if (autoSlideInterval) clearInterval(autoSlideInterval);
+        
         autoSlideInterval = setInterval(function() {
             nextSlide();
         }, autoSlideDelay);
